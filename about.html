@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Animations -->
+    <link rel = "stylesheet" href = "styles/animate.css" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel = "stylesheet" href = "styles/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ 
+    <!-- Swiper CSS --> 
+    <link rel="stylesheet" href="styles/swiper.css" />
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+    <!-- Icon fonts --> 
+    <script src="https://use.fontawesome.com/5783e93cdd.js"></script>
+    <link rel="stylesheet" href="pictonic/css/pictonic.css">
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+    <script src = "scripts/jquery.js"></script>
+    <script src = "scripts/jquery-easing.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+       
+        width: 100%;
+        height: 75%;
+        margin-left:0px !important;
+        margin-right:0px !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .swiper-extend-height
+    {
+        height: 100% !important;
+    }
+
+    .swiper-slide
+    {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+       
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height:320px !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .item-slide
+    {
+        min-height:420px !important;
+        max-height:490px !important;
+    }
+
+    .swiper-container1 {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    </style>
+    </head>
+    <body data-spy="scroll" onLoad = "initNav('outfits')">
+<div id = "top"></div>
+
+    <nav id = "header-nav" class="navbar navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
+    <div id = "background-gradient" class = "background-gradient"></div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
+    </button>
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-md-3 col-lg-2">
+                <a class="navbar-brand white" href="#">JACOB</a>
+            </div>
+            <div class = "col col-md-6 col-lg-8 text-center">
+               
+                    <a class="nav-link white" href="index.html">HOME</a>
+                    <a class="nav-link white" href="store.html">STORE</a>
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                    <a class="nav-link white" href="charity.html">CHARITY</a>
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                    
+            
+            </div>
+            <div class = "col col-md-3 col-lg-2 text-right">
+                
+                <img src = "images/_New/search.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/user.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/shopping-design-light.svg" class = "nav-icon"/>
+                
+            </div>
+        </div>
+    </div>
+    </ul>
+    </nav>
+<nav id = "mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand white" href="index.html">Jacob</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item text-center mobile-nav-item">
+        <a class="nav-link white" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="store.html">STORE</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="outfits.html">OUTFITS</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="about.html">ABOUT</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="contact.html">CONTACT</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+</nav>
+<div class = "section-header-image relative about-image">
+    <div class = "background-overlay"></div>
+    <div class = "col col-12 center-abs text-center">
+        <div class = "slide-text animated fadeInDown large-slide-text heavy section-image-focus">ABOUT US</div>
+    </div>
+    
+    <!--
+    <div class = "section-header-focus center-abs">
+        <span class = "section-header-focus-text">CONTACT US</span>
+    </div>
+    -->
+</div>
+
+<div class = "section-three section-expanded-padding section-header text-center container-fluid">
+    <div class = "small-section-text">INTRODUCTION</div>
+    <div class = "margin-top-small">
+        <span class = "light white">WE ARE</span>
+        <span class = "heavy white">COMPANY NAME</span>
+        <div class = "highlight-line white-line"></div>
+
+      
+
+        <div class = "col col-12">
+            <div class = "row">
+                
+            <div class = "col col-12 col-md-3 hidden-sm-down">
+                <a href = "http://zacharyjordan.github.io/" target = "_blank" onmouseover="enterTriangle('zach')" onmouseout="exitTriangle('zach')">
+                        <span id = "zach-title" class = "center-abs triangle-title add-on-inactive">
+                            <span class = "triangle-main-title">Zachary Jordan</span>
+                                <div class = "triangle-sub-title">Co-Founder</div>
+                            </span>    
+                        <div class = "triangle-pic triangle-image">
+                            
+                        </div>
+                </a>
+            </div>
+
+            <div class = "col col-12 col-md-6 margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+            </div>
+         <div class = "col col-12 col-md-3 hidden-sm-down">
+                <a href = "http://zacharyjordan.github.io/" target = "_blank" onmouseover="enterTriangle('liam')" onmouseout="exitTriangle('liam')">
+                        <span id = "liam-title" class = "center-abs triangle-title add-on-inactive">
+                            <span class = "triangle-main-title">Liam Magistad</span>
+                                <div class = "triangle-sub-title">Co-Founder</div>
+                            </span>    
+                        <div class = "triangle-pic triangle-image">
+                            
+                        </div>
+                </a>
+            </div>
+            </div>
+        
+        </div>
+
+        
+        <div class = "col col-md-11 text-center red-button-max-width col-lg-10 col-xl-7 col-centered move-about-down">
+            <div class = "row margin-bottom-small">
+                <div class = "col-12 col-md-4 margin-top-small margin-top-options">
+                    <a href = "#about-first">
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div>OUR MISSION</div>
+                                <div></div>
+                                <div>OUR MISSION</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class = "col-12 col-sm-12 col-md-4 margin-top-small margin-top-options">
+                    <a href = "#about-second">
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div>OUR PRODUCTS</div>
+                                <div></div>
+                                <div>OUR PRODUCTS</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class = "col-12 col-sm-12 col-md-4 margin-top-small margin-top-options">
+                    <a href = "#about-third">
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div>OUR TEAM</div>
+                                <div></div>
+                                <div>OUR TEAM</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>   
+        
+        <div class = "row margin-top-large hidden-md-up margin-top-medium">
+            <div class = "col col-10 col-centered founder-pic women-pic margin-top-large"></div>
+            <div class = "col col-10 col-centered founder-pic men-pic margin-top-large"></div>
+        </div>
+    </div>
+</div>
+
+<div id = "about-first" class = "move-anchor-up"></div>
+<div id="hero" class="hero section-header text-center larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+   <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text">Our <span class = "heavy">Mission</span></div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">FUELING ADVENTURE, </span>
+    <span class "heavy white" style = "color:#fff;">FIXING PROBLEMS</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+    <div class = "col col-11 col-md-9 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+    </div>  
+    <div class = "col col-12 max-width-about-options margin-top-large">
+        <span class = "outfit-header white">Every purchase made supports these great charities</span>
+        <div class = "row">
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://water.org/" target="_blank"><div class = "charity-name">Water.Org</div></a>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://www.actionagainsthunger.org/" target = "_blank"><div class = "charity-name">Action Against Hunger</div></a>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://www.habitat.org/" target = "_blank"><div class = "charity-name">Habitat for Humanity</div></a>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+</div>
+
+<div id = "about-second" class = "move-anchor-up"></div>
+<div class = "section-two section-expanded-padding section-header text-center container-fluid">
+    <div class = "margin-top-small">
+        <div>
+            <div id = "chevron"><div class = "center-abs chevron-text">Our <span class = "heavy">Products</span></div></div>
+        </div>
+        <div class = "margin-top-large">
+        <span class = "light">ONLY THE</span>
+        <span class "heavy">BEST</span>
+        </div>
+
+        <div class = "col col-12">
+            <div class = "row">
+            <div class = "col col-12 col-md-3 hidden-sm-down">
+                <a href = "http://zacharyjordan.github.io/" target = "_blank" onmouseover="enterTriangle('men')" onmouseout="exitTriangle('men')">
+                        <span id = "men-title" class = "center-abs triangle-title add-on-inactive">
+                            <span class = "triangle-main-title">Browse Men</span>
+                                <div class = "triangle-sub-title">View Catalogue</div>
+                            </span>    
+                        <div class = "triangle-pic triangle-image">
+                            
+                        </div>
+                </a>
+            </div>
+
+            <div class = "col col-12 col-md-6 margin-top-large base-text-size text-center">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+            </div>
+            <div class = "col col-12 col-md-3 hidden-sm-down">
+                <a href = "http://zacharyjordan.github.io/" target = "_blank" onmouseover="enterTriangle('women')" onmouseout="exitTriangle('women')">
+                        <span id = "women-title" class = "center-abs triangle-title add-on-inactive">
+                            <span class = "triangle-main-title">Browse Women</span>
+                                <div class = "triangle-sub-title">View Catalogue</div>
+                            </span>    
+                        <div class = "triangle-pic triangle-image">
+                            
+                        </div>
+                </a>
+            </div>
+            </div>
+        
+        </div>
+        <div class = "row margin-top-large hidden-md-up margin-top-medium">
+            <div class = "col col-10 col-centered founder-pic women-pic margin-top-large"></div>
+            <div class = "col col-10 col-centered founder-pic men-pic margin-top-large"></div>
+        </div>
+
+        
+        <div class = "col col-md-8 col-lg-6 col-centered move-about-down">
+            <a href = "store.html" class = "kill-link-style"><div class = "item-button item-button-wide outfit-container-button margin-top-small outfit-container-button-white">Browse our Catalogue</div></a>
+        </div>        
+    </div>
+</div>
+
+<div id = "about-third" class = "move-anchor-up"></div>
+<div id="hero" class="hero section-header text-center larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+    <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text">GET <span class = "heavy">OUT THERE</span></div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">FUELING ADVENTURE, </span>
+    <span class "heavy white" style = "color:#fff;">FIXING PROBLEMS</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+<div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+ </div>
+ <div class = "col col-12 margin-top-large">
+        <div class = "row">
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('about', 1)" onmouseout="exitEmployee('about', 1)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head1" class = "employee-overlay-title">
+                                Zachary Jordan
+                            </div>
+                            <div id = "employee-position1" class = "employee-overlay-subtitle">
+                                Co-Founder
+                            </div>
+                            <div id = "employee-body1" class = "center-abs employee-body noselect">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button1" class = "employee-bottom-button">
+                                    My Work
+                                </div>
+                            </a>
+                        </div>
+                        <div class = "employee-pic zach-pic"></div>
+                    <div id = "employee-title1" class = "employee-title larger-employee-title add-on-active">
+                    Zachary<span class = "heavy"> Jordan</span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('about', 2)" onmouseout="exitEmployee('about', 2)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head2" class = "employee-overlay-title">
+                                Kade Renwick
+                            </div>
+                            <div id = "employee-position2" class = "employee-overlay-subtitle">
+                                Social Media Manager
+                            </div>
+                            <div id = "employee-body2" class = "center-abs employee-body noselect">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button2" class = "employee-bottom-button">
+                                    My Instagram
+                                </div>
+                            </a>
+                        </div>
+                        <div class = "employee-pic kade-pic"></div>
+                    <div id = "employee-title2" class = "employee-title larger-employee-title add-on-active">
+                    Kade <span class = "heavy">Renwick</span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('about', 3)" onmouseout="exitEmployee('about', 3)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head3" class = "employee-overlay-title">
+                                Zachary Jordan
+                            </div>
+                            <div id = "employee-position3" class = "employee-overlay-subtitle">
+                                Co-Founder
+                            </div>
+                            <div id = "employee-body3" class = "center-abs employee-body noselect">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button3" class = "employee-bottom-button">
+                                    My Work
+                                </div>
+                            </a>
+                        </div>
+                        <div class = "employee-pic zach-pic"></div>
+                    <div id = "employee-title3" class = "employee-title larger-employee-title add-on-active">
+                    Liam <span class = "heavy">Magistad</span>
+                    </div>
+                </div>
+            </div>
+</div>
+</div>
+ </div>
+ 
+</div>
+<!--
+<div class = "section-four relative section-header text-center section-picture landscape-pic larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "col col-11 col-centered">
+        <div>
+            <div id = "chevron"><div class = "center-abs chevron-text">Our <span class = "heavy">team</span></div></div>
+        </div>
+        <div class = "margin-top-large">
+        <span class = "light white">EXPANDING CHARITY, </span>
+        <span class "heavy white" style = "color:#fff;">EXPANDING FASHION</span>
+        </div>
+        <div class = "highlight-line white-line"></div>
+    </div>
+
+    <div class = "col col-11 col-md-9 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+    </div>
+
+    <div class = "col col-lg-11 col-centered margin-top-large">
+        <div class = "row">
+             <div class = "col col-12 col-md-4 text-center margin-top-large">
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('about', 1)" onmouseout="exitEmployee('about', 1)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head1" class = "employee-overlay-title">
+                                Zachary Jordan
+                            </div>
+                            <div id = "employee-position1" class = "employee-overlay-subtitle">
+                                Co-Founder
+                            </div>
+                            <div id = "employee-body1" class = "center-abs employee-body noselect">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button1" class = "employee-bottom-button">
+                                    My Work
+                                </div>
+                            </a>
+                        </div>
+                        <div class = "employee-pic zach-pic"></div>
+                    <div id = "employee-title1" class = "employee-title larger-employee-title add-on-active">
+                    Zachary<span class = "heavy"> Jordan</span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('about', 2)" onmouseout="exitEmployee('about', 2)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head2" class = "employee-overlay-title">
+                                Kade Renwick
+                            </div>
+                            <div id = "employee-position2" class = "employee-overlay-subtitle">
+                                Social Media Manager
+                            </div>
+                            <div id = "employee-body2" class = "center-abs employee-body noselect">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button2" class = "employee-bottom-button">
+                                    My Instagram
+                                </div>
+                            </a>
+                        </div>
+                        <div class = "employee-pic kade-pic"></div>
+                    <div id = "employee-title2" class = "employee-title larger-employee-title add-on-active">
+                    Kade <span class = "heavy">Renwick</span>
+                    </div>
+                </div>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('about', 3)" onmouseout="exitEmployee('about', 3)">
+                        <div class = "employee-overlay">
+                            <div id = "employee-head3" class = "employee-overlay-title">
+                                Zachary Jordan
+                            </div>
+                            <div id = "employee-position3" class = "employee-overlay-subtitle">
+                                Co-Founder
+                            </div>
+                            <div id = "employee-body3" class = "center-abs employee-body noselect">
+                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
+                                 placeholder  placeholder  placeholder  placeholder  placeholder.
+                            </div>
+                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
+                                <div id = "employee-button3" class = "employee-bottom-button">
+                                    My Work
+                                </div>
+                            </a>
+                        </div>
+                        <div class = "employee-pic zach-pic"></div>
+                    <div id = "employee-title3" class = "employee-title larger-employee-title add-on-active">
+                    Liam <span class = "heavy">Magistad</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<div class = "section-three section-header center-rel text-center">
+    <div class = "small-section-text center-rel">GET STARTED</div>
+    <span class = "light white">JUMP TO</span>
+        <span class = "heavy white">CATEGORY</span>
+        <div class = "highlight-line white-line"></div>
+         <div class = "col col-12 col-centered max-width-categories">
+        <div class = "row margin-top-medium">
+            <div class = "col col-12 col-md-12 col-lg-6 category-gutter">
+                <div class = "category-image-box-top">
+                    <div class = "relative">
+                    <div id = "individualButton1" class = "anchor-bottom-absolute darker category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class = "light">BROWSE</span> <span class = "heavy">OUTDOOR PRODUCTS</span></div>
+                        <div class = "category-image-box-small blackx delay1" onmouseover="categorySelectionIn('1')" onmouseout="categorySelectionOut('1')">
+                            <div class = "position-left-box-header">
+                            <div id = "categoryHeader1" class = "category-image-box-header heavy">OUTDOORS</div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col col-12 col-md-12 col-lg-6 category-gutter">
+                <div class = "category-image-box-top">
+                    <div>
+            
+                        <div class = "category-image-box-tiny float-left sport-pic pic-top delay2" onmouseover="categorySelectionIn('2')" onmouseout="categorySelectionOut('2')">
+                            <div class = "darker-small"></div>
+                            <div id = "individualButton2" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE</span> <span class = "heavy">SPORTS GEAR</span></div>
+                            <div class = "position-left-box-header">
+                            <div id = "categoryHeader2" class = "category-image-box-header category-image-box-header-small price-label-visible heavy">SPORT</div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "relative">
+                        <div class = "category-image-box-tiny float-right men-pic pic-top delay2" onmouseover="categorySelectionIn('3')" onmouseout="categorySelectionOut('3')">
+                            <div class = "darker-small"></div>
+                            <div id = "individualButton3" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE OUR</span> <span class = "heavy">DEALS</span></div>
+                            <div class = "position-top-right-box-header">
+                            <div id = "categoryHeader3" class = "category-image-box-header category-image-box-header-small heavy">DEALS</div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col col-12 col-lg-6 category-gutter">
+                <div id = "individualButton4" class = "category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class = "light">BROWSE OUR</span> <span class = "heavy">WATCHES</span></div>
+                <div class = "category-image-box darker watch-pic text-center delay3" onmouseover="categorySelectionIn('4')" onmouseout="categorySelectionOut('4')">
+                    <div class = "position-left-box-header">
+                        <div id = "categoryHeader4" class = "category-image-box-header price-label-visible heavy">WATCHES</div>
+                    </div>
+                </div>
+            </div>
+            <div class = "col col-12 col-lg-6 category-gutter">
+                <div class = "category-image-box">
+                    
+                <div class = "category-image-box-top">
+                    <div class = "relative">
+
+                        <div class = "category-image-box-tiny float-left sunglasses-pic pic-top delay2" onmouseover="categorySelectionIn('5')" onmouseout="categorySelectionOut('5')">
+                            <div class = "darker-small"></div>
+                            <div id = "individualButton5" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE</span> <span class = "heavy">SUNGLASSES</span></div>
+                            <div class = "position-bottom-left-box-header">
+                            <div id = "categoryHeader5" class = "category-image-box-header category-image-box-header-small heavy">SUNGLASSES</div>
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "relative">
+                        <div class = "category-image-box-tiny float-right charity-water-pic delay2" onmouseover="categorySelectionIn('6')" onmouseout="categorySelectionOut('6')">
+                            <div class = "darker-small"></div>
+                            <div id = "individualButton6" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE</span> <span class = "heavy">CHARITY</span></div>
+                            <div class = "position-right-box-header">
+                            <div id = "categoryHeader6" class = "category-image-box-header category-image-box-header-small heavy">CHARITY</div>
+                        
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                    
+                    <div class = "relative grid-correction">
+                        <div id = "individualButton7" class = "category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class = "light">BROWSE</span> <span class = "heavy">SPRING STYLES</span></div>
+                        <div class = "position-bottom category-image-box-small darken blackx delay4" onmouseover="categorySelectionIn('7')" onmouseout="categorySelectionOut('7')">
+                            <div class = "position-right-box-header">
+                            <div id = "categoryHeader7" class = "category-image-box-header heavy">SPRING STYLES</div>
+                        
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+       
+    <div class = "row hidden-sm-down max-width margin-top-large">   
+     </div>
+  </div>
+        <div class = "margin-top-medium hidden-md-up"></div>
+        <a href = "store.html" class = "kill-link-style">
+            <div class = "item-button outfit-hover margin-top outfit-hover-darker">View All</div>
+        </a>
+    </div>
+</div>
+
+<div class = "footer-container fluid-container text-center">
+ <div class = "center-footer-container text-center" style = "max-width:1100px;">
+         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+         <div class = "col col-11 col-centered">  
+         <div class = "row">
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                    <span class = "footer-header">SHOP</span>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Women</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Men</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">All Categories</a></div>
+               
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+               
+                <span class = "footer-header">LEARN</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+             
+                <span class = "footer-header">SUPPORT</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+             
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                <span class = "footer-header">Category FOUR</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+            <div class = "footer-container-two text-center">
+                <div class = "col col-12 col-centered icon-container text-center">
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                </div>
+                <div class = "center-rel text-center">
+
+                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
+                </form>
+                </div>
+</div>
+
+           
+                
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src = "scripts/navbar.js"></script>
+    <script src = "scripts/script.js"></script>
+    <!-- This will eventually be placed in its own file, currently here for testing purposes --> 
+     <script>
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+        window.sr = ScrollReveal();
+        var delay1, delay2, delay3, delay4, delay5;
+        delay1 = 100;
+        delay2 = 300;
+        delay3 = 500;
+        delay4 = 700;
+        delay5 = 900;
+
+        sr.reveal('.delay1', {delay: delay1});
+        sr.reveal('.delay2', {delay: delay2});
+        sr.reveal('.delay3', {delay: delay3});
+        sr.reveal('.delay4', {delay: delay4});
+
+          var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop: true     
+    });
+    
+        var swiper = new Swiper('.swiper-container1', {
+        slidesPerView: 3,
+        slidersPerGroup: 3,
+        nextButton: '.right-arrow',
+        prevButton: '.left-arrow',
+        paginationClickable: true,
+        loop: true,
+        spaceBetween: 20,
+        lazyLoading: false
+    });
+    </script>
+
+    <script>
+        
+              $('a').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+});
+
+ $('.item-type-box').on('mousenter', function(e) {
+     $(this).find('canvas').trigger('hover');
+ });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+    </body>

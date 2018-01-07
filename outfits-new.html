@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Animations -->
+    <link rel = "stylesheet" href = "styles/animate.css" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel = "stylesheet" href = "styles/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ 
+    <!-- Swiper CSS --> 
+    <link rel="stylesheet" href="styles/swiper.css" />
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!-- Icon fonts --> 
+    <script src="https://use.fontawesome.com/5783e93cdd.js"></script>
+    <link rel="stylesheet" href="pictonic/css/pictonic.css">
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+    <script src = "scripts/jquery.js"></script>
+    <script src = "scripts/jquery-easing.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+       
+        width: 100%;
+        height: 75%;
+        margin-left:0px !important;
+        margin-right:0px !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .swiper-container-style {
+       
+        width: 100%;
+        height: 100%;
+        margin-left:0px !important;
+        margin-right:0px !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .swiper-extend-height
+    {
+        height: 100% !important;
+    }
+
+    .swiper-slide
+    {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+       
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height:320px !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .item-slide
+    {
+        min-height:420px !important;
+        max-height:490px !important;
+    }
+
+    </style>
+    </head>
+    <body data-spy="scroll" onLoad = "initNav('outfits')">
+ <div id = "top"></div>
+
+   <nav id = "header-nav" class="navbar navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
+    <div id = "background-gradient" class = "background-gradient"></div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
+    </button>
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-md-3 col-lg-2">
+                <a class="navbar-brand white" href="#">JACOB</a>
+            </div>
+            <div class = "col col-md-6 col-lg-8 text-center">
+               
+                    <a class="nav-link white" href="index.html">HOME</a>
+                    <a class="nav-link white" href="store.html" onmouseover = "openNav('store')">STORE</a>
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                    <a class="nav-link white" href="charity.html">CHARITY</a>
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                    
+            
+            </div>
+            <div class = "col col-md-3 col-lg-2 text-right">
+                
+                <img src = "images/_New/search.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/user.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/shopping-design-light.svg" class = "nav-icon"/>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+    </ul>
+    <div id = "navbar-expanded" class = "navbar-expanded navbar-not-active">
+        <span id = "navbar-content" class = "hidden">
+                <div class = "header-category-container">
+                    
+                </div>
+           
+            <div class = "header-bottom-options">
+                <div class = "col col-12">
+                    <div class = "row">
+                        <div class = "col col-4 header-bottom-options-height">
+                            SHOP WOMEN <span class = "header-category-arrow">&#8702;</span>
+                        </div>
+                        <div class = "col col-4 header-bottom-options-height">
+                            SHOP MEN <span class = "header-category-arrow">&#8702;</span>
+                        </div>
+                        <div class = "col col-4 header-bottom-options-height">
+                            SHOP ALL <span class = "header-category-arrow">&#8702;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                </div>
+            </div>
+
+        </span>
+    </div>
+    </nav>
+<nav id = "mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand white" href="index.html">Jacob</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item text-center mobile-nav-item">
+        <a class="nav-link white" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="store.html">STORE</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="outfits.html">OUTFITS</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="about.html">ABOUT</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="contact.html">CONTACT</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+</nav>
+<div onmouseover = "enterSlider('outfitHeader')" onmouseout = "exitSlider('outfitHeader')" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide header-slider-image-style second-image">
+             <div class = "slide-text large-slide-text heavy animated fadeInDown">Shop our favorites</div>
+           
+            </div>
+            <div class="swiper-slide header-slider-image-style third-image"></div>
+        
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class"swiper-slide third-image"></div>
+        </div>
+    
+        <div class="swiper-pagination"></div>
+    
+        <img id = "left-slider-arrow-outfit-header" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-prev swiper-button-switch semi-transparent"/>
+        <img id = "right-slider-arrow-outfit-header" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-next swiper-button-switch semi-transparent"/>
+        
+</div>
+
+<div class = "section-two section-expanded-padding container-fluid">  
+    <div class = "section-header center-rel text-center">
+        <div class = "small-section-text light-section-text center-rel">OUR OUTFITS</div>
+        <span class = "light">TIME FOR A</span>
+        <span class = "heavy">NEW LOOK</span>
+        <div class = "highlight-line"></div>
+    </div>
+    <div class = "col col-11 col-md-7 margin-top-medium base-text-size text-center col-centered">
+        Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder 
+            placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+    </div>
+
+    <div class = "col col-12 col-lg-10 col-centered margin-top">
+        <div class = "row max-width-outfit-category-box">
+            <div class = "col col-12 col-md-4 margin-top-medium">
+                <div class = "outfit-category-box text-center no-select" onclick = "outfitCategory('women')">Men's Outfits</div>
+            </div>
+            
+            <div class = "col col-12 col-md-4 margin-top-medium">
+                <div class = "outfit-category-box text-center no-select" onclick = "outfitCategory('all')">All Outfits</div>
+            </div>
+            
+            <div class = "col col-12 col-md-4 margin-top-medium">
+                <div class = "outfit-category-box text-center no-select" onclick = "outfitCategory('women')">Women's Outfits</div>
+            </div>
+        </div>
+    </div>     
+</div>
+
+<div class = "section-three eliminate-padding">
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-12 text-center col-lg-6 outfit-container-height">
+                <div class = "margin-top">
+                    <div class = "col col-5 max-width-form col-centered white">
+            <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+                <label id = "outfit-option1-1" class="btn btn-primary outfit-button cell-button" onclick = "selectOutfits('breakdown1')">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Breakdown
+                </label>
+                <label id = "outfit-option1-2" class="btn btn-primary outfit-button selected-button cell-button" onclick = "selectOutfits('description1')">
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Overview
+                </label>
+                <label id = "outfit-option1-3" class="btn outfit-button btn-primary cell-button" onclick = "selectOutfits('addOns1')">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Add-Ons
+                </label>
+            </div>
+        </div>
+                <div id = "outfitContainer1" class = "center-abs animated fadeIn outfit-content-description text-center">
+                    <div class = "outfit-container-header white">Outfit Name</div> 
+                        <div class = "highlight-line white-line"></div>
+                        <div class = "col-12 col-md-10 col-lg-11 col-centered white outfit-container-text margin-top-medium">Placeholder placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.</div>
+                </div>
+                
+                        <div class = "outfit-container-buttons delay1">
+                            <div class = "item-button outfit-container-button">Add to Cart</div> 
+                            <span class = "hidden-md-down margin-right-medium"></span>
+                            <div class = "item-button outfit-container-button">More Info</div>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-container col col-12 col-lg-6 outfit-image-container remove-pad-margin swiper-extend-height" onmouseover = "enterSlider('outfit1')" onmouseout = "exitSlider('outfit1')">
+                <div class="swiper-wrapper outfit-container-height">
+                    <div class="swiper-slide header-slider-image-style second-image">
+                    <div class = "slide-text large-slide-text heavy animated fadeInDown"></div>
+                
+                    </div>
+                    <div class="swiper-slide header-slider-image-style third-image"></div>
+                
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class"swiper-slide third-image"></div>
+                </div>
+            
+                <div class="swiper-pagination"></div>
+            
+                <img id = "left-slider-arrow-outfit1" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-prev swiper-button-switch semi-transparent"/>
+                <img id = "right-slider-arrow-outfit1" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-next swiper-button-switch semi-transparent"/>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-two eliminate-padding hidden-lg-up">
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-12 text-center col-lg-6 outfit-container-height">
+                <div class = "margin-top">
+                    <div class = "col col-5 max-width-form col-centered white">
+            <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+                <label id = "outfit-option1-1" class="btn btn-primary outfit-button cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('breakdown1')">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Breakdown
+                </label>
+                <label id = "outfit-option1-2" class="btn btn-primary outfit-button cell-button outfit-container-button-white-selected btn-lighter" onclick = "selectOutfits('description1')">
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Overview
+                </label>
+                <label id = "outfit-option1-3" class="btn outfit-button btn-primary cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('addOns1')">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Add-Ons
+                </label>
+            </div>
+        </div>
+                <div id = "outfitContainer1" class = "center-abs animated fadeIn outfit-content-description text-center">
+                    <div class = "outfit-container-header">Outfit Name</div> 
+                        <div class = "highlight-line"></div>
+                        <div class = "col-12 col-md-10 col-lg-11 col-centered outfit-container-text margin-top-medium">Placeholder placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.</div>
+                </div>
+                
+                    <div class = "outfit-container-buttons delay1">
+                        <div class = "item-button outfit-container-button outfit-container-button-white">Add to Cart</div> 
+                        <span class = "hidden-md-down margin-right-medium"></span>
+                        <div class = "item-button outfit-container-button outfit-container-button-white">More Info</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="swiper-container col col-12 col-lg-6 outfit-image-container remove-pad-margin swiper-extend-height" onmouseover = "enterSlider('outfit2')" onmouseout = "exitSlider('outfit2')">
+                <div class="swiper-wrapper outfit-container-height">
+                    <div class="swiper-slide header-slider-image-style second-image">
+                    <div class = "slide-text large-slide-text heavy animated fadeInDown"></div>
+                
+                    </div>
+                    <div class="swiper-slide header-slider-image-style third-image"></div>
+                
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class"swiper-slide third-image"></div>
+                </div>
+            
+                <div class="swiper-pagination"></div>
+            
+                <img id = "left-slider-arrow-outfit2" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-prev swiper-button-switch semi-transparent"/>
+                <img id = "right-slider-arrow-outfit2" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-next swiper-button-switch semi-transparent"/>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-two eliminate-padding hidden-md-down">
+    <div class = "col col-12">
+        <div class = "row">
+            <div class="swiper-container col col-12 col-lg-6 outfit-image-container remove-pad-margin swiper-extend-height" onmouseover = "enterSlider('outfit2-big')" onmouseout = "exitSlider('outfit2-big')">
+                <div class="swiper-wrapper outfit-container-height">
+                    <div class="swiper-slide header-slider-image-style second-image">
+                    <div class = "slide-text large-slide-text heavy animated fadeInDown"></div>
+                
+                    </div>
+                    <div class="swiper-slide header-slider-image-style third-image"></div>
+                
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class"swiper-slide third-image"></div>
+                </div>
+            
+                <div class="swiper-pagination"></div>
+
+                <img id = "left-slider-arrow-outfit2-big" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-style swiper-button-position-left swiper-button-prev swiper-button-switch semi-transparent"/>
+                <img id = "right-slider-arrow-outfit2-big" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-style swiper-button-position-right swiper-button-next swiper-button-switch semi-transparent"/>
+            </div>
+
+
+            <div class = "col col-12 text-center col-lg-6 outfit-container-height">
+                <div class = "margin-top">
+                    <div class = "col col-5 max-width-form col-centered white">
+            <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+                <label id = "outfit-option1-1" class="btn btn-primary outfit-button cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('breakdown1')">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Breakdown
+                </label>
+                <label id = "outfit-option1-2" class="btn btn-primary outfit-button cell-button outfit-container-button-white-selected btn-lighter" onclick = "selectOutfits('description1')">
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Overview
+                </label>
+                <label id = "outfit-option1-3" class="btn outfit-button btn-primary cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('addOns1')">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Add-Ons
+                </label>
+            </div>
+        </div>
+                <div id = "outfitContainer1" class = "center-abs animated fadeIn outfit-content-description text-center">
+                    <div class = "outfit-container-header">Outfit Name</div> 
+                        <div class = "highlight-line"></div>
+                        <div class = "col-12 col-md-10 col-lg-11 col-centered outfit-container-text margin-top-medium">Placeholder placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.</div>
+                </div>
+                
+                    <div class = "outfit-container-buttons delay1">
+                        <div class = "item-button outfit-container-button outfit-container-button-white">Add to Cart</div> 
+                        <span class = "hidden-md-down margin-right-medium"></span>
+                        <div class = "item-button outfit-container-button outfit-container-button-white">More Info</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-three eliminate-padding">
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-12 text-center col-lg-6 outfit-container-height">
+                <div class = "margin-top">
+                    <div class = "col col-5 max-width-form col-centered white">
+            <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+                <label id = "outfit-option1-1" class="btn btn-primary outfit-button cell-button" onclick = "selectOutfits('breakdown1')">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Breakdown
+                </label>
+                <label id = "outfit-option1-2" class="btn btn-primary outfit-button selected-button cell-button" onclick = "selectOutfits('description1')">
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Overview
+                </label>
+                <label id = "outfit-option1-3" class="btn outfit-button btn-primary cell-button" onclick = "selectOutfits('addOns1')">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Add-Ons
+                </label>
+            </div>
+        </div>
+                <div id = "outfitContainer1" class = "center-abs animated fadeIn outfit-content-description text-center">
+                    <div class = "outfit-container-header white">Outfit Name</div> 
+                        <div class = "highlight-line white-line"></div>
+                        <div class = "col-12 col-md-10 col-lg-11 col-centered white outfit-container-text margin-top-medium">Placeholder placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.</div>
+                </div>
+                
+                        <div class = "outfit-container-buttons delay1">
+                            <div class = "item-button outfit-container-button">Add to Cart</div> 
+                            <span class = "hidden-md-down margin-right-medium"></span>
+                            <div class = "item-button outfit-container-button">More Info</div>
+                        </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-container col col-12 col-lg-6 outfit-image-container remove-pad-margin swiper-extend-height" onmouseover = "enterSlider('outfit3')" onmouseout = "exitSlider('outfit3')">
+                <div class="swiper-wrapper outfit-container-height">
+                    <div class="swiper-slide header-slider-image-style second-image">
+                    <div class = "slide-text large-slide-text heavy animated fadeInDown"></div>
+                
+                    </div>
+                    <div class="swiper-slide header-slider-image-style third-image"></div>
+                
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class"swiper-slide third-image"></div>
+                </div>
+            
+                <div class="swiper-pagination"></div>
+            
+                <img id = "left-slider-arrow-outfit3" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-prev swiper-button-switch semi-transparent"/>
+                <img id = "right-slider-arrow-outfit3" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-next swiper-button-switch semi-transparent"/>    
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-two eliminate-padding hidden-lg-up">
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-12 text-center col-lg-6 outfit-container-height">
+                <div class = "margin-top">
+                    <div class = "col col-5 max-width-form col-centered white">
+            <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+                <label id = "outfit-option1-1" class="btn btn-primary outfit-button cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('breakdown1')">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Breakdown
+                </label>
+                <label id = "outfit-option1-2" class="btn btn-primary outfit-button cell-button outfit-container-button-white-selected btn-lighter" onclick = "selectOutfits('description1')">
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Overview
+                </label>
+                <label id = "outfit-option1-3" class="btn outfit-button btn-primary cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('addOns1')">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Add-Ons
+                </label>
+            </div>
+        </div>
+                <div id = "outfitContainer1" class = "center-abs animated fadeIn outfit-content-description text-center">
+                    <div class = "outfit-container-header">Outfit Name</div> 
+                        <div class = "highlight-line"></div>
+                        <div class = "col-12 col-md-10 col-lg-11 col-centered outfit-container-text margin-top-medium">Placeholder placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.</div>
+                </div>
+                
+                    <div class = "outfit-container-buttons delay1">
+                        <div class = "item-button outfit-container-button outfit-container-button-white">Add to Cart</div> 
+                        <span class = "hidden-md-down margin-right-medium"></span>
+                        <div class = "item-button outfit-container-button outfit-container-button-white">More Info</div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-container col col-12 col-lg-6 outfit-image-container remove-pad-margin swiper-extend-height" onmouseover = "enterSlider('outfit4')" onmouseout = "exitSlider('outfit4')">
+                <div class="swiper-wrapper outfit-container-height">
+                    <div class="swiper-slide header-slider-image-style second-image">
+                    <div class = "slide-text large-slide-text heavy animated fadeInDown"></div>
+
+                    </div>
+                    <div class="swiper-slide header-slider-image-style third-image"></div>
+                
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class"swiper-slide third-image"></div>
+                </div>
+            
+                <div class="swiper-pagination"></div>
+
+                <img id = "left-slider-arrow-outfit4" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-style swiper-button-position-left swiper-button-prev swiper-button-switch semi-transparent"/>
+                <img id = "right-slider-arrow-outfit4" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-style swiper-button-position-right swiper-button-next swiper-button-switch semi-transparent"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-two eliminate-padding hidden-md-down">
+    <div class = "col col-12">
+        <div class = "row">
+            <div class="swiper-container col col-12 col-lg-6 outfit-image-container remove-pad-margin swiper-extend-height" onmouseover = "enterSlider('outfit3-big')" onmouseout = "exitSlider('outfit3-big')">
+                <div class="swiper-wrapper outfit-container-height">
+                    <div class="swiper-slide header-slider-image-style second-image">
+                    <div class = "slide-text large-slide-text heavy animated fadeInDown"></div>
+                
+                    </div>
+                    <div class="swiper-slide header-slider-image-style third-image"></div>
+                
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                    <div class"swiper-slide third-image"></div>
+                </div>
+            
+                <div class="swiper-pagination"></div>
+
+                <img id = "left-slider-arrow-outfit3-big" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-style swiper-button-position-left swiper-button-prev swiper-button-switch semi-transparent"/>
+                <img id = "right-slider-arrow-outfit3-big" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-style swiper-button-position-right swiper-button-next swiper-button-switch semi-transparent"/>
+            </div>
+
+
+            <div class = "col col-12 text-center col-lg-6 outfit-container-height">
+                <div class = "margin-top">
+                    <div class = "col col-5 max-width-form col-centered white">
+            <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+                <label id = "outfit-option1-1" class="btn btn-primary outfit-button cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('breakdown1')">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> Breakdown
+                </label>
+                <label id = "outfit-option1-2" class="btn btn-primary outfit-button cell-button outfit-container-button-white-selected btn-lighter" onclick = "selectOutfits('description1')">
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Overview
+                </label>
+                <label id = "outfit-option1-3" class="btn outfit-button btn-primary cell-button outfit-container-button-white btn-lighter" onclick = "selectOutfits('addOns1')">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Add-Ons
+                </label>
+            </div>
+        </div>
+                <div id = "outfitContainer1" class = "center-abs animated fadeIn outfit-content-description text-center">
+                    <div class = "outfit-container-header">Outfit Name</div> 
+                        <div class = "highlight-line"></div>
+                        <div class = "col-12 col-md-10 col-lg-11 col-centered outfit-container-text margin-top-medium">Placeholder placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.</div>
+                </div>
+                
+                    <div class = "outfit-container-buttons delay1">
+                        <div class = "item-button outfit-container-button outfit-container-button-white">Add to Cart</div> 
+                        <span class = "hidden-md-down margin-right-medium"></span>
+                        <div class = "item-button outfit-container-button outfit-container-button-white">More Info</div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-three section-header center-rel text-center">
+    <div class = "small-section-text center-rel">MORE OPTIONS</div>
+    <span class = "light white animate12">BROWSE INDIVIDUAL</span>
+        <span class = "heavy white">ITEMS</span>
+        <div class = "highlight-line white-line"></div>
+       <div class = "col col-11 max-width-outfits col-centered hidden-md-down">
+           <div class = "row delay1 margin-top-large">
+               
+               <div id = "individualItem1" class = "col individual-item-box-height">
+                   <div id = "individualButton1" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice1" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item1" onmouseover="individualItemIn(1)" onmouseout="individualItemOut(1)">
+                       
+                   </div>
+               </div>
+               <div class = "col individual-item-box-height">
+                    <div id = "individualButton2" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                    <div id = "individualPrice2" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item2" onmouseover="individualItemIn(2)" onmouseout="individualItemOut(2)">
+                   </div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton3" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice3" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item3" onmouseover="individualItemIn(3)" onmouseout="individualItemOut(3)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton4" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice4" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item1" onmouseover="individualItemIn(4)" onmouseout="individualItemOut(4)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton5" class = "individual-item-button individual-item-button-hidden center-abs" onmouseover="individualItemIn(5)" onmouseout="individualItemOut(5)">More Info</div>
+                   <div id = "individualPrice5" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item2" onmouseover="individualItemIn(5)" onmouseout="individualItemOut(5)"></div>
+               </div>
+            </div>
+            <div class = "row delay1 margin-top-medium margin-top-outfits-category">
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton6" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice6" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item3" onmouseover="individualItemIn(6)" onmouseout="individualItemOut(6)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton7" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice7" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item4" onmouseover="individualItemIn(7)" onmouseout="individualItemOut(7)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton8" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice8" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item2" onmouseover="individualItemIn(8)" onmouseout="individualItemOut(8)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton9" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice9" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item3" onmouseover="individualItemIn(9)" onmouseout="individualItemOut(9)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton10" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice10" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item4" onmouseover="individualItemIn(10)" onmouseout="individualItemOut(10)"></div>
+               </div>
+               
+            </div>
+        </div>
+        <div class = "item-button outfit-hover margin-top-large outfit-hover-darker">View All</div>
+    </div>
+
+<div class = "footer-container fluid-container text-center">
+ <div class = "center-footer-container text-center" style = "max-width:1100px;">
+         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+         <div class = "col col-11 col-centered">  
+         <div class = "row">
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                    <span class = "footer-header">SHOP</span>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Women</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Men</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">All Categories</a></div>
+               
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+               
+                <span class = "footer-header">LEARN</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+             
+                <span class = "footer-header">SUPPORT</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+             
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                <span class = "footer-header">Category FOUR</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+            <div class = "footer-container-two text-center">
+                <div class = "col col-12 col-centered icon-container text-center">
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                </div>
+                <div class = "center-rel text-center">
+
+                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
+                </form>
+                </div>
+</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src = "scripts/script.js"></script>
+    <!-- This will eventually be placed in its own file, currently here for testing purposes --> 
+     <script>
+
+
+        $('.swiper-container').each(function(){
+            new Swiper($(this), {
+                pagination: $(this).find('.swiper-pagination'),
+                paginationClickable: $(this).find('.swiper-pagination'),
+                nextButton: $(this).find('.swiper-button-next'),
+                prevButton: $(this).find('.swiper-button-prev'),
+                loop: true
+            });
+        });
+
+
+
+    
+    </script>
+
+    <script>
+              $('a').on('click', function(event) {
+                var $anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $($anchor.attr('href')).offset().top
+                }, 1500, 'easeInOutExpo');
+                event.preventDefault();
+            });
+
+            $('.item-type-box').on('mousenter', function(e) {
+                $(this).find('canvas').trigger('hover');
+            });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+    </body>

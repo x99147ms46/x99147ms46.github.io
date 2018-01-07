@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Animations -->
+    <link rel = "stylesheet" href = "styles/animate.css" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel = "stylesheet" href = "styles/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ 
+    <!-- Swiper CSS --> 
+    <link rel="stylesheet" href="styles/swiper.css" />
+
+    <!-- Custom Code --> 
+
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!-- Icon fonts --> 
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+    <script src = "scripts/jquery.js"></script>
+    <script src = "scripts/jquery-easing.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width:100%;
+        height: calc(100vh - 84px);
+        margin-left:auto !important;
+        margin-right:auto !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .swiper-slide
+    {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+       
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height:320px !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .item-slide
+    {
+        min-height:420px !important;
+        max-height:490px !important;
+    }
+
+    .swiper-container1 {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    </head>
+    <body data-spy="scroll" onLoad = "initNav('detailPage')">
+    <div id = "top"></div>
+
+    <nav id = "header-nav-changed" class="navbar navbar-altered navbar-toggleable-md desktop-nav wow hidden-md-down navbar-transparent bg-faded fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
+    </button>
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-md-3 col-lg-2">
+                <a class="navbar-brand white" href="#">JACOB</a>
+            </div>
+            <div class = "col col-md-6 col-lg-8 text-center">
+               
+                    <a class="nav-link white" href="index.html">HOME</a>
+                    <a class="nav-link white" href="store.html">STORE</a>
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                    <a class="nav-link white" href="charity.html">CHARITY</a>
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                    
+            
+            </div>
+            <div class = "col col-md-3 col-lg-2 text-right">
+                
+                <img src = "images/_New/search.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/user.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/shopping-design-light.svg" class = "nav-icon"/>
+                
+            </div>
+        </div>
+    </div>
+    </ul>
+    </nav>
+<nav id = "mobile header-nav" class="navbar navbar-default mobile-navbar-light mobile-navbar-solid fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand white" href="index.html">Jacob</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item text-center mobile-nav-item">
+        <a class="nav-link white" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="store.html">STORE</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="outfits.html">OUTFITS</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="about.html">ABOUT</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="contact.html">CONTACT</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+</nav>
+<div class = "section-three eliminate-padding push-slider-down" style = "height:calc(100vh - 84px);">
+    <div class = "col col-12" >
+    <div id = "scroll-to" class = "scroll-to"></div>
+   
+        <div class = "row">
+            <div id="end-fixed" class = "col col-12 col-lg-6 full-swiper absolute" style = "z-index:40 !important">
+                <div class = "custom-slider women-pic" style = "height:calc(100vh - 84px);" onmouseover="enterSlider('detail-page')" onmouseout="exitSlider('detail-page')">
+                    <img id = "left-slider-arrow" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-style swiper-button-position-left left-outfit1 swiper-button-switch semi-transparent"/>
+                    <img id = "right-slider-arrow" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-style swiper-button-position-right left-outfit1 swiper-button-switch semi-transparent"/>
+                    <div class = "custom-slider-bullet-position text-center">
+                        <div class = "inline">
+                            <div class = "custom-slider-bullet"></div>
+                            <div class = "custom-slider-bullet"></div>
+                            <div class = "custom-slider-bullet"></div>
+                            <div class = "custom-slider-bullet"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class = "col col-12 text-center" style = "height:calc(100vh - 84px);overflow:auto;">
+                <div class = "row">
+                <div class = "col col-6 scrollDiv" style = "position:absolute;right:0;">
+                <div class = "position-product-info">
+                    <div class = "small-section-text center-rel">OUR FLANNELS</div>
+                    <div class = "product-name white">COOPER FLANNEL BUTTON DOWN</div>
+                    <div class = "highlight-line pure-white-line"></div>
+                    <div class = "product-price white margin-top-medium">$50</div>
+                    <div class = "product-description margin-top-medium col col-12 col-lg-11 col-centered white">
+                        <div class = "product-description-header">PRODUCT DESCRIPTION</div>
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+                    </div>
+
+                    <div class = "col col-12 margin-top-medium col-centered">
+                        <span class = "inline margin-right">
+                            <div class = "select-header first-select-header">Size</div>
+                            <select class = "styled-select force-font">
+                                <option>L</option>
+                                <option>M</option>
+                                <option>S</option>
+                            </select>
+                        </span>
+
+                        <span class = "inline margin-right">
+                            <div class = "select-header second-select-header">Quantity</div>
+                            <select class = "styled-select force-font">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </span>
+
+                
+                        <span class = "inline add-cart-button noselect">Add to Cart</span>
+                    </div>
+                    
+                    <div class = "charity-donation green-text margin-top-large">10% OF PROFITS FOR THIS SALE GOES TO CHARITY</div>
+                    <div class = "charity-tag white margin-top">Every purchase <a href = "charity.html" class = "inline-link">donates money to charity.</a></div>
+                    </div>
+                    <div class = "dividing-line margin-top-large"></div>
+                   
+
+                    <div class = "margin-top-medium col col-11 col-centered white">
+                        <div class = "product-description-header">PRODUCT FEATURES</div>
+                        <div class = "row margin-top">
+                            <div class = "col col-4">
+                                <div class = "product-feature-icon-box">
+                                    <img src = "images/_New/chat-white.svg" class = "product-feature-icon" />
+                                     Heat trapping
+                                </div>
+                            
+                            </div>
+                            <div class = "col col-4">
+                                <div class = "product-feature-icon-box">
+                                    <img src = "images/_New/chat-white.svg" class = "product-feature-icon" />
+                                    Slim fit
+                                </div>
+                            </div>
+                            <div class = "col col-4 text-center">
+                               <div class = "product-feature-icon-box">
+                                    <img src = "images/_New/chat-white.svg" class = "product-feature-icon" />
+                                    Soft touch
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "margin-top-medium col col-11 col-centered white">
+                        <div class = "product-description-header">GREAT FOR...</div>
+                        <div class = "row margin-top">
+                            <div class = "col col-12 col-sm-6 col-md-4 margin-top-medium">
+                                <div class = "product-feature-box">Skiing</div>
+                            </div>
+                            <div class = "col col-12 col-sm-6 col-md-4 margin-top-medium">
+                                <div class = "product-feature-box">Hiking</div>
+                            </div>
+                            <div class = "col col-12 col-sm-6 col-md-4 margin-top-medium">
+                                <div class = "product-feature-box">Staying warm</div>
+                            </div>
+                      
+                            <div class = "col col-12 col-sm-6 col-md-4 margin-top-medium">
+                                <div class = "product-feature-box">Exploring</div>
+                            </div>
+                            <div class = "col col-12 col-sm-6 col-md-4 margin-top-medium">
+                                <div class = "product-feature-box">Everyday style</div>
+                            </div>
+                            <div class = "col col-12 col-sm-6 col-md-4 margin-top-medium">
+                                <div class = "product-feature-box">Looking fresh</div>
+                            </div>
+
+                        </div>
+                    
+                    </div>
+                    
+                    <div class = "row">
+                        
+                    </div>
+
+                    <!--
+                    <div class = "margin-top-medium col col-12 redx col-centered white">
+                        <div class = "product-description-header">ADD ONS</div>
+                        <div class = "row text-center" style = "margin-left:auto;margin-right:auto;">
+                            <div class = "col col-4 bluex text-center margin-top-medium" mouseenter="console.log('out')">
+                                <div id = "add-on1" class = "add-on-overlay center-abs add-on-inactive">Bamboo Sunglasses</div>
+                                <div id = "add-on-box1" class = "center-rel add-on-box add-on1 add-on-option1" onclick = "selectAddOn(1)" onmouseover="enterAddOn(1)" onmouseout="exitAddOn(1)">
+                                    <div id = "add-on-price1" class = "add-on-box-price add-on-active">$25</div>
+                                </div>
+                                <span class = "add-on-subtext green-text">25% Discount</span>
+                            </div>
+                            <div class = "col col-4 text-center margin-top-medium">
+                                <div id = "add-on2" class = "add-on-overlay center-abs add-on-inactive">Bamboo Sunglasses</div>
+                                <div id = "add-on-box2" class = "add-on-box add-on2 add-on-option2" onclick = "selectAddOn(2)" class = "add-on-box add-on2" onclick = "selectAddOn(2)" onmouseover="enterAddOn(2)" onmouseout="exitAddOn(2)">
+                                    <div id = "add-on-price2" class = "add-on-box-price add-on-active">$25</div>
+                                </div>
+                                 <span class = "add-on-subtext green-text">25% Discount</span>
+                            </div>
+                            <div class = "col col-4 text-center margin-top-medium">
+                                <div id = "add-on3" class = "add-on-overlay center-abs add-on-inactive">Bamboo Sunglasses</div>
+                                <div id = "add-on-box3" class = "add-on-box add-on1 add-on-option3" onclick = "selectAddOn(3)" onmouseover="enterAddOn(3)" onmouseout="exitAddOn(3)">
+                                    <div id = "add-on-price3" class = "add-on-box-price add-on-active">$25</div>
+                                </div>
+                                 <span class = "add-on-subtext green-text">25% Discount</span>
+                            </div>
+                        </div>
+                </div>
+                    -->
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+   </div>
+
+
+<div class = "section-two section-expanded-padding section-header center-rel text-center">
+    <div class = "small-section-text light-section-text center-rel">MORE INFORMATION</div>
+    <span class = "light">TAKE A CLOSER</span>
+    <span class = "heavy">LOOK</span>
+    <div class = "highlight-line"></div>
+    <div class = "col col-12 col-centered margin-top-large">
+        <div class = "row">
+            <div class = "col col-12">
+                <div class = "image-section second-image"></div>
+            </div>
+        </div>
+        <div class = "more-details-section">
+            <div class = "col col-md-10 col-lg-7 col-centered">
+                    <div class = "row">
+                        <div id = "center-text"class = "col col-12 col-md-6 text-left">
+                            <span class = "more-details-header">THE STORY</span>
+                            <div class = "more-details-body">
+                                We're not sure exactly why, but this dark faded grey button down
+                                 looks fancier than our other button downs. 
+                                Great for all those holiday parties you accidentally RSVP'd yes to.
+                            </div>
+                        </div>
+                       
+                        <div id = "center-text" class = "col col-12 col-md-6 text-right">
+                             <div class = "margin-top-medium hidden-md-up"></div>
+                            <div class = "more-details-header">THE PRODUCT</div>
+                            <ul class = "list-style">
+                                <li>Custom stripe</li>
+                                <li>Charcoal/Carolina Blue</li>
+                                <li>Standard fit</li>
+                                <li>Wash on cold</li>
+                                <li>Crazy soft</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col col-12 col-md-6 margin-top">
+                <div class = "image-section women-pic"></div>
+            </div>
+            <div class = "col col-12 col-md-6 margin-top">
+                <div class = "image-section men-pic"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-four relative section-header text-center section-picture landscape-pic larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text heavy">Charity</div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">YOUR PURCHASE SUPPORTS </span>
+    <span class "heavy white" style = "color:#fff;">THESE GREAT CHARITIES</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+    <div class = "col col-11 col-md-9 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+    </div>
+
+    <div class = "col col-12 max-width-about-options margin-top-large">
+        <span class = "outfit-header white">Every purchase made supports these great charities</span>
+        <div class = "row">
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://water.org/" target="_blank"><div class = "charity-name">Water.Org</div></a>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://www.actionagainsthunger.org/" target = "_blank"><div class = "charity-name">Action Against Hunger</div></a>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://www.habitat.org/" target = "_blank"><div class = "charity-name">Habitat for Humanity</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "section-three section-expanded-padding section-header center-rel text-center">
+    <div class = "small-section-text center-rel">MORE OPTIONS</div>
+    <span class = "light white">VIEW MORE</span>
+    <span class = "heavy white">ITEMS</span>
+    <div class = "highlight-line white-line"></div>
+
+    <div class = "col col-11 max-width-outfits col-centered">
+           <div class = "row delay1 margin-top-large">
+               
+               <div id = "individualItem1" class = "col individual-item-box-height">
+                   <div id = "individualButton1" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice1" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item1" onmouseover="individualItemIn(1, 'Blue Shirt')" onmouseout="individualItemOut(1)">
+                       
+                   </div>
+               </div>
+               <div class = "col individual-item-box-height">
+                    <div id = "individualButton2" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                    <div id = "individualPrice2" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item2" onmouseover="individualItemIn(2, 'Black Jacket')" onmouseout="individualItemOut(2)">
+                   </div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton3" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice3" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item3" onmouseover="individualItemIn(3, 'White Shirt')" onmouseout="individualItemOut(3)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton4" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice4" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item1" onmouseover="individualItemIn(4, 'Item Name')" onmouseout="individualItemOut(4)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton5" class = "individual-item-button individual-item-button-hidden center-abs" onmouseover="individualItemIn(5)" onmouseout="individualItemOut(5)">More Info</div>
+                   <div id = "individualPrice5" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item2" onmouseover="individualItemIn(5, 'Liam Magistad')" onmouseout="individualItemOut(5)"></div>
+               </div>
+            </div>
+            <div class = "row delay1 margin-top-medium">
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton6" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice6" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item3" onmouseover="individualItemIn(6, 'Zach Jordan')" onmouseout="individualItemOut(6)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton7" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice7" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item4" onmouseover="individualItemIn(7, 'wow')" onmouseout="individualItemOut(7)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton8" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice8" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item2" onmouseover="individualItemIn(8, 'Cool')" onmouseout="individualItemOut(8)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton9" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice9" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item3" onmouseover="individualItemIn(9, 'The Bomb')" onmouseout="individualItemOut(9)"></div>
+               </div>
+               <div class = "col individual-item-box-height">
+                   <div id = "individualButton10" class = "individual-item-button individual-item-button-hidden center-abs">More Info</div>
+                   <div id = "individualPrice10" class = "price-label">$25</div>
+                   <div class = "individual-item-box center-abs individual-item4" onmouseover="individualItemIn(10, 'Nice')" onmouseout="individualItemOut(10)"></div>
+               </div>
+               
+            </div>
+        </div>
+        <div class = "item-button outfit-hover margin-top-large outfit-hover-darker">View All</div>
+</div>
+</div>
+
+<div class = "footer-container fluid-container text-center">
+ <div class = "center-footer-container text-center" style = "max-width:1100px;">
+         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+         <div class = "col col-11 col-centered">  
+         <div class = "row">
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                    <span class = "footer-header">SHOP</span>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Women</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Men</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">All Categories</a></div>
+               
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+               
+                <span class = "footer-header">LEARN</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+             
+                <span class = "footer-header">SUPPORT</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+             
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                <span class = "footer-header">Category FOUR</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+            <div class = "footer-container-two text-center">
+                <div class = "col col-12 col-centered icon-container text-center">
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                </div>
+                <div class = "center-rel text-center">
+
+                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
+                </form>
+                </div>
+</div>
+                
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src = "scripts/navbar.js"></script>
+    <script src = "scripts/script.js"></script>
+
+    <!-- This will eventually be placed in its own file, currently here for testing purposes --> 
+     <script>
+
+          var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop: true
+    });
+
+        var swiper = new Swiper('.swiper-container1', {
+            pagination: '.swiper-2',
+        slidesPerView: 3,
+        nextButton: '.right-arrow',
+        prevButton: '.left-arrow',
+        paginationClickable: true,
+        loop: true,
+        spaceBetween: 20,
+        lazyLoading: false,
+        breakpoints: {
+            517: {
+        slidesPerView: 1,
+            },
+            744: {
+        slidesPerView: 2,
+            }
+        }
+    });
+
+    $(window).scroll(function() {
+    var hT = $('#scroll-to').offset().top,
+        hH = $('#scroll-to').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+        
+        if (wS > (hT+hH-wH)){
+            document.getElementById("end-fixed").className = "col col-12 col-lg-6 full-swiper to-top absolute";
+        }
+        if (wS < (hT+hH-wH)){
+            document.getElementById("end-fixed").className = "col col-12 col-lg-6 full-swiper to-top fixed";
+        }
+    
+    });
+    
+    </script>
+
+    <script>
+     window.sr = ScrollReveal();
+    var delay1, delay2, delay3, delay4, delay5;
+    delay1 = 100;
+    delay2 = 300;
+    delay3 = 500;
+    delay4 = 700;
+    delay5 = 900;
+
+    sr.reveal('.delay1', {delay: delay1});
+    sr.reveal('.delay2', {delay: delay2});
+    sr.reveal('.delay3', {delay: delay3});
+    sr.reveal('.delay4', {delay: delay4});
+        
+        $('a').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+});
+
+ $('.item-type-box').on('mousenter', function(e) {
+     $(this).find('canvas').trigger('hover');
+ });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+    </body>

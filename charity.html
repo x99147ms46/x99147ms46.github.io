@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <!-- Animations -->
+    <link rel = "stylesheet" href = "styles/animate.css" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel = "stylesheet" href = "styles/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+ 
+    <!-- Swiper CSS --> 
+    <link rel="stylesheet" href="styles/swiper.css" />
+
+    <!-- Custom Code --> 
+    
+    <script src="scripts/scrollreveal.min.js"></script>
+
+    <!-- Icon fonts --> 
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+    <script src = "scripts/jquery.js"></script>
+    <script src = "scripts/jquery-easing.js"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+    
+    <script src = "scripts/Chart.min.js"></script>
+    
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+       
+        width: 100%;
+        height: 75%;
+        margin-left:0px !important;
+        margin-right:0px !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .swiper-extend-height
+    {
+        height: 100% !important;
+    }
+
+    .swiper-slide
+    {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+       
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height:320px !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .item-slide
+    {
+        min-height:420px !important;
+        max-height:490px !important;
+    }
+
+    .swiper-container1 {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    </head>
+    <body data-spy="scroll" onLoad = "initNav('charity')">
+     <div id = "top"></div>
+
+    <nav id = "header-nav" class="navbar navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
+    <div id = "background-gradient" class = "background-gradient"></div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
+    </button>
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-md-3 col-lg-2">
+                <a class="navbar-brand white" href="#">JACOB</a>
+            </div>
+            <div class = "col col-md-6 col-lg-8 text-center">
+               
+                    <a class="nav-link white" href="index.html">HOME</a>
+                    <a class="nav-link white" href="store.html">STORE</a>
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                    <a class="nav-link white" href="charity.html">CHARITY</a>
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                    
+            
+            </div>
+            <div class = "col col-md-3 col-lg-2 text-right">
+                
+                <img src = "images/_New/search.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/user.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/shopping-design-light.svg" class = "nav-icon"/>
+                
+            </div>
+        </div>
+    </div>
+    </ul>
+    </nav>
+<nav id = "mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand white" href="index.html">Jacob</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item text-center mobile-nav-item">
+        <a class="nav-link white" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="store.html">STORE</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="outfits.html">OUTFITS</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="about.html">ABOUT</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="contact.html">CONTACT</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+</nav>
+
+<div class = "section-header-image relative charity-image">
+    <div class = "background-overlay"></div>
+    <div class = "col col-12 center-abs text-center">
+        <div class = "slide-text animated fadeInDown large-slide-text heavy section-image-focus">GIVING BACK</div>
+    </div>
+</div>
+
+<div class = "section-three section-expanded-padding section-header text-center container-fluid">
+    <div class = "small-section-text">OUR CHARITABLE COMMITMENT</div>
+    <div class = "margin-top-small">
+        <span class = "light white">SUPPORTING CHARITY WITH</span>
+        <span class = "heavy white">EVERY SALE</span>
+        <div class = "highlight-line white-line"></div>
+
+        <div class = "col col-12">
+            <div class = "row">
+           
+
+            <div class = "col col-11 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. 
+            
+            And as we grow, we want our charitable impact to grow with us.
+            You can read about our charitable roadmap <a href = "#about-fourth" class = "inline-link">here.</a>
+            </div>
+
+            <div class = "col col-11 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+                At company name, every sale supports the causes below.
+            </div>
+            </div>
+        </div>
+        
+        <div class = "col col-md-11 text-center red-button-max-width col-lg-10 col-xl-7 push-red-button-down col-centered">
+            <div class = "row margin-bottom-small">
+                <div class = "col-12 col-md-4 margin-top-small margin-top-options">
+                    <a href = "#about-first">
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div>OUR MISSION</div>
+                                <div></div>
+                                <div>OUR MISSION</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class = "col-12 col-sm-12 col-md-4 margin-top-small margin-top-options">
+                    <a href = "#about-second">
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div>OUR PRODUCTS</div>
+                                <div></div>
+                                <div>OUR PRODUCTS</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class = "col-12 col-sm-12 col-md-4 margin-top-small margin-top-options">
+                    <a href = "#about-third">
+                        <div class="back">
+                            <div class="button_base b03_skewed_slide_in">
+                                <div>OUR TEAM</div>
+                                <div></div>
+                                <div>OUR TEAM</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+           
+            </div>
+        </div>         
+    </div>
+</div>
+
+<!-- water-charity-pic --> 
+<div id = "about-first" class = "move-anchor-up"></div>
+<div id="hero" class="hero section-header text-center larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+    <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text"><span class = "heavy">FOOD</span></div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">FEEDING THE</span>
+    <span class "heavy white" style = "color:#fff;">HUNGRY</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+<div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+    <div class = "margin-bottom-small">Donations going to <a href = "https://www.actionagainsthunger.org/" target = "_blank" class = "inline-link">Action Against Hunger</a></div>        
+    At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+ </div>
+ <div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large">
+        <div class = "row">
+            <div class = "col col-12 col-md-6 text-center margin-top-large">
+                <a href = "https://www.actionagainsthunger.org/" target="_blank"><div class = "charity-name">Visit Website</div></a>
+            </div>
+            <div class = "col col-12 col-md-6 text-center margin-top-large">
+                <a href = "https://www.actionagainsthunger.org/donate-now" target = "_blank"><div class = "charity-name">Donate Directly</div></a>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+</div>
+
+
+<div class = "section-two section-expanded-padding section-header text-center container-fluid">
+    <div class = "small-section-text light-section-text center-rel">ABOUT GLOBAL HUNGER</div>
+    <span class = "light">ONE IN SEVEN PEOPLE</span>
+    <span class "heavy">ARE HUNGRY</span>
+    <div class = "highlight-line"></div>
+
+    <div class = "col col-11 col-md-7 col-centered margin-top-large base-text-size text-center">
+
+        With <a href = "https://www.statisticbrain.com/world-hunger-statistics/" target = "_blank" class = "inline-link">7.6 people dying from malnutrition each year</a>, it is imperitive that solving global hunger is made a top priority. 
+        At company name, we are committed to pursuing this problem with urgency for as long as we are in business.  It's through your support that we are able to continue to give money address this fundementally important cause. 
+    </div>
+
+    <div class = "col col-11 col-lg-7 col-centered margin-top-large base-text-size text-center">
+       Since you started browsing this page, <span id = "hunger-deaths" class = "red">0</span> people have died from malnutrition.
+        <div>
+            <a href = "https://www.statisticbrain.com/world-hunger-statistics/" target = "_blank" class = "inline-link small-text">View Source</a>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class = "col col-12 col-md-4 margin-top">
+                <span class = "header-circle">1</span>
+                <div class = "chart-card-header">Hunger breakdown by gender</div>
+                <canvas id="food-chart1" class = "center-rel"></canvas>
+                <div class = "chart-card-body base-text-size">
+                    The majority of people suffering from malnutrition are female.
+                    <div>
+                        <a href = "http://www.thp.org/knowledge-center/know-your-world-facts-about-hunger-poverty/" target = "_blank" class = "inline-link small-text">View Source</a>
+                    </div>
+                </div>
+        </div>
+        <div class = "col col-12 col-md-4 margin-top">
+            
+                <div class = "header-circle">2</div>
+                <div class = "chart-card-header">Cause of death in children under 5</div>
+                <canvas id="food-chart2" class = "center-rel"></canvas>
+                <div class = "chart-card-body base-text-size">
+                    Nearly half the deaths of children under 5 are caused by malnutrition.
+                    <div>
+                        <a href = "https://www.unicefusa.org/press/releases/unicef-too-many-children-dying-malnutrition/8259" target = "_blank" class = "inline-link small-text">View Source</a>
+                    </div>
+                </div>
+          
+
+        </div>
+        <div class = "col col-12 col-md-4 margin-top">
+          
+                <div class = "header-circle">3</div>
+                <div class = "chart-card-header">Birth weight in developing countries</div>
+                <canvas id="food-chart3" class = "center-rel"></canvas>
+                <div class = "chart-card-body base-text-size">
+                    1 in 6 infants are born underweight in developing countries
+                    <div>
+                        <a href = "http://www.thp.org/knowledge-center/know-your-world-facts-about-hunger-poverty/" target = "_blank" class = "inline-link small-text">View Source</a>
+                    </div>
+                </div>
+           
+        </div>
+    </div>
+
+</div>
+
+<div id = "about-second" class = "move-anchor-up"></div>
+<div id="hero" class="hero section-header text-center larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+    <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text"><span class = "heavy">WATER</span></div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">FEEDING THE</span>
+    <span class "heavy white" style = "color:#fff;">HUNGRY</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+<div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+    <div class = "margin-bottom-small">Donations going to <a href = "https://water.org/" target = "_blank" class = "inline-link">Water.Org</a></div>        
+    At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+ </div>
+ <div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large">
+        <div class = "row">
+            <div class = "col col-12 col-md-6 text-center margin-top-large">
+                <a href = "https://water.org/" target="_blank"><div class = "charity-name">Visit Website</div></a>
+            </div>
+            <div class = "col col-12 col-md-6 text-center margin-top-large">
+                <a href = "https://www.actionagainsthunger.org/donate-now" target = "_blank"><div class = "charity-name">Donate Directly</div></a>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+</div>
+
+<div class = "section-three section-expanded-padding section-header center-rel text-center fluid-container">
+    <div class = "small-section-text center-rel">ABOUT LACK OF WATER</div>
+    <span class = "light white">ONE IN SEVEN PEOPLE</span>
+    <span class "heavy white" style = "color:#fff">ARE HUNGRY</span>
+    <div class = "highlight-line white-line"></div>
+
+    <div class = "col col-11 col-md-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+    </div>
+
+    <div class = "col col-12">
+        <div class = "row margin-top-medium">
+            
+            <div class = "col col-11 col-lg-8 col-centered">
+                <canvas id="water-chart1" class = "water-chart center-rel"></canvas>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = "about-third" class = "move-anchor-up"></div>
+<div id="hero" class="hero section-header text-center larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+    <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text"><span class = "heavy">SHELTER</span></div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">FEEDING THE</span>
+    <span class "heavy white" style = "color:#fff;">HUNGRY</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+<div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+    <div class = "margin-bottom-small">Donations going to <a href = "https://water.org/" target = "_blank" class = "inline-link">Water.Org</a></div>        
+    At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+ </div>
+ <div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large">
+        <div class = "row">
+            <div class = "col col-12 col-md-6 text-center margin-top-large">
+                <a href = "https://water.org/" target="_blank"><div class = "charity-name">Visit Website</div></a>
+            </div>
+            <div class = "col col-12 col-md-6 text-center margin-top-large">
+                <a href = "https://www.actionagainsthunger.org/donate-now" target = "_blank"><div class = "charity-name">Donate Directly</div></a>
+            </div>
+        </div>
+    </div>
+ </div>
+ 
+</div>
+
+<div class = "section-two section-expanded-padding section-header center-rel text-center  fluid-container">
+    <div class = "small-section-text light-section-text center-rel">ABOUT LACK OF SHELTER</div>
+    <span class = "light">ONE IN SEVEN PEOPLE</span>
+    <span class "heavy">ARE HUNGRY</span>
+    <div class = "highlight-line"></div>
+
+    <div class = "col col-11 col-md-7 col-centered margin-top-large base-text-size text-center">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+    </div>
+
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-12 col-md-4 margin-top">
+                <div class = "chart-card">
+                    <span class = "header-circle">1</span>
+                    <div class = "chart-card-header">Hunger in global population</div>
+                    <canvas id="shelter-chart1" class = "center-rel"></canvas>
+                    <div class = "chart-card-body">The majority of people suffering from malnutrition are female</div>
+                </div>
+            </div>
+            <div class = "col col-12 col-md-4 margin-top">
+                <div class = "chart-card">
+                    <div class = "header-circle">2</div>
+                    <div class = "chart-card-header">Hunger in global population</div>
+                    <canvas id="shelter-chart2" class = "center-rel"></canvas>
+                    <div class = "chart-card-body">The majority of people suffering from malnutrition are female</div>
+                </div>
+
+            </div>
+            <div class = "col col-12 col-md-4 margin-top">
+                <div class = "chart-card">
+                    <div class = "header-circle">3</div>
+                    <div class = "chart-card-header">Hunger in global population</div>
+                    <canvas id="shelter-chart3" class = "center-rel"></canvas>
+                    <div class = "chart-card-body">The majority of people suffering from malnutrition are female</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id = "about-fourth" class = "move-anchor-up"></div>
+<div class = "section-three section-expanded-padding section-header center-rel text-center fluid-container">
+    <div class = "small-section-text center-rel">OUR CHARITABLE ROADMAP</div>
+    <span class = "light white">GIVING MORE AS</span>
+    <span class "heavy white" style = "color:#fff">WE GROW</span>
+    <div class = "highlight-line white-line"></div>
+    <div class = "col col-11 col-md-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+    </div>
+        <div class = "col col-md-11 col-lg-12 max-width-charity-extras col-centered">
+            <div class = "row">
+                <div class = "col col-12 col-lg-4 margin-top-medium">
+                    <div class = "charity-options-card no-cursor">
+                        <div class = "header-circle red-circle">1</div>
+                        <div class = "charity-options-header eliminate-top-margin">
+                            Expand Charitable Giving
+                        </div>
+                    
+                        <div class = "charity-options-description col col-11 col-centered">
+                            Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                            <div>
+                                <a href = "contact.html" class = "medium-text inline-link charity-extras-link">Suggest Charity<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                            </div>
+                        </div>
+                    </div>
+            
+            </div>
+
+                <div class = "col col-12 col-lg-4 margin-top-medium">
+                <div class = "charity-options-card no-cursor">
+                        <div class = "header-circle red-circle">2</div>
+                        <div class = "charity-options-header eliminate-top-margin">
+                            Expand Charitable Giving
+                        </div>
+                    
+                        <div class = "charity-options-description col col-11 col-centered">
+                            Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                            <div>
+                                <a href = "contact.html" class = "medium-text inline-link charity-extras-link">Request Partnership<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class = "col col-12 col-lg-4 margin-top-medium">
+                    <div class = "charity-options-card no-cursor">
+                        <div class = "header-circle red-circle">3</div>
+                        <div class = "charity-options-header eliminate-top-margin">
+                            Expand Charitable Giving
+                        </div>
+                    
+                        <div class = "charity-options-description col col-11 col-centered">
+                            Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                            <div>
+                                <a href = "contact.html" class = "medium-text inline-link charity-extras-link">Request Charity Items<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+    
+<div class = "section-two extended-padding section-header center-rel text-center fluid-container">
+    <div class = "negative-bottom-margin">
+        <img src = "images/expand-button.svg" class = "slider-arrow left-arrow delay1"/>
+        <span class = "smaller-text-mobile">
+        <span class = "light">BROWSE CHARITABLE</span>
+        <span class = "heavy">ITEMS</span>
+        </span>
+        <img src = "images/expand-button.svg" class = "slider-arrow right-arrow delay1"/>
+    </div>
+    <div class = "col col-11 col-md-7 margin-top-medium base-text-size text-center col-centered" >
+        One item donated for every item purchased
+    </div>
+    <div class = "col col-12 margin-top-medium">
+       <div class = "swiper-container1 col-12 hidden-lg-up col-centered" style = "overflow:hidden;">
+        <div class="swiper-wrapper">
+                
+               <div class="swiper-slide item-slide">
+                    <div class = "item-container item1"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy featured4">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                      <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button" style = "height:10px;">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+              <div class="swiper-slide item-slide">
+                    <div class = "item-container item2"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+                       <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="swiper-slide item-slide">
+                    <div class = "item-container item3"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                        <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide item-slide">
+                    <div class = "item-container item1"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                      <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide item-slide">
+                    <div class = "item-container item2"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                       <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                 <div class="swiper-slide item-slide">
+                    <div class = "item-container item3"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                      <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next2"></div>
+            <div class="swiper-button-prev2"></div>
+        
+         <div class="hidden-lg-up swiper-pagination swiper-2 center-rel" style = "position:relative;top:5px;"></div>
+
+         </div>
+    
+
+    <div class = "swiper-container1 col-11 margin-top-medium hidden-md-down col-centered">
+        <div class="swiper-wrapper">
+                
+                <div class="swiper-slide item-slide">
+                    <div class = "item-container item1"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy featured4">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                      <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+              <div class="swiper-slide item-slide">
+                    <div class = "item-container item2"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+                       <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+               <div class="swiper-slide item-slide">
+                    <div class = "item-container item3"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                        <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide item-slide">
+                    <div class = "item-container item1"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                      <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide item-slide">
+                    <div class = "item-container item2"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                       <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                 <div class="swiper-slide item-slide">
+                    <div class = "item-container item3"></div>
+                    <div class = "text-container">
+                        <div class = "item-name heavy">Soft Navy Tee</div>
+                        <div class = "highlight-line"></div>
+                        <div class = "item-price light">$10</div>
+
+                      <div class = "align-bottom">
+                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                 
+         
+            <div class="swiper-button-next2"></div>
+            <div class="swiper-button-prev2"></div>
+        </div>
+       
+        <div class="hidden-md-down swiper-pagination swiper-2 center-rel move-down"></div>
+        <div class = "hidden-md-down margin-top-pagination"></div>
+        
+    </div>
+</div>
+</div>
+</div>
+
+<div class = "section-three section-expanded-padding section-header center-rel text-center fluid-container">
+    <div class = "small-section-text center-rel">EXPLORE MORE CHARITIES</div>
+    <span class = "light white">OTHER TOP RATED</span>
+    <span class "heavy white" style = "color:#fff">CHARITIES</span>
+    <div class = "highlight-line white-line"></div>
+    <div class = "col col-11 col-md-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. If there is a charity you love that is not listed here, <a href = "contact.html" class = "inline-link">let us know</a> about it! Ratings provided by <a href = "https://www.charitynavigator.org/" target="_blank" class = "inline-link">Charity Navigator</a>.
+    </div>
+
+    <div class = "col col-md-11 col-lg-12 max-width-charity-extras col-centered">
+      
+        <div class = "row">
+            <div class = "col col-12 col-md-6 col-lg-4 margin-top-extras">
+               <div id = "width-extras" class = "charity-options-card charity-suggestion-card">
+                    <div class = "charity-options-header">
+                        Action Against Hunger
+                        <div class = "margin-bottom-tiny">
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                        </div>
+                    </div>
+                
+                    <div class = "charity-options-description col col-11 col-md-12 col-centered">
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                        <div>
+                            <a href = "index.html" class = "medium-text inline-link charity-extras-link">Learn More<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col col-12 col-md-6 col-lg-4 margin-top-extras">
+               <div id = "width-extras" class = "charity-options-card charity-suggestion-card">
+                    <div class = "charity-options-header">
+                        Action Against Hunsger
+                        <div class = "margin-bottom-tiny">
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                        </div>
+                    </div>
+                
+                    <div class = "charity-options-description col col-11 col-md-12 col-centered">
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                        <div>
+                            <a href = "index.html" class = "medium-text inline-link charity-extras-link">Learn More<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col col-12 col-md-6 col-lg-4 margin-top-extras">
+                <div class = "charity-options-card charity-suggestion-card">
+                    <div class = "charity-options-header">
+                        Action Against Hunger
+                        <div class = "margin-bottom-tiny">
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                        </div>
+                    </div>
+                
+                    <div class = "charity-options-description col col-11 col-md-12 col-centered">
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                        <div>
+                            <a href = "index.html" class = "medium-text inline-link charity-extras-link">Learn More<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        
+            <div class = "col col-12 col-md-6 col-lg-4 margin-top-extras">
+                <div class = "charity-options-card charity-suggestion-card">
+                    <div class = "charity-options-header">
+                        Action Against Hunger
+                        <div class = "margin-bottom-tiny">
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                        </div>
+                    </div>
+                
+                    <div class = "charity-options-description col col-md-12 col-centered">
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                        <div>
+                            <a href = "index.html" class = "medium-text inline-link charity-extras-link">Learn More<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                        </div>
+                    </div>
+                </div>
+        
+        </div>
+
+            <div class = "col col-12 col-md-6 col-lg-4 margin-top-extras">
+               <div class = "charity-options-card charity-suggestion-card">
+                    <div class = "charity-options-header">
+                        Action Against Hunger
+                        <div class = "margin-bottom-tiny">
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                        </div>
+                    </div>
+                
+                    <div class = "charity-options-description col col-md-12 col-centered">
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                        <div>
+                            <a href = "index.html" class = "medium-text inline-link charity-extras-link">Learn More<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col col-12 col-md-6 col-lg-4 margin-top-extras">
+                <div class = "charity-options-card charity-suggestion-card">
+                    <div class = "charity-options-header">
+                        Action Against Hunger
+                        <div class = "margin-bottom-tiny">
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                            <img src = "images/_New/star.svg" class = "rating-star" />
+                        </div>
+                    </div>
+                
+                    <div class = "charity-options-description col col-md-12 col-centered">
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder.
+                        <div>
+                            <a href = "index.html" class = "medium-text inline-link charity-extras-link">Learn More<span class = "small-arrow charity-extras-arrow">&#8702;</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href = "https://www.charitynavigator.org/index.cfm?bay=content.view&cpid=2203" target = "_blank" class = "center-rel kill-link-style"><div class = "item-button noselect margin-top-large outfit-container-button">More Charities</div></a>
+       </div>
+    </div>
+</div>
+
+<!-- charity-bottom-pic --> 
+<div id="hero" class="hero section-header text-center largest-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+        <div class = "center-abs charity-name hold-charity-name branding-tag">Request Charities</div>
+    </div>
+</div>
+
+<div class = "footer-container fluid-container text-center">
+ <div class = "center-footer-container text-center" style = "max-width:1100px;">
+         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+         <div class = "col col-11 col-centered">  
+         <div class = "row">
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                    <span class = "footer-header">SHOP</span>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Women</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Men</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">All Categories</a></div>
+               
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+               
+                <span class = "footer-header">LEARN</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+             
+                <span class = "footer-header">SUPPORT</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+             
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                <span class = "footer-header">Category FOUR</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+            <div class = "footer-container-two text-center">
+                <div class = "col col-12 col-centered icon-container text-center">
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                </div>
+                <div class = "center-rel text-center">
+
+                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
+                </form>
+                </div>
+</div>
+
+           
+                
+
+    <script src="scripts/tether.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src = "scripts/script.js"></script>
+    <!-- This will eventually be placed in its own file, currently here for testing purposes --> 
+     <script>
+        
+            var swiper = new Swiper('.swiper-container1', {
+            slidesPerView: 3,
+            pagination: '.swiper-2',
+            slidersPerGroup: 3,
+            nextButton: '.right-arrow',
+            prevButton: '.left-arrow',
+            paginationClickable: true,
+            loop: true,
+            spaceBetween: 20,
+            lazyLoading: false,
+            breakpoints: {
+            517: {
+        slidesPerView: 1,
+            },
+            744: {
+        slidesPerView: 2,
+            }
+        }
+            });
+        
+</script>
+
+<script>
+    Chart.defaults.global.defaultFontFamily = 'Josefin Sans';
+var myChart = new Chart(document.getElementById("food-chart1"), {
+    type: 'doughnut',
+    data: {
+        labels: ["Women", "Men"],
+        datasets: [{
+            label: '# of Votes',
+            data: [60, 40],
+            backgroundColor: [
+                '#fc6585',
+                '#214A7F',
+    
+            ],
+            borderColor: [
+                '#fc6585',
+                '#214A7F',
+                
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        legend: {
+            labels: {
+                // This more specific font property overrides the global property
+                defaultFontFamily: "Josefin Sans', sans-serif",
+                color:"#fff"
+            }
+        }
+    }
+});
+
+var myChart = new Chart(document.getElementById("food-chart2"), {
+    type: 'doughnut',
+    data: {
+        labels: ["Malnutrition", "Other"],
+        datasets: [{
+            label: '# of Votes',
+            data: [45, 55],
+            backgroundColor: [
+                '#fc6585',
+                '#214A7F',
+    
+            ],
+            borderColor: [
+                '#fc6585',
+                '#214A7F',
+                
+            ],
+            borderWidth: 1
+        }]
+
+
+    }
+});
+
+var myChart = new Chart(document.getElementById("food-chart3"), {
+    type: 'doughnut',
+    data: {
+        labels: ["Underweight", "Healthy"],
+        datasets: [{
+            label: '# of Votes',
+            data: [1, 5],
+            backgroundColor: [
+                '#fc6585',
+                '#214A7F',
+    
+            ],
+            borderColor: [
+                '#fc6585',
+                '#214A7F',
+                
+            ],
+            borderWidth: 1
+        }]
+
+
+    }
+});
+
+
+var myChart = new Chart(document.getElementById("water-chart1"), {
+    type: 'line',
+    data: {
+        labels: ["1990", "2000", "2010", "2020", "2030", "2040", "2050"],
+        datasets: [{
+            label: 'Starving people',
+            data: [8, 6, 3, 9, 5, 13, 10, 15, 13, 18, 16, 20],
+            backgroundColor: [
+                '#f3204f',    
+            ],
+            borderColor: [
+                '#f3204f)',
+            ]
+        }]
+
+
+    },
+    options: {
+        legend: {
+            labels: {
+                fontColor: "white",
+                fontSize: 18,
+                defaultFontFamily: 'Josefin Sans'
+            }
+        },
+        scales:{
+  xAxes:[{
+    gridLines:{
+      color:"#0c1c32",
+    },
+    ticks: {
+    fontColor: "#fff", // this here
+    },
+  }],
+  yAxes:[{
+      gridLines: {color:'rgba(21,49,89, 0.5)'},
+      ticks: {
+    fontColor: "#fff", // this here
+    },
+    display:true,
+    fontColor:'#fff'
+  }],
+
+}
+        
+       
+  
+    }
+});
+
+var myChart = new Chart(document.getElementById("shelter-chart1"), {
+    type: 'doughnut',
+    data: {
+        labels: ["Hungry", "Not Hungry"],
+        datasets: [{
+            label: '# of Votes',
+            data: [1, 7],
+            backgroundColor: [
+                '#fc6585',
+                '#1A3D6B',
+    
+            ],
+            borderColor: [
+                '#fc6585',
+                '#1A3D6B',
+                
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        legend: {
+            labels: {
+                // This more specific font property overrides the global property
+                defaultFontFamily: "Josefin Sans', sans-serif",
+                color:"#fff"
+            }
+        }
+    }
+});
+
+var myChart = new Chart(document.getElementById("shelter-chart2"), {
+    type: 'doughnut',
+    data: {
+        labels: ["Hungry", "Not Hungry"],
+        datasets: [{
+            label: '# of Votes',
+            data: [1, 7],
+            backgroundColor: [
+                '#fc6585',
+                '#1A3D6B',
+    
+            ],
+            borderColor: [
+                '#fc6585',
+                '#1A3D6B',
+                
+            ],
+            borderWidth: 1
+        }]
+
+
+    }
+});
+
+var myChart = new Chart(document.getElementById("shelter-chart3"), {
+    type: 'doughnut',
+    data: {
+        labels: ["Hungry", "Not Hungry"],
+        datasets: [{
+            label: '# of Votes',
+            data: [1, 7],
+            backgroundColor: [
+                '#fc6585',
+                '#1A3D6B',
+    
+            ],
+            borderColor: [
+                '#fc6585',
+                '#1A3D6B',
+                
+            ],
+            borderWidth: 1
+        }]
+
+
+    }
+});
+
+</script>
+
+    <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+        
+              $('a').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+});
+
+ $('.item-type-box').on('mousenter', function(e) {
+     $(this).find('canvas').trigger('hover');
+ });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    </body>

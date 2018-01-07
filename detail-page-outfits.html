@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Animations -->
+    <link rel = "stylesheet" href = "styles/animate.css" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel = "stylesheet" href = "styles/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+ 
+    <!-- Swiper CSS --> 
+    <link rel="stylesheet" href="styles/swiper.css" />
+
+    <!-- Custom Code --> 
+    <script src = "scripts/script.js"></script>
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <!-- Icon fonts --> 
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+    <script src = "scripts/jquery.js"></script>
+    <script src = "scripts/jquery-easing.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width:100%;
+        height: calc(100vh - 84px);
+        margin-left:auto !important;
+        margin-right:auto !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .swiper-slide
+    {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+       
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height:320px !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .item-slide
+    {
+        min-height:420px !important;
+        max-height:490px !important;
+    }
+
+    .swiper-container1 {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    </head>
+    <body data-spy="scroll" onLoad = "initNav()">
+    <div id = "top"></div>
+
+    <nav id = "header-nav" class="navbar navbar-altered navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
+    <div id = "background-gradient" class = "background-gradient"></div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
+    </button>
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-md-3 col-lg-2">
+                <a class="navbar-brand white" href="#">JACOB</a>
+            </div>
+            <div class = "col col-md-6 col-lg-8 text-center">
+               
+                    <a class="nav-link white" href="index.html">HOME</a>
+                    <a class="nav-link white" href="store.html">STORE</a>
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                    <a class="nav-link white" href="charity.html">CHARITY</a>
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                    
+            
+            </div>
+            <div class = "col col-md-3 col-lg-2 text-right">
+                
+                <img src = "images/_New/search.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/user.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/shopping-design-light.svg" class = "nav-icon"/>
+                
+            </div>
+        </div>
+    </div>
+    </ul>
+    </nav>
+<nav id = "mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand white" href="index.html">Jacob</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item text-center mobile-nav-item">
+        <a class="nav-link white" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="store.html">STORE</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="outfits.html">OUTFITS</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="about.html">ABOUT</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="contact.html">CONTACT</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+</nav>
+
+<div class = "section-three eliminate-padding push-slider-down" >
+    <div class = "col col-12" >
+        <div class = "row">
+            <div class = "col col-6 full-swiper" style = "position:relative">
+            <div class="swiper-container" onmouseover = "enterSlider('detail-page')" onmouseout = "exitSlider('detail-page')"> 
+            <div class="swiper-wrapper">
+                <div class="swiper-slide header-slider-image-style outfit-image-container1">
+                    <div class = "col col-12">
+                        
+                    </div>
+                
+            
+                </div>
+                <div class="swiper-slide header-slider-image-style second-image">
+                    <div class = "col col-6">
+                    <div class = "slide-text large-slide-text heavy">Browse best deals</div>
+                    <br />
+                    <div class = "split-button slider-button light">Get Started</div>
+                    </div>
+                </div>
+            
+                <div class="swiper-slide header-slider-image-style third-image"><span class = "slide-text large-slide-text heavy">Shop our favorites</span></div>
+                <div class="swiper-slide header-slider-image-style fourth-image"></div>
+                <div class="swiper-slide header-slider-image-style fifth-image"></div>
+            
+            </div>
+        
+            <div class="swiper-pagination"></div>
+
+            <img id = "left-slider-arrow" src = "images/_New/left-arrow-thick.svg" class = "swiper-button-prev swiper-button-switch semi-transparent"/>
+            <img id = "right-slider-arrow" src = "images/_New/right-arrow-thick.svg" class = "swiper-button-next swiper-button-switch semi-transparent"/>
+            
+    </div>
+            </div>
+            <div class = "col col-6 text-center" style = "height:calc(100vh - 84px);overflow:auto;">
+                <div class = "position-product-info">
+                    <div class = "small-section-text center-rel">OUR FLANNELS</div>
+                    <div class = "product-name white">COOPER FLANNEL BUTTON DOWN</div>
+                    <div class = "highlight-line pure-white-line"></div>
+                    <div class = "product-price white margin-top-medium">$50</div>
+                    <div class = "product-description margin-top-medium col col-11 col-centered white">
+                        <div class = "product-description-header">PRODUCT DESCRIPTION</div>
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+                        Placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+                    </div>
+
+                    <div class = "col col-11 margin-top-medium col-centered">
+                        <span class = "inline margin-right">
+                            <div class = "select-header first-select-header">Size</div>
+                            <select class = "styled-select force-font">
+                                <option>L</option>
+                                <option>M</option>
+                                <option>S</option>
+                            </select>
+                        </span>
+
+                        <span class = "inline margin-right">
+                            <div class = "select-header second-select-header">Quantity</div>
+                            <select class = "styled-select force-font">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+                        </span>
+
+                        <span class = "inline add-cart-button noselect">Add to Cart</span>
+                    </div>
+
+                    <div class = "charity-tag white margin-top-large">Your purchase of this outfit <a href = "charity.html" class = "inline-link">donates money to charity.</a></div>
+
+                    <div class = "dividing-line margin-top-large"></div>
+                   
+
+                    <div class = "margin-top-medium col col-11 col-centered white">
+                        <div class = "product-description-header">OUTFIT FEATURES</div>
+                        <div class = "row margin-top">
+                            <div class = "col col-4">
+                                <div class = "product-feature-icon-box">
+                                    <img src = "images/_New/chat-white.svg" class = "product-feature-icon" />
+                                     Heat trapping
+                                </div>
+                                <!--
+                                <div class = "product-feature-box">Skiing</div>
+                                -->
+                            </div>
+                            <div class = "col col-4">
+                                <div class = "product-feature-icon-box">
+                                    <img src = "images/_New/chat-white.svg" class = "product-feature-icon" />
+                                    Slim fit
+                                </div>
+                            </div>
+                            <div class = "col col-4 text-center">
+                               <div class = "product-feature-icon-box">
+                                    <img src = "images/_New/chat-white.svg" class = "product-feature-icon" />
+                                    Soft touch
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "margin-top-medium col col-11 col-centered white">
+                        <div class = "product-description-header">GREAT FOR...</div>
+                        <div class = "row margin-top">
+                            <div class = "col col-4">
+                                <div class = "product-feature-box">Skiing</div>
+                            </div>
+                            <div class = "col col-4">
+                                <div class = "product-feature-box">Hiking</div>
+                            </div>
+                            <div class = "col col-4">
+                                <div class = "product-feature-box">Staying warm</div>
+                            </div>
+                        </div>
+                        <div class = "row margin-top-medium">
+                            <div class = "col col-4">
+                                <div class = "product-feature-box">Exploring</div>
+                            </div>
+                            <div class = "col col-4">
+                                <div class = "product-feature-box">Everyday style</div>
+                            </div>
+                            <div class = "col col-4">
+                                <div class = "product-feature-box">Looking fresh</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class = "margin-top-medium col col-12 col-centered white">
+                        <div class = "product-description-header">ADD ONS</div>
+                        <div style = "margin-top:-5px">
+                            <span class = "white item-image add-on1"></span>
+                            <span class = "item-name-small white">Bamboo Shades
+                                <span class = "item-savings">4.99 (25% discount)</span>
+                                <span class = "position-add-on-checkbox margin-right"></span>
+                                <span style = "position:relative;top:-8px;">
+                                <input type="checkbox" class = "checkbox-blue-background inline" id="item1" />
+                                <label class = "noselect margin-top black checkbox-blue-background checkbox-label pos-check-left" for="item1"></label>
+                                </span>
+                            </span>
+                        </div>
+                        <div class = "margin-top">
+                            <span class = "white item-image add-on1"></span>
+                            <span class = "item-name-small white">Bamboo Shades
+                                <span class = "item-savings">4.99 (25% discount)</span>
+                                <span class = "position-add-on-checkbox margin-right"></span>
+                                <span style = "position:relative;top:-8px;">
+                                <input type="checkbox" class = "checkbox-blue-background inline" id="item1" />
+                                <label class = "noselect margin-top black checkbox-blue-background checkbox-label pos-check-left" for="item1"></label>
+                                </span>
+                            </span>
+                        </div>
+                        <div class = "margin-top">
+                            <span class = "white item-image add-on1"></span>
+                            <span class = "item-name-small white">Bamboo Shades
+                                <span class = "item-savings">4.99 (25% discount)</span>
+                                <span class = "position-add-on-checkbox margin-right"></span>
+                                <span style = "position:relative;top:-8px;">
+                                <input type="checkbox" class = "checkbox-blue-background inline" id="item1" />
+                                <label class = "noselect margin-top black checkbox-blue-background checkbox-label pos-check-left" for="item1"></label>
+                                </span>
+                            </span>
+                        </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class = "section-two section-expanded-padding section-header center-rel text-center">
+    <div class = "small-section-text light-section-text center-rel">MORE INFORMATION</div>
+    <span class = "light">THE OUTFIT</span>
+    <span class = "heavy">BREAKDOWN</span>
+    <div class = "highlight-line"></div>
+
+    <div class = "col col-12 col-centered margin-top-large">
+        <div class = "row">
+            <div class = "col col-12">
+                <div class = "image-section second-image">
+                   
+                        <span class = "selected-item margin-top-medium">Navy Blue Sweater</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class = "more-details-section-outfits">
+            <div class = "col col-7 col-centered">
+                    <div class = "row">
+                        <div class = "col col-6 text-left">
+                            <span class = "more-details-header">THE STORY</span>
+                            <div class = "more-details-body">
+                                We're not sure exactly why, but this dark faded grey button down
+                                 looks fancier than our other button downs. 
+                                Great for all those holiday parties you accidentally RSVP'd yes to.
+                            </div>
+                        </div>
+                        <div class = "col col-6 text-right">
+                            <div class = "more-details-header">THE PRODUCT</div>
+                            <ul class = "list-style">
+                                <li>Custom stripe</li>
+                                <li>Charcoal/Carolina Blue</li>
+                                <li>Standard fit</li>
+                                <li>Wash on cold</li>
+                                <li>Crazy soft</li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+       
+        <div class = "col col-12">
+            <div class = "row">
+                <div class = "col col-3 outfit-breakdown-box women-pic" onmouseover = "enterOutfitItem(1)" onmouseout = "exitOutfitItem(1)">
+                    <div id = "outfit-item-name1" class = "outfit-item-name center-abs">NAVY BLUE DRESS</div>
+                    <div class = "outfit-item-overlay"></div>
+                </div>
+                <div class = "col col-3 outfit-breakdown-box watch-pic" onmouseover = "enterOutfitItem(2)" onmouseout = "exitOutfitItem(2)">
+                    <div id = "outfit-item-name2" class = "outfit-item-name center-abs">NAVY BLUE DRESS</div>
+                    <div class = "outfit-item-overlay"></div>
+                </div>
+                <div class = "col col-3 outfit-breakdown-box women-pic" onmouseover = "enterOutfitItem(3)" onmouseout = "exitOutfitItem(3)">
+                    <div id = "outfit-item-name3" class = "outfit-item-name center-abs">NAVY BLUE DRESS</div>
+                    <div class = "outfit-item-overlay"></div>
+                </div>
+                <div class = "col col-3  outfit-breakdown-box watch-pic" onmouseover = "enterOutfitItem(4)" onmouseout = "exitOutfitItem(4)">
+                    <div id = "outfit-item-name4" class = "outfit-item-name center-abs">NAVY BLUE DRESS</div>
+                    <div class = "outfit-item-overlay"></div>
+                </div>
+            </div>
+            
+        </div>
+
+       
+    </div>
+</div>
+
+
+
+<div class = "section-four relative section-header text-center section-picture landscape-pic larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text">Charity</div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">YOUR PURCHASE SUPPORTS </span>
+    <span class "heavy white" style = "color:#fff;">THESE GREAT CHARITIES</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+    <div class = "col col-11 col-md-9 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+    </div>
+
+    <div class = "col col-12 max-width-about-options margin-top-large">
+        <span class = "outfit-header white">Every purchase made supports these great charities</span>
+        <div class = "row">
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://water.org/" target="_blank"><div class = "charity-name">Water.Org</div></a>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://www.actionagainsthunger.org/" target = "_blank"><div class = "charity-name">Action Against Hunger</div></a>
+            </div>
+            <div class = "col col-12 col-md-4 text-center margin-top-large">
+                <a href = "https://www.habitat.org/" target = "_blank"><div class = "charity-name">Habitat for Humanity</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class = "section-three section-expanded-padding section-header center-rel text-center">
+    <div class = "small-section-text center-rel">MORE OPTIONS</div>
+    <span class = "light white">VIEW MORE</span>
+    <span class = "heavy white">OUTFITS</span>
+    <div class = "highlight-line white-line"></div>
+
+    <div class = "col col-5 max-width-form col-centered white">
+                    <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+                        <label id = "outfitButton1" class="btn btn-primary outfit-button cell-button" onclick="selectOutfitCategory('men')">
+                            <input type="radio" name="options" id="option1" autocomplete="off"> Men
+                        </label>
+                        <label id = "outfitButton2" class="btn btn-primary outfit-button selected-button cell-button" onclick="selectOutfitCategory('all')">
+                            <input type="radio" name="options" id="option2" autocomplete="off" checked> All
+                        </label>
+                        <label id = "outfitButton3" class="btn outfit-button btn-primary cell-button" onclick = "selectOutfitCategory('women')">
+                            <input type="radio" name="options" id="option3" autocomplete="off"> Women
+                        </label>
+                    </div>
+                </div>
+
+    <div class = "col col-11 col-lg-12 col-centered">
+            <div class = "row">
+                <div id = "outfitContainer1" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay1">
+                    <div class = "outfit-container-home">
+                        <div class = "outfit-image outfit-pic1"></div>
+                        <div class = "outfit-text">
+                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
+                            <div class = "highlight-line pure-white-line"></div>
+                            <div class = "item-price white light">$10</div>
+                            <div class = "item-button outfit-hover">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "outfitContainer2" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay2">
+                    <div class = "outfit-container-home">
+                        <div class = "outfit-image outfit-pic2"></div>
+                        <div class = "outfit-text">
+                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
+                            <div class = "highlight-line pure-white-line"></div>
+                            <div class = "item-price white light">$10</div>
+                            <div class = "item-button outfit-hover">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "outfitContainer3" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay3">
+                    <div class = "outfit-container-home">
+                        <div class = "outfit-image women-pic"></div>
+                        <div class = "outfit-text">
+                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
+                            <div class = "highlight-line pure-white-line"></div>
+                            <div class = "item-price white light">$10</div>
+                            <div class = "item-button outfit-hover">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id = "outfitContainer4" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay4">
+                    <div class = "outfit-container-home">
+                        <div class = "outfit-image outfit-pic1"></div>
+                        <div class = "outfit-text">
+                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
+                            <div class = "highlight-line pure-white-line"></div>
+                            <div class = "item-price white light">$10</div>
+                            <div class = "item-button outfit-hover">Add to Cart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href = "outfits.html" class = "kill-link-style">
+                <div class = "item-button outfit-hover margin-top-large outfit-hover-darker">View All</div>
+            </a>
+    </div>
+        
+</div>
+</div>
+
+<div class = "footer-container fluid-container text-center">
+ <div class = "center-footer-container text-center" style = "max-width:1100px;">
+         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+         <div class = "col col-11 col-centered">  
+         <div class = "row">
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                    <span class = "footer-header">SHOP</span>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Women</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Men</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">All Categories</a></div>
+               
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+               
+                <span class = "footer-header">LEARN</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+             
+                <span class = "footer-header">SUPPORT</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+             
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                <span class = "footer-header">Category FOUR</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+            <div class = "footer-container-two text-center">
+                <div class = "col col-12 col-centered icon-container text-center">
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                </div>
+                <div class = "center-rel text-center">
+
+                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
+                </form>
+                </div>
+</div>
+                
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+
+    <!-- This will eventually be placed in its own file, currently here for testing purposes --> 
+     <script>
+
+
+          var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop: true
+    });
+
+        var swiper = new Swiper('.swiper-container1', {
+            pagination: '.swiper-2',
+        slidesPerView: 3,
+        nextButton: '.right-arrow',
+        prevButton: '.left-arrow',
+        paginationClickable: true,
+        loop: true,
+        spaceBetween: 20,
+        lazyLoading: false,
+        breakpoints: {
+            517: {
+        slidesPerView: 1,
+            },
+            744: {
+        slidesPerView: 2,
+            }
+        }
+    });
+    
+    </script>
+
+    <script>
+     window.sr = ScrollReveal();
+    var delay1, delay2, delay3, delay4, delay5;
+    delay1 = 100;
+    delay2 = 300;
+    delay3 = 500;
+    delay4 = 700;
+    delay5 = 900;
+
+    sr.reveal('.delay1', {delay: delay1});
+    sr.reveal('.delay2', {delay: delay2});
+    sr.reveal('.delay3', {delay: delay3});
+    sr.reveal('.delay4', {delay: delay4});
+        
+        $('a').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+});
+
+ $('.item-type-box').on('mousenter', function(e) {
+     $(this).find('canvas').trigger('hover');
+ });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    
+    </body>

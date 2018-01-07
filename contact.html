@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Animations -->
+    <link rel = "stylesheet" href = "styles/animate.css" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel = "stylesheet" href = "styles/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+ 
+    <!-- Swiper CSS --> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+    </script>
+    <!-- Icon fonts --> 
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+    <script src = "scripts/jquery.js"></script>
+    <script src = "scripts/jquery-easing.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+
+    body {
+        background: #eee;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 69%;
+         margin-left:0px !important;
+        margin-right:0px !important;
+        padding-left:0px !important;
+        padding-right:0px !important;
+    }
+
+    .swiper-slide
+    {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+       
+    }
+
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height:320px !important;
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .item-slide
+    {
+        min-height:420px !important;
+        max-height:490px !important;
+    }
+
+    .swiper-container1 {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+    </head>
+    <body data-spy="scroll" onLoad = "initNav()">
+ <div id = "top"></div>
+
+    <nav id = "header-nav" class="navbar navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
+    <div id = "background-gradient" class = "background-gradient"></div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
+    </button>
+    <div class = "col col-12">
+        <div class = "row">
+            <div class = "col col-md-3 col-lg-2">
+                <a class="navbar-brand white" href="#">JACOB</a>
+            </div>
+            <div class = "col col-md-6 col-lg-8 text-center">
+               
+                    <a class="nav-link white" href="index.html">HOME</a>
+                    <a class="nav-link white" href="store.html">STORE</a>
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                    <a class="nav-link white" href="charity.html">CHARITY</a>
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                    
+            
+            </div>
+            <div class = "col col-md-3 col-lg-2 text-right">
+                
+                <img src = "images/_New/search.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/user.svg" class = "nav-icon margin-right-medium"/>
+                <img src = "images/_New/shopping-design-light.svg" class = "nav-icon"/>
+                
+            </div>
+        </div>
+    </div>
+    </ul>
+    </nav>
+<nav id = "mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand white" href="index.html">Jacob</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item text-center mobile-nav-item">
+        <a class="nav-link white" href="index.html">HOME</a>
+      </li>
+      <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="store.html">STORE</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="outfits.html">OUTFITS</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="about.html">ABOUT</a>
+      </li>
+    <li class="nav-item margin-top-medium text-center mobile-nav-item">
+        <a class="nav-link white" href="contact.html">CONTACT</a>
+      </li>
+      
+    </ul>
+    
+  </div>
+
+</nav>
+<div class = "section-header-image relative about-image">
+    <div class = "background-overlay"></div>
+    <div class = "col col-12 center-abs text-center">
+        <div class = "slide-text animated fadeInDown large-slide-text heavy section-image-focus">CONTACT US</div>
+    </div>
+</div>
+<div class = "section-three section-header center-rel text-center fluid-container section-expanded-padding">
+    <div class = "small-section-text">CONTACT US</div>
+    <div class = "margin-top-small"></div>
+    <span class = "light white">WE ARE</span>
+    <span class = "heavy white">HERE TO HELP</span>
+    <div class = "highlight-line white-line"></div>
+    <div class = "col col-11 col-md-7 margin-top-medium base-text-size text-center col-centered white">
+        Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder 
+            placeholder placeholder placeholder placeholder. Placeholder placeholder placeholder placeholder. 
+    </div>
+<div>
+
+<div class = "relative">
+    <div class = "absolute">
+    </div>
+</div>
+  
+  
+    <div class = "col col-5 max-width-form col-centered white delay1">
+            <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
+            <label id = "form-option1" class="btn bootstrap-select btn-primary outfit-button btn-primary cell-button wide-button" onclick = "selectForm('itemRequests')">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Item Requests
+            </label>
+            <label id = "form-option2" class="btn btn-primary outfit-button btn-primary cell-button selected-button wide-button" onclick = "selectForm('general')">
+                <input type="radio" name="options" id="option2" autocomplete="off" checked> General
+            </label>
+            <label id = "form-option3" class="btn btn-primary outfit-button btn-primary cell-button wide-button" onclick = "selectForm('feedback')">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Feedback
+            </label>
+        </div>
+
+        <div id = "formUpdate">
+            <form>
+                <div class = "form delay1">
+                    <div class = "contact-input-header margin-top text-left white">
+                    Your Name
+                    <input type = "text" placeholder="Enter Name" class = "contact-input contact-input1" />
+                    </div>
+                <div class = "contact-input-header margin-top-medium text-left white">
+                    Your Email
+                    <input type = "text" placeholder="Enter Name" class = "contact-input contact-input2" />
+                    </div>
+                    <div class = "contact-input-header margin-top-medium text-left white">
+                    Your Message
+                    
+                    <textarea placeholder = "Enter Message" class = "contact-input contact-input3"></textarea>
+                </div>
+
+                <input type="submit" class = "item-button outfit-hover margin-top-large outfit-hover-darker force-font" value="Send Message">
+               
+               
+            </div>
+            </form>
+        </div>
+        
+    </div>
+</div>
+</div>
+
+<div id="hero" class="hero section-header text-center larger-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+    <div class = "col col-11 col-centered">
+    <div>
+        <div id = "chevron"><div class = "center-abs chevron-text">GET <span class = "heavy">OUT THERE</span></div></div>
+    </div>
+    <div class = "margin-top-large">
+    <span class = "light white">FUELING ADVENTURE, </span>
+    <span class "heavy white" style = "color:#fff;">FIXING PROBLEMS</span>
+    </div>
+    <div class = "highlight-line white-line"></div>
+</div>
+<div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
+ </div>
+ <div class = "col col-12 margin-top-large">
+        <div class = "row">
+           <div class = "col col-md-11 col-lg-7 max-width-social text-center col-centered margin-top-large">
+        <div class = "row">
+            <div class = "col col-6 col-md-3 text-center margin-top-large delay1">
+                <div class = "charity-name social-image-box facebook"> <i class="social-icon fa fa-facebook" aria-hidden="true"></i></div>
+            </div>
+            <div class = "col col-6 col-md-3 text-center margin-top-large delay2">
+                <div class = "charity-name social-image-box twitter"> <i class="social-icon fa fa-twitter" aria-hidden="true"></i></div>
+            </div>
+            <div class = "col col-6 col-md-3 text-center margin-top-large delay3">
+                <div class = "charity-name social-image-box pinterest"> <i class="social-icon fa fa-pinterest" aria-hidden="true"></i></div>
+            </div>
+            <div class = "col col-6 col-md-3 text-center margin-top-large delay4">
+                <div class = "charity-name social-image-box instagram"> <i class="social-icon fa fa-instagram" aria-hidden="true"></i></div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+</div>
+ </div>
+ 
+</div>
+
+
+<div class = "section-two section-header center-rel text-center fluid-container">
+    <div class = "small-section-text light-section-text center-rel">THERE'S MORE</div>
+    <span class = "light">EXPLORE SOME</span>
+    <span class = "heavy">OPTIONS</span>
+    <div class = "highlight-line"></div>
+    <div class = "row max-width">
+        
+        <div class = "col col-12 col-md-4 text-center margin-top-medium">
+            <div id = "contact1" class = "contact-option-box contact1 delay1">
+                <i class="contact-option-icon fa fa-tag" aria-hidden="true"></i>
+                <div class = "contact-option-text">
+                    <div class = "contact-option-header heavy">BROWSE DEALS</div>
+                    <div class = "col col-md-11 col-lg-9 margin-top col-centered contact-option-body">Take a look at our favorite products at affordable prices.</div>
+                    <div id = "contact-arrow1" class = "contact-option-arrow medium-arrow">&#8702;</div>
+                </div>
+            </div>
+        </div>
+       <div class = "col col-12 col-md-4 text-center margin-top-medium">
+           <a href = "about.html" class = "kill-link-style">
+                <div id = "contact2" class = "contact-option-box contact2 delay2">
+                    <i class="contact-option-icon fa fa-street-view" aria-hidden="true"></i>
+                    <div class = "contact-option-text">
+                        <div class = "contact-option-header heavy">LEARN ABOUT US</div>
+                        <div class = "col col-md-11 col-lg-9 margin-top col-centered contact-option-body">Take a look at our favorite products at affordable prices.</div>
+                        <div id = "contact-arrow2" class = "contact-option-arrow medium-arrow contact-arrow2">&#8702;</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class = "col col-12 col-md-4 text-center margin-top-medium">
+            <a href = "charity.html" class = "kill-link-style">
+                <div id = "contact3" class = "contact-option-box contact3 delay3">
+                    <i class="contact-option-icon fa fa-support" aria-hidden="true"></i>
+                    <div class = "contact-option-text">
+                        <div class = "contact-option-header heavy">CHARITABLE COMMITMENT</div>
+                        <div class = "col col-md-11 col-lg-9 margin-top col-centered contact-option-body">Take a look at our favorite products at affordable prices.</div>
+                        <div id = "contact-arrow3" class = "contact-option-arrow medium-arrow contact-arrow3">&#8702;</div>
+                    </div>
+                </div>
+            </a>
+        </div>
+</div>
+    </div>
+
+    <div id="hero" class="hero section-header text-center largest-padding">
+    <div class = "background-overlay-darken"></div>
+    <div class = "row">
+        <div class = "center-abs charity-name hold-charity-name branding-tag">#HITTHETRAIL</div>
+    </div>
+    </div>
+<div class = "footer-container fluid-container text-center">
+ <div class = "center-footer-container text-center" style = "max-width:1100px;">
+         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+         <div class = "col col-11 col-centered">  
+         <div class = "row">
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                    <span class = "footer-header">SHOP</span>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Women</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">Men</a></div>
+                    <div class = "footer-item"><a href = "#" class = "remove-link-style">All Categories</a></div>
+               
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+               
+                <span class = "footer-header">LEARN</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+             
+                <span class = "footer-header">SUPPORT</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+             
+            </div>
+            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+                
+                <span class = "footer-header">Category FOUR</span>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item One</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Two</a></div>
+                <div class = "footer-item"><a href = "#" class = "remove-link-style">Item Three</a></div>
+                
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+            <div class = "footer-container-two text-center">
+                <div class = "col col-12 col-centered icon-container text-center">
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                </div>
+                <div class = "center-rel text-center">
+
+                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
+                </form>
+                </div>
+</div>
+
+           
+                
+
+    <script src="scripts/tether.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src = "scripts/script.js"></script>
+
+     <script>
+        $(".contact1").hover(function(){
+            document.getElementById("contact-arrow1").className = "animated contact-option-arrow medium-arrow extendedAnimation shake"; 
+        });
+         $(".contact1").mouseleave(function(){
+            document.getElementById("contact-arrow1").className = "contact-option-arrow medium-arrow"; 
+            
+        });
+         $(".contact2").hover(function(){
+            document.getElementById("contact-arrow2").className = "animated contact-option-arrow medium-arrow extendedAnimation shake"; 
+            
+        });
+         $(".contact2").mouseleave(function(){
+            document.getElementById("contact-arrow2").className = "contact-option-arrow medium-arrow";  
+        });
+         $(".contact3").hover(function(){
+            document.getElementById("contact-arrow3").className = "animated contact-option-arrow medium-arrow extendedAnimation shake"; 
+           
+        });
+        $(".contact3").mouseleave(function(){
+            document.getElementById("contact-arrow3").className = "contact-option-arrow medium-arrow";  
+        });
+    
+          var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop: true
+            
+         
+            
+    });
+    
+        var swiper = new Swiper('.swiper-container1', {
+        slidesPerView: 3,
+        slidersPerGroup: 3,
+        nextButton: '.right-arrow',
+        prevButton: '.left-arrow',
+        paginationClickable: true,
+        loop: true,
+        spaceBetween: 20,
+        lazyLoading: false
+    });
+    </script>
+
+    <script>
+
+    window.sr = ScrollReveal(); 
+    var delay1, delay2, delay3, delay4, delay5;
+    delay1 = 100;
+    delay2 = 300;
+    delay3 = 500;
+    delay4 = 700;
+    delay5 = 900;
+
+    sr.reveal('.delay1', {delay: delay1});
+    sr.reveal('.delay2', {delay: delay2});
+    sr.reveal('.delay3', {delay: delay3});
+    sr.reveal('.delay4', {delay: delay4});
+
+              $('a').on('click', function(event) {
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
+});
+
+ $('.item-type-box').on('mousenter', function(e) {
+     $(this).find('canvas').trigger('hover');
+ });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+    </body>
