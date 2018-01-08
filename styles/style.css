@@ -1068,13 +1068,13 @@ body
 .charity-bottom-pic
 {
     background-position: center bottom;
-    background-image:url("../images/_New/children-smiling.jpg");
+    background-image:url("../images/children-smiling.jpg");
 }
 
 .kade-pic
 {
     background-position: center top;
-    background-image:url("../images/_New/kade.jpg");
+    background-image:url("../images/kade.jpg");
 }
 
 .zach-pic
@@ -1104,7 +1104,7 @@ body
 
 .triangle-image
 {   
-   background-image:url("../images/_New/triangle-man-placeholder.png") !important;
+   background-image:url("../images/triangle-man-placeholder.png") !important;
 }
 
 .company-image1
@@ -1140,7 +1140,7 @@ body
 .charity-image
 {
     background-position: center center;
-    background-image:url("../images/_New/charity-header.jpg") !important;
+    background-image:url("../images/charity-header.jpg") !important;
 }
 
 .charity-cover-image
@@ -1247,7 +1247,7 @@ body
 
 .water-charity
 {
-    background-image:url("../images/_New/water-charity.jpg") !important;
+    background-image:url("../images/water-charity.jpg") !important;
 }
 
 .contact-input-header
