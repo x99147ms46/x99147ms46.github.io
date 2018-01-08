@@ -1080,7 +1080,7 @@ body
 .zach-pic
 {
     background-position: center top;
-    background-image:url("../images/_New/zach.jpg");
+    background-image:url("../images/zach.jpg");
 }
 
 .arrow-pic1
@@ -1128,7 +1128,7 @@ body
 .water-charity-pic
 {
     background-position: center center;
-    background-image:url("../images/_New/children-water.jpg") !important;
+    background-image:url("../images/children-water.jpg") !important;
 }
 
 .about-image
@@ -3138,7 +3138,7 @@ html,body {
 
 .landscape-pic
 {
-    background-image:url("../images/_New/lakemountain.jpeg") !important;
+    background-image:url("../images/lakemountain.jpeg") !important;
 }
 
 
