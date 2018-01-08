@@ -1287,7 +1287,7 @@ body
 
 .contact-input2
 {
-    background-image: url("../images/_New/email-white.svg");
+    background-image: url("../images/email-white.svg");
 }
 
 .contact-input3
@@ -2008,7 +2008,7 @@ textarea
 .text-input
 {
     font-family: 'Josefin Sans', sans-serif !important;
-    background-image: url("../images/_New/email-white.svg");
+    background-image: url("../images/email-white.svg");
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: center left;
@@ -3000,7 +3000,7 @@ html,body {
   overflow: hidden;
 }
 .hero::before {
-  background-image: url("../images/_New/lakemountain.jpeg");
+  background-image: url("../images/lakemountain.jpeg");
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
