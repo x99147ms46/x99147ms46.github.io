@@ -1282,7 +1282,7 @@ body
 
 .contact-input1
 {
-    background-image: url("../images/_New/user.svg");
+    background-image: url("../images/user.svg");
 }
 
 .contact-input2
@@ -1293,7 +1293,7 @@ body
 .contact-input3
 {
     background-position:10px 10px !important; 
-    background-image: url("../images/_New/chat-white.svg");  
+    background-image: url("../images/chat-white.svg");  
 }
 
 textarea
