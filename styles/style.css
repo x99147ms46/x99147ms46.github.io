@@ -1020,24 +1020,7 @@ body
     background-color:#101c33 !important;
 }
 
-/*
-.background-overlay-darken
-{
-    position: absolute;
-    height:300px;
-    width:300px;
-    display:block;
-    top:0;
-    left:0;
-    opacity: 0.5;
-    height:100.1%;
-    width:100%;
-    background-color:#000;
-    transition: opacity .3s;
-}
-*/
 
-/*
 .background-overlay-darken
 {
     position: absolute;
@@ -1051,7 +1034,7 @@ body
     background-color:#000;
     transition: opacity .3s;
 }
-*/
+
 
 
 .background-header-overlay-darken:hover
@@ -1821,10 +1804,11 @@ textarea
 
 }
 
-
 .navbar-brand
 {
-    font-size:30px !important;
+    position: relative !important;
+    top:5px !important;
+    font-size:25px !important;
     color:#000 !important;
 }
 
@@ -2738,9 +2722,9 @@ body {
 
 .selected-outfit-category
 {
-    font-size:26px;
+    font-size:28px !important;
     color:#fff;
-    background-color:#122846;
+    background-color:#122846 !important;
 }
 
 .category-gutter
@@ -3066,7 +3050,7 @@ html,body {
     */
 }
 
-/*
+
 .hero {
     
   align-items: center;
@@ -3091,7 +3075,7 @@ html,body {
   will-change: transform;
   z-index: -1;
 }
-*/
+
 
 
 
@@ -5090,6 +5074,11 @@ and (max-width: 667px)
         margin-right:auto;
     }
 
+    .selected-outfit-category
+    {
+        font-size: 35px !important;
+    }
+
 }
 
 @media only screen 
@@ -5454,7 +5443,7 @@ and (min-width:857px)
     
     .selected-outfit-category
     {
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 
