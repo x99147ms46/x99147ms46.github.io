@@ -555,9 +555,6 @@ body
   transform: skew(0deg, -6deg);
 }​
 
-
-
-
 .company-image-header
 {
     color: #fff;
@@ -1023,6 +1020,24 @@ body
     background-color:#101c33 !important;
 }
 
+/*
+.background-overlay-darken
+{
+    position: absolute;
+    height:300px;
+    width:300px;
+    display:block;
+    top:0;
+    left:0;
+    opacity: 0.5;
+    height:100.1%;
+    width:100%;
+    background-color:#000;
+    transition: opacity .3s;
+}
+*/
+
+/*
 .background-overlay-darken
 {
     position: absolute;
@@ -1036,6 +1051,8 @@ body
     background-color:#000;
     transition: opacity .3s;
 }
+*/
+
 
 .background-header-overlay-darken:hover
 {
@@ -1973,8 +1990,6 @@ textarea
      background-repeat: no-repeat;
      background-position: left center;
      height:calc(29vh - 15px);
-     
-     /*height:20vh;*/
 }
 
 .category-image-box-small:hover
@@ -2194,11 +2209,6 @@ textarea
     transform: translate(-50%, -50%);
 }
 
-.center-left
-{
-    
-}
-
 .return-to-top
 {
     margin-top:-35px;
@@ -2364,6 +2374,45 @@ body {
     transition: height .3s ease, width .3s ease, box-shadow .3s, opacity 1.3s, filter .3s;
 }
 
+.individual-item-box-small
+{
+    margin-top:10px;
+    display: inline-block !important;
+    background-size: cover;
+    height:205px;
+    width:205px;
+    transition: height .3s ease, width .3s ease, box-shadow .3s, opacity 1.3s, filter .3s;
+}
+
+.individual-item-box-small:hover
+{
+    -webkit-filter: brightness(75%); /* Safari */
+    filter: brightness(75%);
+    box-shadow: 0px 0px 3px 5px #000F26; 
+    cursor:pointer;
+}
+
+.price-label-small
+{
+    position: relative;
+    top:4%;
+    left:35%;
+    margin-left:auto;
+    margin-right:auto;
+    z-index: 98;
+    font-size:20px;
+    pointer-events:none;
+    background: rgb(236,40,77); 
+    background: rgba(236,40,77, 0.75);
+    height:42px;
+    width:42px;
+    border-radius: 42px;
+    line-height: 42px;
+    color:#fff;
+    transition: opacity .3s;
+}
+
+
 .max-width-outfits
 {
     max-width:1120px !important;
@@ -2477,6 +2526,10 @@ body {
     background-color:#122846;
 }
 
+.selected-outfit-category
+{
+    font-size: 26px;
+}
 
 .item-number
 {
@@ -2685,7 +2738,7 @@ body {
 
 .selected-outfit-category
 {
-    font-size:31px;
+    font-size:26px;
     color:#fff;
     background-color:#122846;
 }
@@ -2990,7 +3043,32 @@ html,body {
   margin: 0
 }
 
+.hero-index1
+{
+    height:100%;
+    width:100%;
+    background: url('../images/mountainrange.jpg') no-repeat center;
+    background-size: cover;
+    align-items: center;
+  display: flex;
+  justify-content: center;
+  
+    /*background-attachment: fixed;*/
+}
+
+.hero-index2
+{
+    height:100%;
+    width:100%;
+    background: url('../images/lakemountain.jpeg') no-repeat center;
+    /*background-size: cover;
+    background-attachment: fixed;
+    */
+}
+
+/*
 .hero {
+    
   align-items: center;
   display: flex;
   justify-content: center;
@@ -3000,7 +3078,7 @@ html,body {
   overflow: hidden;
 }
 .hero::before {
-  background-image: url("../images/lakemountain.jpeg");
+     background-image: url("../images/lakemountain.jpeg") !important;
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -3013,6 +3091,8 @@ html,body {
   will-change: transform;
   z-index: -1;
 }
+*/
+
 
 
 .section-picture
@@ -3152,7 +3232,7 @@ html,body {
     background-image:url("../images/mountainrange.jpg") !important;
 }
 
-.landscape-pic4
+.landscape-pic4::before
 {
     background-image:url("../images/mountainsky.jpeg") !important;
 }
@@ -4472,6 +4552,11 @@ and (max-width : 568px)
         font-size:29px !important;
     }
 
+    .selected-outfit-category
+    {
+        font-size: 29px;
+    }
+
 
     .employee-box
     {
@@ -4581,6 +4666,28 @@ and (min-width : 100px)
 and (max-width : 667px)
 {
 
+    .individual-item-box-small
+    {
+        margin-top:10px;
+        height:290px !important; 
+        width:290px !important;
+    }
+
+    .price-label-small
+    {
+        position: relative;
+        top:4%;
+        left:35%;
+        z-index: 98;
+        font-size:22px !important;
+        height:52px !important;
+        width:52px !important;
+        border-radius: 52px !important;
+        line-height: 52px !important;
+        color:#fff;
+        transition: opacity .3s;
+    }
+
     .outfit-category-box
     {
         max-width: 90% !important;
@@ -4592,6 +4699,11 @@ and (max-width : 667px)
     .outfit-category-box:hover
     {
         font-size:33px;
+    }
+
+    .selected-outfit-category
+    {
+        font-size: 33px;
     }
 
     .form-adjustment
@@ -4832,6 +4944,27 @@ and (max-device-width : 736px)  {
 and (min-width: 678px)
 and (max-width: 767px)
 {
+    .individual-item-box-small
+    {
+        margin-top:10px;
+        height:280px !important; 
+        width:280px !important;
+    }
+
+    .price-label-small
+    {
+        position: relative;
+        top:4%;
+        left:35%;
+        z-index: 98;
+        font-size:22px !important;
+        height:52px !important;
+        width:52px !important;
+        border-radius: 52px !important;
+        line-height: 52px !important;
+        color:#fff;
+        transition: opacity .3s;
+    }
 
     .outfit-image
     {
@@ -4856,6 +4989,11 @@ and (max-width: 767px)
     .outfit-category-box:hover
     {
         font-size:37px;
+    }
+
+    .selected-outfit-category
+    {
+        font-size: 37px;
     }
 
     .slide-text
@@ -4967,18 +5105,18 @@ and (max-width : 887px)
     } 
     
     .outfit-category-box
-{
-    height:100px;
-    line-height: 100px;
-    font-size: 25px;
-    width:100%;
-    max-width: 300px;
-    margin-left:auto;
-    margin-right:auto;
-    font-size:24px;
-    background-color:#e0ddd6;
-    transition: background-color .3s, color .3s, font-size .3s;
-}
+    {
+        height:100px;
+        line-height: 100px;
+        font-size: 25px;
+        width:100%;
+        max-width: 300px;
+        margin-left:auto;
+        margin-right:auto;
+        font-size:24px;
+        background-color:#e0ddd6;
+        transition: background-color .3s, color .3s, font-size .3s;
+    }
 
 
 }
@@ -4987,8 +5125,7 @@ and (max-width : 887px)
 @media only screen 
 and (min-width : 768px) 
 and (max-width : 880px)
-{ 
-
+{
     .small-section-text
     {
         font-size:20px;
@@ -5314,6 +5451,11 @@ and (min-width:857px)
     {
         font-size:30px;
     }
+    
+    .selected-outfit-category
+    {
+        font-size: 30px;
+    }
 }
 
 @media only screen
@@ -5468,6 +5610,62 @@ and (max-width: 1150px)
     {
         font-size:20px;
     } 
+}
+
+
+@media only screen 
+and (max-width: 874px)
+and (min-width: 737px)
+{
+    .individual-item-box-small
+    {
+        margin-top:10px;
+        height:168px;
+        width:168px;
+    }
+
+    .price-label-small
+    {
+        position: relative;
+        top:4%;
+        left:35%;
+        z-index: 98;
+        font-size:20px;
+        height:42px;
+        width:42px;
+        border-radius: 42px;
+        line-height: 42px;
+        color:#fff;
+        transition: opacity .3s;
+    }
+}
+
+@media only screen 
+and (max-width: 916px)
+and (min-width: 875px)
+{
+    .individual-item-box-small
+    {
+        margin-top:10px;
+        height:168px;
+        width:168px;
+    }
+
+    .price-label-small
+    {
+        position: relative;
+        top:4%;
+        left:35%;
+  
+        z-index: 98;
+        font-size:20px;
+        height:42px;
+        width:42px;
+        border-radius: 42px;
+        line-height: 42px;
+        color:#fff;
+        transition: opacity .3s;
+    }
 }
 
 @media only screen 

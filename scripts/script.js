@@ -8,6 +8,22 @@ var navOpened = false;
 var addOn1, addOn2, addOn3;
 var currentPage;
 
+$( document ).ready(function() {
+    if(currentPage != "detailPage")
+    {
+    if(!navOpened)
+        {
+    if ($("#header-nav").offset().top > 100) {
+        $("#background-gradient").addClass("hidden");
+        $("#header-nav").addClass("navbar-altered");
+    } else {
+        $("#background-gradient").removeClass("hidden");
+            $("#header-nav").removeClass("navbar-altered");
+    }
+} 
+    } 
+});
+
 function makeNavTransparent()
 {
     $("#background-gradient").removeClass("hidden");
@@ -130,6 +146,28 @@ $(window).scroll(function() {
 } 
     } 
 });
+
+function outfitCategory(type)
+{
+    if(type == "men")
+    {
+        document.getElementById("men-outfit-category").className = "outfit-category-box text-center no-select selected-outfit-category";
+        document.getElementById("all-outfit-category").className = "outfit-category-box text-center no-select";
+        document.getElementById("women-outfit-category").className = "outfit-category-box text-center no-select";
+    }
+    else if(type == "all")
+    {
+        document.getElementById("men-outfit-category").className = "outfit-category-box text-center no-select";
+        document.getElementById("all-outfit-category").className = "outfit-category-box text-center no-select selected-outfit-category";
+        document.getElementById("women-outfit-category").className = "outfit-category-box text-center no-select";
+    }
+    else if(type == "women")
+    {
+        document.getElementById("men-outfit-category").className = "outfit-category-box text-center no-select";
+        document.getElementById("all-outfit-category").className = "outfit-category-box text-center no-select";
+        document.getElementById("women-outfit-category").className = "outfit-category-box text-center no-select selected-outfit-category";
+    }
+}
 
 function selectOutfitCategory(input)
 {
