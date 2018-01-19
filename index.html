@@ -1,148 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
 
     <!-- Animations -->
-    <link rel = "stylesheet" href = "styles/animate.css" />
+    <link rel="stylesheet" href="styles/animate.css" />
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel = "stylesheet" href = "styles/style.css" />
+    <link rel="stylesheet" href="styles/style.css" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
- 
-    <!-- Swiper CSS --> 
+
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="styles/swiper.css" />
 
-    <!-- Custom Code --> 
-    
+    <!-- Custom Code -->
+
     <script src="scripts/scrollreveal.min.js"></script>
 
-    <!-- Icon fonts --> 
+    <!-- Icon fonts -->
     <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
 
     <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
-    <script src = "scripts/jquery.js"></script>
-    <script src = "scripts/jquery-easing.js"></script>
-    
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery-easing.js"></script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
 
     <style>
-    html, body {
-        position: relative;
-        height: 100%;
-    }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
 
-    body {
-        background: #eee;
-        font-size: 14px;
-        color:#000;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            background: #eee;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
 
-    .swiper-container {
-        width: 100%;
-        height: 100vh;
-        margin-left:0px !important;
-        margin-right:0px !important;
-        padding-left:0px !important;
-        padding-right:0px !important;
-    }
+        .swiper-container {
+            width: 100%;
+            height: 100vh;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
 
-    .swiper-slide
-    {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-       
-    }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
 
-    .swiper-slide2 {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        height:320px !important;
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-    }
+        .swiper-slide2 {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            height: 320px !important;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
 
-    .item-slide
-    {
-        min-height:420px !important;
-        max-height:490px !important;
-    }
+        .item-slide {
+            min-height: 420px !important;
+            max-height: 490px !important;
+        }
 
-    .swiper-container1 {
-        width: 100%;
-        height: 100%;
-    }
+        .swiper-container1 {
+            width: 100%;
+            height: 100%;
+        }
     </style>
-    </head>
-    <body data-spy="scroll" onLoad = "initNav('home')">
-    <div id = "top"></div>
-    <div id = "nav-controls" class = "invisible-navbar-controls hidden-md-down invisible-nav-not-active" onmouseover="closeNav()"></div>
-    <nav id = "header-nav" class="navbar navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
-    <div id = "background-gradient" class = "background-gradient"></div>
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+</head>
+
+<body data-spy="scroll" onLoad="initNav('home')">
+    <div id="top"></div>
+    <div id="nav-controls" class="invisible-navbar-controls hidden-md-down invisible-nav-not-active" onmouseover="closeNav()"></div>
+    <nav id="header-nav" class="navbar navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
+        <div id="background-gradient" class="background-gradient"></div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
     </button>
-    <div class = "col col-12">
-        <div class = "row">
-            <div class = "col col-md-3 col-lg-2">
-                <a class="navbar-brand white" href="#">Arcadian Apparel</a>
-            </div>
-            <div class = "col col-md-6 col-lg-8 text-center">
-               
+        <div class="col col-12">
+            <div class="row">
+                <div class="col col-md-3 col-lg-2">
+                    <a class="navbar-brand white" href="#">Arcadian Apparel</a>
+                </div>
+                <div class="col col-md-6 col-lg-8 text-center">
+
                     <a class="nav-link white" href="index.html">HOME</a>
-                    <a class="nav-link white" href="store.html" onmouseover = "openNav('store')">STORE</a>
+                    <a class="nav-link white" href="store.html" onmouseover="openNav('store')">STORE</a>
                     <a class="nav-link white" href="outfits.html">OUTFITS</a>
                     <a class="nav-link white" href="about.html">ABOUT</a>
                     <a class="nav-link white" href="charity.html">CHARITY</a>
                     <a class="nav-link white" href="contact.html">CONTACT</a>
-                    
-            
+
+
+                </div>
+                <div class="col col-md-3 col-lg-2 text-right">
+
+                    <img src="images/search.svg" class="nav-icon margin-right-medium" />
+                    <img src="images/user.svg" class="nav-icon margin-right-medium" />
+                    <img src="images/shopping-design-light.svg" class="nav-icon" />
+
+                </div>
             </div>
-            <div class = "col col-md-3 col-lg-2 text-right">
-                
-                <img src = "images/search.svg" class = "nav-icon margin-right-medium"/>
-                <img src = "images/user.svg" class = "nav-icon margin-right-medium"/>
-                <img src = "images/shopping-design-light.svg" class = "nav-icon"/>
-                
-            </div>
+
+
         </div>
-        
-        
-    </div>
-    </ul>
-    <div id = "navbar-expanded" class = "navbar-expanded navbar-not-active">
-        <span id = "navbar-content" class = "hidden">
+        </ul>
+        <div id="navbar-expanded" class="navbar-expanded navbar-not-active">
+            <span id="navbar-content" class="hidden">
             <!--
             <div class = "header-content-title">Browse Our Catalogue</div>
             -->
@@ -178,17 +179,17 @@
                     <div class = "row">
                         <div class = "col col-4 header-bottom-options-height">
                             SHOP WOMEN <span class = "header-category-arrow">&#8702;</span>
-                        </div>
-                        <div class = "col col-4 header-bottom-options-height">
-                            SHOP MEN <span class = "header-category-arrow">&#8702;</span>
-                        </div>
-                        <div class = "col col-4 header-bottom-options-height">
-                            SHOP ALL <span class = "header-category-arrow">&#8702;</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--
+        </div>
+        <div class="col col-4 header-bottom-options-height">
+            SHOP MEN <span class="header-category-arrow">&#8702;</span>
+        </div>
+        <div class="col col-4 header-bottom-options-height">
+            SHOP ALL <span class="header-category-arrow">&#8702;</span>
+        </div>
+        </div>
+        </div>
+        </div>
+        <!--
             <div class = "col col-12 header-category-container">
                 <div class = "row">
 
@@ -224,11 +225,11 @@
                         
                     </div>
                     -->
-                
-                </div>
-            </div>
 
-            <!--
+        </div>
+        </div>
+
+        <!--
         dasd
         <div class = "col col-5 max-width-form col-centered white" style = "z-index:0 !important;">
             <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons" style = "z-index:0 !important;">
@@ -245,740 +246,752 @@
         </div>
         -->
         </span>
-    </div>
+        </div>
     </nav>
-<nav id = "mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav id="mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand white" href="index.html">Arcadian Apparel</a>
+        <a class="navbar-brand white" href="index.html">Arcadian Apparel</a>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto">
-      <li class="nav-item text-center mobile-nav-item">
-        <a class="nav-link white" href="index.html">HOME</a>
-      </li>
-      <li class="nav-item margin-top-medium text-center mobile-nav-item">
-        <a class="nav-link white" href="store.html">STORE</a>
-      </li>
-    <li class="nav-item margin-top-medium text-center mobile-nav-item">
-        <a class="nav-link white" href="outfits.html">OUTFITS</a>
-      </li>
-    <li class="nav-item margin-top-medium text-center mobile-nav-item">
-        <a class="nav-link white" href="about.html">ABOUT</a>
-      </li>
-    <li class="nav-item margin-top-medium text-center mobile-nav-item">
-        <a class="nav-link white" href="contact.html">CONTACT</a>
-      </li>
-      
-    </ul>
-    
-  </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item text-center mobile-nav-item">
+                    <a class="nav-link white" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="store.html">STORE</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                </li>
 
-</nav>
-    <div onmouseover = "enterSlider('home')" onmouseout = "exitSlider('home')" class="swiper-container">
-        <a class="smooth-scroll" href = "#start-page">
+            </ul>
+
+        </div>
+
+    </nav>
+    <div onmouseover="enterSlider('home')" onmouseout="exitSlider('home')" class="swiper-container">
+        <a class="smooth-scroll" href="#start-page">
             <img id = "down-arrow" src = "images/down-arrow-white.svg" class = "down-arrow" />
         </a>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide header-slider-image-style first-image">
-                    
-                    <div class = "col col-12">
-                        
-                    <div class = "slide-text large-slide-text heavy animated fadeInDown">Browse our favorites</div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide header-slider-image-style first-image">
+
+                <div class="col col-12">
+
+                    <div class="slide-text large-slide-text heavy animated fadeInDown">Browse our favorites</div>
                     <br />
 
-                    
-                    
-                        <div class = "split-button slider-button light">Shop Women</div>
-                        <span class = "margin-right hidden-sm-down"></span>
-                        <div class = "split-button slider-button light">Shop Men</div>
-                        </div>
 
-                        
-                            
-                </div>
-                <div class="swiper-slide header-slider-image-style second-image">
-                    <div class = "col col-6">
-                    <div class = "slide-text large-slide-text heavy">Browse best deals</div>
-                    <br />
-                    <div class = "split-button slider-button light">Get Started</div>
-                    
-                    </div>
+
+                    <div class="split-button slider-button light">Shop Women</div>
+                    <span class="margin-right hidden-sm-down"></span>
+                    <div class="split-button slider-button light">Shop Men</div>
                 </div>
 
 
-            
-                <div class="swiper-slide header-slider-image-style third-image"><span class = "slide-text large-slide-text heavy">Shop our favorites</span></div>
-                <div class="swiper-slide header-slider-image-style fourth-image"></div>
-                <div class="swiper-slide header-slider-image-style fifth-image"></div>
-            
+
+            </div>
+            <div class="swiper-slide header-slider-image-style second-image">
+                <div class="col col-6">
+                    <div class="slide-text large-slide-text heavy">Browse best deals</div>
+                    <br />
+                    <div class="split-button slider-button light">Get Started</div>
+
+                </div>
             </div>
 
-            
-        
-            <div class="swiper-pagination"></div>
 
-            <img id = "left-slider-arrow" src = "images/left-arrow-thick.svg" class = "swiper-button-prev swiper-button-switch semi-transparent"/>
-            <img id = "right-slider-arrow" src = "images/right-arrow-thick.svg" class = "swiper-button-next swiper-button-switch semi-transparent"/>
-            
+
+            <div class="swiper-slide header-slider-image-style third-image"><span class="slide-text large-slide-text heavy">Shop our favorites</span></div>
+            <div class="swiper-slide header-slider-image-style fourth-image"></div>
+            <div class="swiper-slide header-slider-image-style fifth-image"></div>
+
+        </div>
+
+
+
+        <div class="swiper-pagination"></div>
+
+        <img id="left-slider-arrow" src="images/left-arrow-thick.svg" class="swiper-button-prev swiper-button-switch semi-transparent"
+        />
+        <img id="right-slider-arrow" src="images/right-arrow-thick.svg" class="swiper-button-next swiper-button-switch semi-transparent"
+        />
+
     </div>
 
-    <div class = "section-two fluid-container section-header center-rel text-center">
-    <span id = "start-page" class = "section-anchor redx">.</span>
-    <div class = "small-section-text light-section-text center-rel">GET STARTED</div>
-    <span class = "light">WHAT ARE YOU LOOKING FOR</span>
-    <span class = "heavy">TODAY?</span>
-    <div class = "highlight-line"></div>
-    <div class = "col col-12 col-centered max-width-categories">
-        <div class = "row margin-top-medium">
-            <div class = "col col-12 col-md-12 col-lg-6 category-gutter">
-                <div class = "category-image-box-top">
-                    <div class = "relative">
-                    <div id = "individualButton1" class = "anchor-bottom-absolute darker category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class = "light">BROWSE</span> <span class = "heavy">OUTDOOR PRODUCTS</span></div>
-                        <div class = "category-image-box-small blackx delay1" onmouseover="categorySelectionIn('1')" onmouseout="categorySelectionOut('1')">
-                            <div class = "position-left-box-header">
-                            <div id = "categoryHeader1" class = "category-image-box-header heavy">OUTDOORS</div>
-                        
+    <div class="section-two fluid-container section-header center-rel text-center">
+        <span id="start-page" class="section-anchor redx">.</span>
+        <div class="small-section-text light-section-text center-rel">GET STARTED</div>
+        <span class="light">WHAT ARE YOU LOOKING FOR</span>
+        <span class="heavy">TODAY?</span>
+        <div class="highlight-line"></div>
+        <div class="col col-12 col-centered max-width-categories">
+            <div class="row margin-top-medium">
+                <div class="col col-12 col-md-12 col-lg-6 category-gutter">
+                    <div class="category-image-box-top">
+                        <div class="relative">
+                            <div id="individualButton1" class="anchor-bottom-absolute darker category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class="light">BROWSE</span> <span class="heavy">OUTDOOR PRODUCTS</span></div>
+                            <div class="category-image-box-small blackx delay1" onmouseover="categorySelectionIn('1')" onmouseout="categorySelectionOut('1')">
+                                <div class="position-left-box-header">
+                                    <div id="categoryHeader1" class="category-image-box-header heavy">OUTDOORS</div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class = "col col-12 col-md-12 col-lg-6 category-gutter">
-                <div class = "category-image-box-top">
-                    <div>
-            
-                        <div class = "category-image-box-tiny float-left sport-pic pic-top delay2" onmouseover="categorySelectionIn('2')" onmouseout="categorySelectionOut('2')">
-                            <div class = "darker-small"></div>
-                            <div id = "individualButton2" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE</span> <span class = "heavy">SPORTS GEAR</span></div>
-                            <div class = "position-left-box-header">
-                            <div id = "categoryHeader2" class = "category-image-box-header category-image-box-header-small price-label-visible heavy">SPORT</div>
-                        
+                <div class="col col-12 col-md-12 col-lg-6 category-gutter">
+                    <div class="category-image-box-top">
+                        <div>
+
+                            <div class="category-image-box-tiny float-left sport-pic pic-top delay2" onmouseover="categorySelectionIn('2')" onmouseout="categorySelectionOut('2')">
+                                <div class="darker-small"></div>
+                                <div id="individualButton2" class="individual-item-button-hidden category-item-button-small"><span class="light">BROWSE</span> <span class="heavy">SPORTS GEAR</span></div>
+                                <div class="position-left-box-header">
+                                    <div id="categoryHeader2" class="category-image-box-header category-image-box-header-small price-label-visible heavy">SPORT</div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class = "relative">
-                        <div class = "category-image-box-tiny float-right men-pic pic-top delay2" onmouseover="categorySelectionIn('3')" onmouseout="categorySelectionOut('3')">
-                            <div class = "darker-small"></div>
-                            <div id = "individualButton3" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE OUR</span> <span class = "heavy">DEALS</span></div>
-                            <div class = "position-top-right-box-header">
-                            <div id = "categoryHeader3" class = "category-image-box-header category-image-box-header-small heavy">DEALS</div>
-                        
+                        <div class="relative">
+                            <div class="category-image-box-tiny float-right men-pic pic-top delay2" onmouseover="categorySelectionIn('3')" onmouseout="categorySelectionOut('3')">
+                                <div class="darker-small"></div>
+                                <div id="individualButton3" class="individual-item-button-hidden category-item-button-small"><span class="light">BROWSE OUR</span> <span class="heavy">DEALS</span></div>
+                                <div class="position-top-right-box-header">
+                                    <div id="categoryHeader3" class="category-image-box-header category-image-box-header-small heavy">DEALS</div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class = "col col-12 col-lg-6 category-gutter">
-                <div id = "individualButton4" class = "category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class = "light">BROWSE OUR</span> <span class = "heavy">WATCHES</span></div>
-                <div class = "category-image-box darker watch-pic text-center delay3" onmouseover="categorySelectionIn('4')" onmouseout="categorySelectionOut('4')">
-                    <div class = "position-left-box-header">
-                        <div id = "categoryHeader4" class = "category-image-box-header price-label-visible heavy">WATCHES</div>
+                <div class="col col-12 col-lg-6 category-gutter">
+                    <div id="individualButton4" class="category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class="light">BROWSE OUR</span> <span class="heavy">WATCHES</span></div>
+                    <div class="category-image-box darker watch-pic text-center delay3" onmouseover="categorySelectionIn('4')" onmouseout="categorySelectionOut('4')">
+                        <div class="position-left-box-header">
+                            <div id="categoryHeader4" class="category-image-box-header price-label-visible heavy">WATCHES</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-lg-6 category-gutter">
+                    <div class="category-image-box">
+
+                        <div class="category-image-box-top">
+                            <div class="relative">
+
+                                <div class="category-image-box-tiny float-left sunglasses-pic pic-top delay2" onmouseover="categorySelectionIn('5')" onmouseout="categorySelectionOut('5')">
+                                    <div class="darker-small"></div>
+                                    <div id="individualButton5" class="individual-item-button-hidden category-item-button-small"><span class="light">BROWSE</span> <span class="heavy">SUNGLASSES</span></div>
+                                    <div class="position-bottom-left-box-header">
+                                        <div id="categoryHeader5" class="category-image-box-header category-image-box-header-small heavy">SUNGLASSES</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div class="category-image-box-tiny float-right charity-water-pic delay2" onmouseover="categorySelectionIn('6')" onmouseout="categorySelectionOut('6')">
+                                    <div class="darker-small"></div>
+                                    <div id="individualButton6" class="individual-item-button-hidden category-item-button-small"><span class="light">BROWSE</span> <span class="heavy">CHARITY</span></div>
+                                    <div class="position-right-box-header">
+                                        <div id="categoryHeader6" class="category-image-box-header category-image-box-header-small heavy">CHARITY</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="relative grid-correction">
+                            <div id="individualButton7" class="category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class="light">BROWSE</span> <span class="heavy">SPRING STYLES</span></div>
+                            <div class="position-bottom category-image-box-small darken blackx delay4" onmouseover="categorySelectionIn('7')" onmouseout="categorySelectionOut('7')">
+                                <div class="position-right-box-header">
+                                    <div id="categoryHeader7" class="category-image-box-header heavy">SPRING STYLES</div>
+
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-            <div class = "col col-12 col-lg-6 category-gutter">
-                <div class = "category-image-box">
-                    
-                <div class = "category-image-box-top">
-                    <div class = "relative">
 
-                        <div class = "category-image-box-tiny float-left sunglasses-pic pic-top delay2" onmouseover="categorySelectionIn('5')" onmouseout="categorySelectionOut('5')">
-                            <div class = "darker-small"></div>
-                            <div id = "individualButton5" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE</span> <span class = "heavy">SUNGLASSES</span></div>
-                            <div class = "position-bottom-left-box-header">
-                            <div id = "categoryHeader5" class = "category-image-box-header category-image-box-header-small heavy">SUNGLASSES</div>
-                        
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "relative">
-                        <div class = "category-image-box-tiny float-right charity-water-pic delay2" onmouseover="categorySelectionIn('6')" onmouseout="categorySelectionOut('6')">
-                            <div class = "darker-small"></div>
-                            <div id = "individualButton6" class = "individual-item-button-hidden category-item-button-small"><span class = "light">BROWSE</span> <span class = "heavy">CHARITY</span></div>
-                            <div class = "position-right-box-header">
-                            <div id = "categoryHeader6" class = "category-image-box-header category-image-box-header-small heavy">CHARITY</div>
-                        
-                            </div>
-                        </div>
-                    </div>
+            <div class="row hidden-sm-down max-width margin-top-large">
             </div>
-                    
-                    <div class = "relative grid-correction">
-                        <div id = "individualButton7" class = "category-item-button individual-item-button-hidden center-abs individual-item-button-large"><span class = "light">BROWSE</span> <span class = "heavy">SPRING STYLES</span></div>
-                        <div class = "position-bottom category-image-box-small darken blackx delay4" onmouseover="categorySelectionIn('7')" onmouseout="categorySelectionOut('7')">
-                            <div class = "position-right-box-header">
-                            <div id = "categoryHeader7" class = "category-image-box-header heavy">SPRING STYLES</div>
-                        
+        </div>
+    </div>
+
+    <div class="container-fluid hidden-sm-down col col-12 col-centered section-one diagonal-split-background">
+        <div class="row">
+            <div class="col col-6">
+                <div class="col col-8 col-centered split-header light">ONLY THE BEST</div>
+                <div class="col col-8 col-centered split-header-large">Exclusive, high quality products and service</div>
+                <div class="col col-8 col-centered split-header-small margin-top-small">New deals offered every week</div>
+            </div>
+            <div class="col col-6">
+                <span class="split-button light center-abs"><span class = "move-up-small">Enter Store</span> <span class="add-small-space"></span>
+                <span
+                    class="small-arrow">&#8702;</span>
+                    </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid hidden-md-up text-center col col-12 col-centered section-three">
+        <div class="col col-12 col-centered split-header red light">ONLY THE BEST</div>
+        <div class="col col-12 col-centered split-header split-header-large-mobile red light">Exclusive, high quality products and service</div>
+        <div class="col col-12 col-centered split-header-small margin-top-small">New deals offered every week</div>
+        <span class="split-button light center-rel margin-top"><span class = "move-up-small">Enter Store</span> <span class="add-small-space"></span>
+        <span
+            class="small-arrow">&#8702;</span>
+            </span>
+    </div>
+
+
+    <div id="hero" class="hero section-header text-center larger-padding">
+        <div class="background-overlay-darken"></div>
+        <div class="row">
+            <div class="col col-11 col-centered">
+                <div>
+                    <div id="chevron">
+                        <div class="center-abs chevron-text">GET <span class="heavy">OUT THERE</span></div>
+                    </div>
+                </div>
+                <div class="margin-top-large">
+                    <span class="light white">FUELING ADVENTURE, </span>
+                    <span class "heavy white" style="color:#fff;">FIXING PROBLEMS</span>
+                </div>
+                <div class="highlight-line white-line"></div>
+            </div>
+            <div class="col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+                At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder
+                placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder
+                placeholder. Placeholder placeholder placeholder.
+            </div>
+            <div class="col col-12 margin-top-large">
+                <div class="row">
+                    <div class="col col-12 col-md-4 text-center margin-top-large">
+
+                        <div class="employee-box add-on-active" onmouseover="enterEmployee('home', 1)" onmouseout="exitEmployee('home', 1)">
+                            <div class="employee-overlay">
+                                <div id="employee-head1" class="employee-overlay-title">
+                                    Free shipping after $50
+                                </div>
+                                <div id="employee-position1" class="employee-overlay-subtitle">
+                                    Co-Founder
+                                </div>
+                                <div id="employee-body1" class="center-abs employee-body">
+                                    Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder.
+                                </div>
+                                <a href="http://zacharyjordan.github.io/" target="_blank" class="kill-link-style">
+                                    <div id="employee-button1" class="employee-bottom-button">
+                                        My Work
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="employee-pic zach-pic"></div>
+                            <div id="employee-title1" class="employee-title smaller-employee-title add-on-active">
+                                Free shipping <span class="heavy">after $50</span>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="col col-12 col-md-4 text-center margin-top-large">
+                        <div class="employee-box add-on-active" onmouseover="enterEmployee('home', 2)" onmouseout="exitEmployee('home', 2)">
+                            <div class="employee-overlay">
+                                <div id="employee-head2" class="employee-overlay-title">
+                                    10% of profits donated
+                                </div>
+                                <div id="employee-position2" class="employee-overlay-subtitle">
+                                    Time to give back
+                                </div>
+                                <div id="employee-body2" class="center-abs employee-body">
+                                    Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder.
+                                </div>
+                                <a href="http://zacharyjordan.github.io/" target="_blank" class="kill-link-style">
+                                    <div id="employee-button2" class="employee-bottom-button">
+                                        My Work
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="employee-pic water-charity-pic"></div>
+                            <div id="employee-title2" class="employee-title smaller-employee-title add-on-active">
+                                10% of profits <span class="heavy">donated</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col col-12 col-md-4 text-center margin-top-large">
+                        <div class="employee-box add-on-active" onmouseover="enterEmployee('home', 3)" onmouseout="exitEmployee('home', 3)">
+                            <div class="employee-overlay">
+                                <div id="employee-head3" class="employee-overlay-title">
+                                    Fast, friendly support
+                                </div>
+                                <div id="employee-position3" class="employee-overlay-subtitle">
+                                    We're here for you
+                                </div>
+                                <div id="employee-body3" class="center-abs employee-body">
+                                    Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder.
+                                </div>
+                                <a href="contact.html" target="_blank" class="kill-link-style">
+                                    <div id="employee-button3" class="employee-bottom-button">
+                                        Contact Us
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="employee-pic zach-pic"></div>
+                            <div id="employee-title3" class="employee-title smaller-employee-title add-on-active">
+                                Fast, friendly <span class="heavy">support</span>
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-       
-    <div class = "row hidden-sm-down max-width margin-top-large">   
-     </div>
-  </div>
-</div>
 
-<div class = "container-fluid hidden-sm-down col col-12 col-centered section-one diagonal-split-background">
-    <div class = "row">
-    <div class = "col col-6">
-        <div class = "col col-8 col-centered split-header light">ONLY THE BEST</div>
-        <div class = "col col-8 col-centered split-header-large">Exclusive, high quality products and service</div>
-        <div class = "col col-8 col-centered split-header-small margin-top-small">New deals offered every week</div>
     </div>
-    <div class = "col col-6">
-        <span class = "split-button light center-abs"><span class = "move-up-small">Enter Store</span> <span class = "add-small-space"></span><span class = "small-arrow">&#8702;</span></span>    
-    </div>
-    </div>
-</div>
-
-<div class = "container-fluid hidden-md-up text-center col col-12 col-centered section-three">
-    <div class = "col col-12 col-centered split-header red light">ONLY THE BEST</div>
-    <div class = "col col-12 col-centered split-header split-header-large-mobile red light">Exclusive, high quality products and service</div>
-    <div class = "col col-12 col-centered split-header-small margin-top-small">New deals offered every week</div>
-    <span class = "split-button light center-rel margin-top"><span class = "move-up-small">Enter Store</span> <span class = "add-small-space"></span><span class = "small-arrow">&#8702;</span></span>    
-</div>
 
 
-<div id="hero" class="hero section-header text-center larger-padding">
-    <div class = "background-overlay-darken"></div>
-    <div class = "row">
-    <div class = "col col-11 col-centered">
-    <div>
-        <div id = "chevron"><div class = "center-abs chevron-text">GET <span class = "heavy">OUT THERE</span></div></div>
-    </div>
-    <div class = "margin-top-large">
-    <span class = "light white">FUELING ADVENTURE, </span>
-    <span class "heavy white" style = "color:#fff;">FIXING PROBLEMS</span>
-    </div>
-    <div class = "highlight-line white-line"></div>
-</div>
-<div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
-            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
- </div>
- <div class = "col col-12 margin-top-large">
-        <div class = "row">
-            <div class = "col col-12 col-md-4 text-center margin-top-large">
-                
-                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('home', 1)" onmouseout="exitEmployee('home', 1)">
-                        <div class = "employee-overlay">
-                            <div id = "employee-head1" class = "employee-overlay-title">
-                                Free shipping after $50
-                            </div>
-                            <div id = "employee-position1" class = "employee-overlay-subtitle">
-                                Co-Founder
-                            </div>
-                            <div id = "employee-body1" class = "center-abs employee-body">
-                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
-                                 placeholder  placeholder  placeholder  placeholder  placeholder.
-                            </div>
-                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
-                                <div id = "employee-button1" class = "employee-bottom-button">
-                                    My Work
-                                </div>
-                            </a>
+    <div class="section-three fluid-container section-header center-rel text-center">
+        <div class="small-section-text center-rel">FIND A NEW LOOK</div>
+        <span class="light white">SHOP OUTFITS FOR</span>
+        <span class="heavy white">EVERYONE</span>
+        <div class="highlight-line white-line"></div>
 
-                        </div>
-                        <div class = "employee-pic zach-pic"></div>
-                    <div id = "employee-title1" class = "employee-title smaller-employee-title add-on-active">
-                    Free shipping <span class = "heavy">after $50</span>
-                    </div>
-                  
-                    
-                </div>
-                
-            </div>
-           <div class = "col col-12 col-md-4 text-center margin-top-large">
-                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('home', 2)" onmouseout="exitEmployee('home', 2)">
-                        <div class = "employee-overlay">
-                            <div id = "employee-head2" class = "employee-overlay-title">
-                                10% of profits donated
-                            </div>
-                            <div id = "employee-position2" class = "employee-overlay-subtitle">
-                                Time to give back
-                            </div>
-                            <div id = "employee-body2" class = "center-abs employee-body">
-                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
-                                 placeholder  placeholder  placeholder  placeholder  placeholder.
-                            </div>
-                            <a href = "http://zacharyjordan.github.io/" target = "_blank" class = "kill-link-style">
-                                <div id = "employee-button2" class = "employee-bottom-button">
-                                    My Work
-                                </div>
-                            </a>
-
-                        </div>
-                        <div class = "employee-pic water-charity-pic"></div>
-                    <div id = "employee-title2" class = "employee-title smaller-employee-title add-on-active">
-                    10% of profits <span class = "heavy">donated</span>
-                    </div>
-                </div>
-                
-            </div>
-            <div class = "col col-12 col-md-4 text-center margin-top-large">
-                    <div class = "employee-box add-on-active" onmouseover="enterEmployee('home', 3)" onmouseout="exitEmployee('home', 3)">
-                        <div class = "employee-overlay">
-                            <div id = "employee-head3" class = "employee-overlay-title">
-                                Fast, friendly support
-                            </div>
-                            <div id = "employee-position3" class = "employee-overlay-subtitle">
-                                We're here for you
-                            </div>
-                            <div id = "employee-body3" class = "center-abs employee-body">
-                                Placeholder placeholder  placeholder  placeholder  placeholder  placeholder 
-                                 placeholder  placeholder  placeholder  placeholder  placeholder.
-                            </div>
-                            <a href = "contact.html" target = "_blank" class = "kill-link-style">
-                                <div id = "employee-button3" class = "employee-bottom-button">
-                                    Contact Us
-                                </div>
-                            </a>
-                        </div>
-                        <div class = "employee-pic zach-pic"></div>
-                    <div id = "employee-title3" class = "employee-title smaller-employee-title add-on-active">
-                    Fast, friendly <span class = "heavy">support</span>
-                    </div>
-                </div>
-            </div>
-</div>
-</div>
- </div>
- 
-</div>
-
-
-<div class = "section-three fluid-container section-header center-rel text-center">
-        <div class = "small-section-text center-rel">FIND A NEW LOOK</div>
-        <span class = "light white">SHOP OUTFITS FOR</span>
-        <span class = "heavy white">EVERYONE</span>
-        <div class = "highlight-line white-line"></div>
-
-        <div class = "col col-5 max-width-form col-centered white">
+        <div class="col col-5 max-width-form col-centered white">
             <div class="btn-group margin-top-medium outfitcontrols" data-toggle="buttons">
-                <label id = "outfitButton1" class="btn btn-primary outfit-button cell-button" onclick="selectOutfitCategory('men')">
+                <label id="outfitButton1" class="btn btn-primary outfit-button cell-button" onclick="selectOutfitCategory('men')">
                     <input type="radio" name="options" id="option1" autocomplete="off"> Men
                 </label>
-                <label id = "outfitButton2" class="btn btn-primary outfit-button selected-button cell-button" onclick="selectOutfitCategory('all')">
+                <label id="outfitButton2" class="btn btn-primary outfit-button selected-button cell-button" onclick="selectOutfitCategory('all')">
                     <input type="radio" name="options" id="option2" autocomplete="off" checked> All
                 </label>
-                <label id = "outfitButton3" class="btn outfit-button btn-primary cell-button" onclick = "selectOutfitCategory('women')">
+                <label id="outfitButton3" class="btn outfit-button btn-primary cell-button" onclick="selectOutfitCategory('women')">
                     <input type="radio" name="options" id="option3" autocomplete="off"> Women
                 </label>
             </div>
         </div>
-        <div id = "outfitBigContainer" class = "col col-11 col-lg-12 col-centered">
-            <div class = "row">
-                <div id = "outfitContainer1" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay1">
-                    <div class = "outfit-container-home">
-                        <div class = "outfit-image outfit-pic1"></div>
-                        <div class = "outfit-text">
-                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
-                            <div class = "highlight-line pure-white-line"></div>
-                            <div class = "item-price white light">$10</div>
-                            <div class = "item-button outfit-hover">Add to Cart</div>
+        <div id="outfitBigContainer" class="col col-11 col-lg-12 col-centered">
+            <div class="row">
+                <div id="outfitContainer1" class="col col-12 col-md-6 col-lg-3 text-center margin-top-large delay1">
+                    <div class="outfit-container-home">
+                        <div class="outfit-image outfit-pic1"></div>
+                        <div class="outfit-text">
+                            <span class="outfit-name white heavy">Summer Polka Dot</span>
+                            <div class="highlight-line pure-white-line"></div>
+                            <div class="item-price white light">$10</div>
+                            <div class="item-button outfit-hover">Add to Cart</div>
                         </div>
                     </div>
                 </div>
 
-                <div id = "outfitContainer2" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay2">
-                    <div class = "outfit-container-home">
-                        <div class = "outfit-image outfit-pic2"></div>
-                        <div class = "outfit-text">
-                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
-                            <div class = "highlight-line pure-white-line"></div>
-                            <div class = "item-price white light">$10</div>
-                            <div class = "item-button outfit-hover">Add to Cart</div>
+                <div id="outfitContainer2" class="col col-12 col-md-6 col-lg-3 text-center margin-top-large delay2">
+                    <div class="outfit-container-home">
+                        <div class="outfit-image outfit-pic2"></div>
+                        <div class="outfit-text">
+                            <span class="outfit-name white heavy">Summer Polka Dot</span>
+                            <div class="highlight-line pure-white-line"></div>
+                            <div class="item-price white light">$10</div>
+                            <div class="item-button outfit-hover">Add to Cart</div>
                         </div>
                     </div>
                 </div>
 
-                <div id = "outfitContainer3" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay3">
-                    <div class = "outfit-container-home">
-                        <div class = "outfit-image women-pic"></div>
-                        <div class = "outfit-text">
-                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
-                            <div class = "highlight-line pure-white-line"></div>
-                            <div class = "item-price white light">$10</div>
-                            <div class = "item-button outfit-hover">Add to Cart</div>
+                <div id="outfitContainer3" class="col col-12 col-md-6 col-lg-3 text-center margin-top-large delay3">
+                    <div class="outfit-container-home">
+                        <div class="outfit-image women-pic"></div>
+                        <div class="outfit-text">
+                            <span class="outfit-name white heavy">Summer Polka Dot</span>
+                            <div class="highlight-line pure-white-line"></div>
+                            <div class="item-price white light">$10</div>
+                            <div class="item-button outfit-hover">Add to Cart</div>
                         </div>
                     </div>
                 </div>
 
-                <div id = "outfitContainer4" class = "col col-12 col-md-6 col-lg-3 text-center margin-top-large delay4">
-                    <div class = "outfit-container-home">
-                        <div class = "outfit-image outfit-pic1"></div>
-                        <div class = "outfit-text">
-                            <span class = "outfit-name white heavy">Summer Polka Dot</span>
-                            <div class = "highlight-line pure-white-line"></div>
-                            <div class = "item-price white light">$10</div>
-                            <div class = "item-button outfit-hover">Add to Cart</div>
+                <div id="outfitContainer4" class="col col-12 col-md-6 col-lg-3 text-center margin-top-large delay4">
+                    <div class="outfit-container-home">
+                        <div class="outfit-image outfit-pic1"></div>
+                        <div class="outfit-text">
+                            <span class="outfit-name white heavy">Summer Polka Dot</span>
+                            <div class="highlight-line pure-white-line"></div>
+                            <div class="item-price white light">$10</div>
+                            <div class="item-button outfit-hover">Add to Cart</div>
                         </div>
                     </div>
                 </div>
             </div>
-</div>
+        </div>
 
-</div>
+    </div>
 
-<div class = "section-two extended-padding fluid-container section-header center-rel text-center">
-<div class = "section-header center-rel text-center">
-        <div class = "small-section-text light-section-text center-rel">FEATURED ITEMS</div>
-        <img src = "images/expand-button.svg" class = "slider-arrow left-arrow delay1"/>
-        <span class = "smaller-text-mobile">
+    <div class="section-two extended-padding fluid-container section-header center-rel text-center">
+        <div class="section-header center-rel text-center">
+            <div class="small-section-text light-section-text center-rel">FEATURED ITEMS</div>
+            <img src="images/expand-button.svg" class="slider-arrow left-arrow delay1" />
+            <span class="smaller-text-mobile">
         <span class = "light">VIEW THE</span>
-        <span class = "heavy">HIGHLIGHTS</span>
-        </span>
-        <img src = "images/expand-button.svg" class = "slider-arrow right-arrow delay1"/>
-        <br />
-        <a href = "store.html" class = "kill-link-style">
-            <div class = "navbar-top-element small-element delay2 heavy">Shop All <span class = "smaller-arrow">&#8702;</span></div>
-        </a>
-        <div class = "swiper-container1 col-12 hidden-lg-up col-centered" style = "overflow:hidden;">
-        <div class="swiper-wrapper">
-               <div class="swiper-slide item-slide">
-                    <div class = "item-container item1"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy featured4">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+            <span class="heavy">HIGHLIGHTS</span>
+            </span>
+            <img src="images/expand-button.svg" class="slider-arrow right-arrow delay1" />
+            <br />
+            <a href="store.html" class="kill-link-style">
+                <div class="navbar-top-element small-element delay2 heavy">Shop All <span class="smaller-arrow">&#8702;</span></div>
+            </a>
+            <div class="swiper-container1 col-12 hidden-lg-up col-centered" style="overflow:hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide item-slide">
+                        <div class="item-container item1"></div>
+                        <div class="text-container">
+                            <div class="item-name heavy featured4">Soft Navy Tee</div>
+                            <div class="highlight-line"></div>
+                            <div class="item-price light">$10</div>
 
-                      <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
-                        </div>
-                        
-                    </div>
-                </div>
-              <div class="swiper-slide item-slide">
-                    <div class = "item-container item2"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
-                       <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
-                        </div>
-                    </div>
-                </div>
-               <div class="swiper-slide item-slide">
-                    <div class = "item-container item3"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+                            <div class="align-bottom">
+                                <div id="item-button-home" class="item-button">Add to Cart</div>
+                            </div>
 
-                        <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
                         </div>
-                        
                     </div>
-                </div>
-                <div class="swiper-slide item-slide">
-                    <div class = "item-container item1"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+                    <div class="swiper-slide item-slide">
+                        <div class="item-container item2"></div>
+                        <div class="text-container">
+                            <div class="item-name heavy">Soft Navy Tee</div>
+                            <div class="highlight-line"></div>
+                            <div class="item-price light">$10</div>
+                            <div class="align-bottom">
+                                <div id="item-button-home" class="item-button">Add to Cart</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide item-slide">
+                        <div class="item-container item3"></div>
+                        <div class="text-container">
+                            <div class="item-name heavy">Soft Navy Tee</div>
+                            <div class="highlight-line"></div>
+                            <div class="item-price light">$10</div>
 
-                      <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide item-slide">
-                    <div class = "item-container item2"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+                            <div class="align-bottom">
+                                <div id="item-button-home" class="item-button">Add to Cart</div>
+                            </div>
 
-                       <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
                         </div>
-                        
                     </div>
-                </div>
-                 <div class="swiper-slide item-slide">
-                    <div class = "item-container item3"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+                    <div class="swiper-slide item-slide">
+                        <div class="item-container item1"></div>
+                        <div class="text-container">
+                            <div class="item-name heavy">Soft Navy Tee</div>
+                            <div class="highlight-line"></div>
+                            <div class="item-price light">$10</div>
 
-                      <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                            <div class="align-bottom">
+                                <div id="item-button-home" class="item-button">Add to Cart</div>
+                            </div>
                         </div>
-                        
+                    </div>
+                    <div class="swiper-slide item-slide">
+                        <div class="item-container item2"></div>
+                        <div class="text-container">
+                            <div class="item-name heavy">Soft Navy Tee</div>
+                            <div class="highlight-line"></div>
+                            <div class="item-price light">$10</div>
+
+                            <div class="align-bottom">
+                                <div id="item-button-home" class="item-button">Add to Cart</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide item-slide">
+                        <div class="item-container item3"></div>
+                        <div class="text-container">
+                            <div class="item-name heavy">Soft Navy Tee</div>
+                            <div class="highlight-line"></div>
+                            <div class="item-price light">$10</div>
+
+                            <div class="align-bottom">
+                                <div id="item-button-home" class="item-button">Add to Cart</div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-button-next2"></div>
+                <div class="swiper-button-prev2"></div>
+
+                <div class="hidden-lg-up swiper-pagination swiper-2 center-rel" style="position:relative;top:5px;"></div>
+
             </div>
-            <div class="swiper-button-next2"></div>
-            <div class="swiper-button-prev2"></div>
-        
-         <div class="hidden-lg-up swiper-pagination swiper-2 center-rel" style = "position:relative;top:5px;"></div>
+        </div>
 
-         </div>
-    </div>
+        <div class="swiper-container1 col-11 hidden-md-down col-centered">
+            <div class="swiper-wrapper">
 
-    <div class = "swiper-container1 col-11 hidden-md-down col-centered">
-        <div class="swiper-wrapper">
-                
                 <div class="swiper-slide item-slide">
-                    <div class = "item-container item1"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy featured4">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+                    <div class="item-container item1"></div>
+                    <div class="text-container">
+                        <div class="item-name heavy featured4">Soft Navy Tee</div>
+                        <div class="highlight-line"></div>
+                        <div class="item-price light">$10</div>
 
-                      <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        <div class="align-bottom">
+                            <div id="item-button-home" class="item-button">Add to Cart</div>
                         </div>
-                        
-                    </div>
-                </div>
-              <div class="swiper-slide item-slide">
-                    <div class = "item-container item2"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
-                       <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
-                        </div>
-                    </div>
-                </div>
-               <div class="swiper-slide item-slide">
-                    <div class = "item-container item3"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
 
-                        <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
-                        </div>
-                        
                     </div>
                 </div>
                 <div class="swiper-slide item-slide">
-                    <div class = "item-container item1"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
-
-                      <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                    <div class="item-container item2"></div>
+                    <div class="text-container">
+                        <div class="item-name heavy">Soft Navy Tee</div>
+                        <div class="highlight-line"></div>
+                        <div class="item-price light">$10</div>
+                        <div class="align-bottom">
+                            <div id="item-button-home" class="item-button">Add to Cart</div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide item-slide">
-                    <div class = "item-container item2"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+                    <div class="item-container item3"></div>
+                    <div class="text-container">
+                        <div class="item-name heavy">Soft Navy Tee</div>
+                        <div class="highlight-line"></div>
+                        <div class="item-price light">$10</div>
 
-                       <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        <div class="align-bottom">
+                            <div id="item-button-home" class="item-button">Add to Cart</div>
                         </div>
-                        
+
                     </div>
                 </div>
-                 <div class="swiper-slide item-slide">
-                    <div class = "item-container item3"></div>
-                    <div class = "text-container">
-                        <div class = "item-name heavy">Soft Navy Tee</div>
-                        <div class = "highlight-line"></div>
-                        <div class = "item-price light">$10</div>
+                <div class="swiper-slide item-slide">
+                    <div class="item-container item1"></div>
+                    <div class="text-container">
+                        <div class="item-name heavy">Soft Navy Tee</div>
+                        <div class="highlight-line"></div>
+                        <div class="item-price light">$10</div>
 
-                      <div class = "align-bottom">
-                            <div id = "item-button-home" class = "item-button">Add to Cart</div>
+                        <div class="align-bottom">
+                            <div id="item-button-home" class="item-button">Add to Cart</div>
                         </div>
-                        
                     </div>
                 </div>
-                 
-         
-            <div class="swiper-button-next2"></div>
-            <div class="swiper-button-prev2"></div>
-        </div>
-       
-        <div class="hidden-md-down swiper-pagination swiper-2 center-rel move-down"></div>
-        <div class = "hidden-md-down margin-top-pagination"></div>
-        
-    </div>
-</div>
+                <div class="swiper-slide item-slide">
+                    <div class="item-container item2"></div>
+                    <div class="text-container">
+                        <div class="item-name heavy">Soft Navy Tee</div>
+                        <div class="highlight-line"></div>
+                        <div class="item-price light">$10</div>
 
-<div id="hero" class="hero section-header text-center larger-padding">
-    <div class = "background-overlay-darken"></div>
-    <div class = "row">
-    <div class = "col col-11 col-centered">
-    <div>
-        <div id = "chevron"><div class = "center-abs chevron-text">GET <span class = "heavy">OUT THERE</span></div></div>
-    </div>
-    <div class = "margin-top-large">
-    <span class = "light white">FUELING ADVENTURE, </span>
-    <span class "heavy white" style = "color:#fff;">FIXING PROBLEMS</span>
-    </div>
-    <div class = "highlight-line white-line"></div>
-</div>
-<div class = "col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
-            At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder placeholder. Placeholder placeholder placeholder.
- </div>
- <div class = "col col-12 margin-top-large">
-        <div class = "row">
-           <div class = "col col-md-11 col-lg-7 max-width-social text-center col-centered margin-top-large">
-        <div class = "row">
-            <div class = "col col-6 col-md-3 text-center margin-top-large delay1">
-                <div class = "charity-name social-image-box facebook"> <i class="social-icon fa fa-facebook" aria-hidden="true"></i></div>
-            </div>
-            <div class = "col col-6 col-md-3 text-center margin-top-large delay2">
-                <div class = "charity-name social-image-box twitter"> <i class="social-icon fa fa-twitter" aria-hidden="true"></i></div>
-            </div>
-            <div class = "col col-6 col-md-3 text-center margin-top-large delay3">
-                <div class = "charity-name social-image-box pinterest"> <i class="social-icon fa fa-pinterest" aria-hidden="true"></i></div>
-            </div>
-            <div class = "col col-6 col-md-3 text-center margin-top-large delay4">
-                <div class = "charity-name social-image-box instagram"> <i class="social-icon fa fa-instagram" aria-hidden="true"></i></div>
-            </div>
-            
-            
-        </div>
-    </div>
-</div>
-</div>
- </div>
- 
-</div>
+                        <div class="align-bottom">
+                            <div id="item-button-home" class="item-button">Add to Cart</div>
+                        </div>
 
-
-
-<div class = "footer-container fluid-container text-center">
- <div class = "center-footer-container text-center" style = "max-width:1100px;">
-         <a class="smooth-scroll" href = "#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
-         <div class = "col col-11 col-centered">  
-         <div class = "row">
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-                
-                    <span class = "footer-header">SHOP</span>
-                    <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Women</a></div>
-                    <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Men</a></div>
-                    <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">All Categories</a></div>
-               
-            </div>
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-               
-                <span class = "footer-header">LEARN</span>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item One</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item Two</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item Three</a></div>
-                
-            </div>
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-             
-                <span class = "footer-header">SUPPORT</span>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item One</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item Two</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item Three</a></div>
-             
-            </div>
-            <div class = "col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
-                
-                <span class = "footer-header">Category FOUR</span>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item One</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item Two</a></div>
-                <div class = "footer-item"><a href = "#" class = "remove-link-style footer-item-hover">Item Three</a></div>
-                
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-            <div class = "footer-container-two text-center">
-                <div class = "col-centered icon-container text-center" onmouseover="enterSocialMedia()" onmouseout="exitSocialMedia()">
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i id = "facebookIcon" class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i id = "twitterIcon" class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i id = "pinterestIcon" class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
-                    <a href = "https://www.facebook.com/brockwaystreet" target = "_blank"><i id = "instagramIcon" class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+                    </div>
                 </div>
-                <div class = "center-rel text-center">
+                <div class="swiper-slide item-slide">
+                    <div class="item-container item3"></div>
+                    <div class="text-container">
+                        <div class="item-name heavy">Soft Navy Tee</div>
+                        <div class="highlight-line"></div>
+                        <div class="item-price light">$10</div>
 
-                <div class = "mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
-                <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
-                    <input name = "mail-list-email" class = "text-input" type = "text" placeholder = "Enter email" />
-                </form>
+                        <div class="align-bottom">
+                            <div id="item-button-home" class="item-button">Add to Cart</div>
+                        </div>
+
+                    </div>
                 </div>
-</div>
-                
+
+
+                <div class="swiper-button-next2"></div>
+                <div class="swiper-button-prev2"></div>
+            </div>
+
+            <div class="hidden-md-down swiper-pagination swiper-2 center-rel move-down"></div>
+            <div class="hidden-md-down margin-top-pagination"></div>
+
+        </div>
+    </div>
+
+    <div id="hero" class="hero section-header text-center larger-padding">
+        <div class="background-overlay-darken"></div>
+        <div class="row">
+            <div class="col col-11 col-centered">
+                <div>
+                    <div id="chevron">
+                        <div class="center-abs chevron-text">GET <span class="heavy">OUT THERE</span></div>
+                    </div>
+                </div>
+                <div class="margin-top-large">
+                    <span class="light white">FUELING ADVENTURE, </span>
+                    <span class "heavy white" style="color:#fff;">FIXING PROBLEMS</span>
+                </div>
+                <div class="highlight-line white-line"></div>
+            </div>
+            <div class="col col-12 col-md-8 col-lg-7 col-centered margin-top-large base-text-size text-center white">
+                At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder
+                placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder
+                placeholder. Placeholder placeholder placeholder.
+            </div>
+            <div class="col col-12 margin-top-large">
+                <div class="row">
+                    <div class="col col-md-11 col-lg-7 max-width-social text-center col-centered margin-top-large">
+                        <div class="row">
+                            <div class="col col-6 col-md-3 text-center margin-top-large delay1">
+                                <div class="charity-name social-image-box facebook"> <i class="social-icon fa fa-facebook" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="col col-6 col-md-3 text-center margin-top-large delay2">
+                                <div class="charity-name social-image-box twitter"> <i class="social-icon fa fa-twitter" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="col col-6 col-md-3 text-center margin-top-large delay3">
+                                <div class="charity-name social-image-box pinterest"> <i class="social-icon fa fa-pinterest" aria-hidden="true"></i></div>
+                            </div>
+                            <div class="col col-6 col-md-3 text-center margin-top-large delay4">
+                                <div class="charity-name social-image-box instagram"> <i class="social-icon fa fa-instagram" aria-hidden="true"></i></div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="footer-container fluid-container text-center">
+        <div class="center-footer-container text-center" style="max-width:1100px;">
+            <a class="smooth-scroll" href="#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+            <div class="col col-11 col-centered">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">SHOP</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Women</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Men</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">All Categories</a></div>
+
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">LEARN</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item One</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item Two</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item Three</a></div>
+
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">SUPPORT</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item One</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item Two</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item Three</a></div>
+
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">Category FOUR</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item One</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item Two</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style footer-item-hover">Item Three</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container-two text-center">
+        <div class="col-centered icon-container text-center" onmouseover="enterSocialMedia()" onmouseout="exitSocialMedia()">
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i id = "facebookIcon" class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i id = "twitterIcon" class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i id = "pinterestIcon" class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i id = "instagramIcon" class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+        </div>
+        <div class="center-rel text-center">
+
+            <div class="mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+            <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                <input name="mail-list-email" class="text-input" type="text" placeholder="Enter email" />
+            </form>
+        </div>
+    </div>
+
     <script src="scripts/tether.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/swiper.min.js"></script>
-    <script src = "scripts/script.js"></script>
-    <!-- This will eventually be placed in its own file, currently here for testing purposes --> 
-     <script>
-
-          var swiper = new Swiper('.swiper-container', {
+    <script src="scripts/script.js"></script>
+    <!-- This will eventually be placed in its own file, currently here for testing purposes -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
             pagination: '.swiper-pagination',
             paginationClickable: true,
             nextButton: '.swiper-button-next',
             prevButton: '.swiper-button-prev',
             loop: true
-    });
+        });
 
         var swiper = new Swiper('.swiper-container1', {
             pagination: '.swiper-2',
-        slidesPerView: 3,
-        nextButton: '.right-arrow',
-        prevButton: '.left-arrow',
-        paginationClickable: true,
-        loop: true,
-        spaceBetween: 20,
-        lazyLoading: false,
-        breakpoints: {
-            517: {
-        slidesPerView: 1,
-            },
-            744: {
-        slidesPerView: 2,
+            slidesPerView: 3,
+            nextButton: '.right-arrow',
+            prevButton: '.left-arrow',
+            paginationClickable: true,
+            loop: true,
+            spaceBetween: 20,
+            lazyLoading: false,
+            breakpoints: {
+                517: {
+                    slidesPerView: 1,
+                },
+                744: {
+                    slidesPerView: 2,
+                }
             }
-        }
-    });
-    
+        });
     </script>
 
     <script>
-     window.sr = ScrollReveal();
-    var delay1, delay2, delay3, delay4, delay5;
-    delay1 = 100;
-    delay2 = 300;
-    delay3 = 500;
-    delay4 = 700;
-    delay5 = 900;
+        window.sr = ScrollReveal();
+        var delay1, delay2, delay3, delay4, delay5;
+        delay1 = 100;
+        delay2 = 300;
+        delay3 = 500;
+        delay4 = 700;
+        delay5 = 900;
 
-    sr.reveal('.delay1', {delay: delay1});
-    sr.reveal('.delay2', {delay: delay2});
-    sr.reveal('.delay3', {delay: delay3});
-    sr.reveal('.delay4', {delay: delay4});
-        
-        $('a').on('click', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top
-    }, 1500, 'easeInOutExpo');
-    event.preventDefault();
-});
+        sr.reveal('.delay1', { delay: delay1 });
+        sr.reveal('.delay2', { delay: delay2 });
+        sr.reveal('.delay3', { delay: delay3 });
+        sr.reveal('.delay4', { delay: delay4 });
 
- $('.item-type-box').on('mousenter', function(e) {
-     $(this).find('canvas').trigger('hover');
- });
+        $('a').on('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+        $('.item-type-box').on('mousenter', function (e) {
+            $(this).find('canvas').trigger('hover');
+        });
     </script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-    
-    </body>
+
+</body>

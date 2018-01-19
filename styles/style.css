@@ -574,24 +574,6 @@ body
     color:#B7B5AA;
 }
 
-/*
-.company-image
-{
-    background-size: cover;
-    height:300px;
-    -webkit-filter: brightness(75%); 
-    filter: brightness(75%);
-    transition: filter .3s;
-}
-
-.company-image:hover
-{
-    cursor: pointer;
-    -webkit-filter: brightness(100%); 
-    filter: brightness(100%);
-}
-*/
-
 .full-swiper
 {
     width:100% !important;
@@ -1097,9 +1079,51 @@ body
 }   
 
 .svg-triangle polygon {
-
   stroke-width:2;
- 
+}
+
+.blog-header
+{
+    font-size:28px;
+}
+
+.blog-body
+{
+    font-size: 17px;
+}
+
+.blog-pic
+{
+    margin-left: auto;
+    margin-right: auto;
+    height:315px;
+    width:500px;
+    background-size: cover;
+}
+
+.blog-lift
+{
+    padding-top:30px;
+    padding-bottom: 30px;
+    position: relative;
+    top:0;
+    transition: box-shadow .3s ease, top .3s ease;
+}
+
+.blog-lift:hover
+{
+    top:-3.5px;
+    cursor:pointer;   
+}
+
+.blog-lift-blue:hover
+{
+    box-shadow: 0px 0px 3px 5px #000F26; 
+}
+
+.blog-lift-white:hover
+{
+    box-shadow: 0px 0px 3px 5px #d0cfc2;
 }
 
 .triangle-image
@@ -1135,6 +1159,12 @@ body
 {
     background-position: center center; 
     background-image:url("https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg?w=940&h=650&dpr=2&auto=compress&cs=tinysrgb") !important;
+}
+
+.blog-image
+{
+    background-position: center center; 
+    background-image:url("../images/blog-mountains.jpeg") !important;
 }
 
 .charity-image
@@ -4343,6 +4373,11 @@ html,body {
     margin-top:30px;
 }
 
+.margin-top-huge
+{
+    margin-top:50px;
+}
+
 .margin-right
 {
     margin-right:15px !important;
@@ -5753,6 +5788,12 @@ and (max-width: 1200px)
     {
         position: relative;
         top:5vh;
+    }
+
+    .move-blog-down
+    {
+        position: relative;
+        top:3vh;
     }
 
 }
