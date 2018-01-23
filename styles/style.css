@@ -1002,6 +1002,33 @@ body
     background-color:#101c33 !important;
 }
 
+.lighter-darken
+{
+    opacity: 0.35 !important;
+}
+
+.large-blog-button
+{
+    z-index:2 !important;
+    position: absolute;
+    height:75px;
+    width:220px;
+    line-height: 65px;
+    font-size: 27px;
+    bottom:50px;
+    font-weight: bold;
+    left:50px;
+    border: 2px solid #c72144;
+    background-color:#c72144;
+    transition: font-size .3s, background-color .3s;
+}
+
+.large-blog-button:hover
+{
+    background-color: transparent;
+    font-size:28.5px;
+    cursor: pointer;
+}
 
 .background-overlay-darken
 {
@@ -1016,8 +1043,6 @@ body
     background-color:#000;
     transition: opacity .3s;
 }
-
-
 
 .background-header-overlay-darken:hover
 {
@@ -1082,6 +1107,68 @@ body
   stroke-width:2;
 }
 
+.blog-pic-box-button
+{
+    background-color:#c72144;
+    height:66px;
+    width:210px;
+    font-size: 21px;
+    line-height: 66px;
+    font-weight: bold;
+    border: 2px solid #c72144;
+    transition: font-size .3s, background-color .3s;
+}
+
+
+.blog-pic-box-button:hover
+{
+    cursor: pointer;
+    background-color:transparent;
+    
+    font-size:23px;
+}
+
+.bottom-left-button
+{
+    position: absolute;
+    left:70px;
+    bottom:40px;
+}
+
+.background-overlay-darken-box
+{
+    position: absolute;
+    z-index: 0;
+    display:block;
+    top:0;
+    left:0;
+    opacity: 0.3;
+    height:100.1%;
+    width:100%;
+    background-color:#000;
+    transition: opacity .3s;
+}
+
+
+.blog-pic-box-header
+{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.top-left-box
+{
+    position: absolute;
+    top:30px;
+    left:30px;
+}
+
+
+.blog-pic-box-wrapper
+{
+    height:65vh;
+}
+
 .blog-header
 {
     font-size:28px;
@@ -1089,15 +1176,18 @@ body
 
 .blog-body
 {
-    font-size: 17px;
+    font-size: 18px;
 }
 
 .blog-pic
 {
     margin-left: auto;
     margin-right: auto;
+    margin-top:0px;
+    padding-top: 0px;
     height:315px;
-    width:500px;
+    position: relative;
+    top:-30px;
     background-size: cover;
 }
 
@@ -1112,7 +1202,7 @@ body
 
 .blog-lift:hover
 {
-    top:-3.5px;
+    top:-5px;
     cursor:pointer;   
 }
 
@@ -1652,6 +1742,41 @@ textarea
     width:60px;
 }
 
+.large-blog-post
+{
+    height:65vh;
+    background-size: cover;
+    margin-bottom: 30px;
+}
+
+.large-blog-post-header
+{
+    position: absolute;
+    z-index:2 !important;
+    font-weight: bold;
+    font-size: 55px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.large-blog-post-body
+{
+    font-weight: 300;
+    font-size:34px;
+}
+
+.left-no-pad
+{
+    margin-left:0px !important;
+    padding-left:0px !important;
+}
+
+.right-no-pad
+{
+    margin-right: 0px !important;
+    padding-right: 0px !important;
+}
+
 .bigger-text
 {
     font-size:17px;
@@ -1886,6 +2011,16 @@ textarea
 .navbar-top-element-white:hover:after
 {
     background:#000 !important;
+}
+
+.white-line-text:after
+{
+    background: #fff !important
+}
+
+.white-line-text:hover:after 
+{
+    background: #fff !important;
 }
 
 .navbar-top-element:after{
@@ -5032,7 +5167,33 @@ and (max-width: 767px)
 @media only screen 
 and (max-width: 767px)
 {
+    .large-blog-post-header
+    {
+        font-size: 34px;    
+    }
 
+    .large-blog-post-body
+    {
+        font-size: 27px;
+    }
+
+    .left-no-pad
+    {
+        margin-right: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    .right-no-pad
+    {
+        margin-left: 0px !important;
+        padding-left: 0px !important;
+    }
+
+    .margin-top-blog
+    {
+        margin-top:25px;
+    }
+    
     .perks-box
     {
         height:230px;

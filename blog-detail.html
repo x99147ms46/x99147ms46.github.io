@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="styles/animate.css" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+    <script>
+        window.sr = ScrollReveal();
+    </script>
+    <!-- Icon fonts -->
+    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery-easing.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 69%;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .swiper-slide2 {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            height: 320px !important;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        .item-slide {
+            min-height: 420px !important;
+            max-height: 490px !important;
+        }
+
+        .swiper-container1 {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" onLoad="initNav()">
+    <div id="top"></div>
+
+    <nav id="header-nav" class="navbar navbar-toggleable-md desktop-nav hidden-md-down navbar-transparent bg-faded fixed-top">
+        <div id="background-gradient" class="background-gradient"></div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style = "color:#fff !important;"></span>
+    </button>
+        <div class="col col-12">
+            <div class="row">
+                <div class="col col-md-3 col-lg-2">
+                    <a class="navbar-brand white" href="#">Arcadian Apparel</a>
+                </div>
+                <div class="col col-md-6 col-lg-8 text-center">
+
+                    <a class="nav-link white" href="index.html">HOME</a>
+                    <a class="nav-link white" href="store.html">STORE</a>
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                    <a class="nav-link white" href="charity.html">CHARITY</a>
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+
+
+                </div>
+                <div class="col col-md-3 col-lg-2 text-right">
+
+                    <img src="images/search.svg" class="nav-icon margin-right-medium" />
+                    <img src="images/user.svg" class="nav-icon margin-right-medium" />
+                    <img src="images/shopping-design-light.svg" class="nav-icon" />
+
+                </div>
+            </div>
+        </div>
+        </ul>
+    </nav>
+    <nav id="mobile header-nav" class="navbar navbar-default mobile-navbar-light fixed-top navbar-toggleable-md hidden-lg-up navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <a class="navbar-brand white" href="index.html">Arcadian Apparel</a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item text-center mobile-nav-item">
+                    <a class="nav-link white" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="store.html">STORE</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="outfits.html">OUTFITS</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav-item margin-top-medium text-center mobile-nav-item">
+                    <a class="nav-link white" href="contact.html">CONTACT</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+    <div class="section-header-image relative blog-image">
+        <div class="background-overlay"></div>
+        <div class="col col-12 center-abs text-center">
+            <div class="slide-text animated fadeInDown large-slide-text heavy section-image-focus">COMMUNITY SUPPORT</div>
+        </div>
+    </div>
+
+    <div class="section-three section-expanded-padding section-header text-center container-fluid">
+        <div class="small-section-text">January 26th, 2018</div>
+
+        <span class="light white">WE ARE ABOUT</span>
+        <span class="heavy white">SUPPORTING COMMUNITIES</span>
+        <div class="highlight-line white-line"></div>
+
+        <div class = "col col-8 white blog-body margin-top-medium text-left col-centered">
+            Placeholder blog text placeholder blog text placeholder blog text. Placeholder blog text placeholder blog text placeholder blog text. Placeholder placeholer.
+            Placeholder blog text placeholder blog text placeholder blog text. Placeholder blog text placeholder blog text placeholder blog text. 
+            Placeholder blog text placeholder blog text placeholder blog text. Placeholder blog text placeholder blog text placeholder blog text. 
+            Placeholder blog text placeholder blog text placeholder blog text. Placeholder blog text placeholder blog text placeholder blog text. 
+        </div>
+
+        <!--
+        <div class="col col-12">
+            <div class="row">
+
+                <div class="col col-11 col-md-8 col-lg-7 col-centered margin-top-medium base-text-size text-center white">
+                    At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder
+                    placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder
+                    placeholder. And as we grow, we want our charitable impact to grow with us. You can read about our charitable
+                    roadmap <a href="#about-fourth" class="inline-link">here.</a>
+                </div>
+
+            </div>
+        </div>
+        -->
+    </div>
+
+    <div class="footer-container fluid-container text-center">
+        <div class="center-footer-container text-center" style="max-width:1100px;">
+            <a class="smooth-scroll" href="#top"><img src = "images/expand-button.svg" class = "rotate-arrow return-to-top inline" /></a>
+            <div class="col col-11 col-centered">
+                <div class="row">
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">SHOP</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Women</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Men</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">All Categories</a></div>
+
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">LEARN</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item One</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item Two</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item Three</a></div>
+
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">SUPPORT</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item One</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item Two</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item Three</a></div>
+
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-3 margin-top-medium text-center">
+
+                        <span class="footer-header">Category FOUR</span>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item One</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item Two</a></div>
+                        <div class="footer-item"><a href="#" class="remove-link-style">Item Three</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-container-two text-center">
+        <div class="col col-12 col-centered icon-container text-center">
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i class="social-media-icon footer-icon fa fa-facebook facebook-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i class="social-media-icon footer-icon fa fa-twitter twitter-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i class="social-media-icon footer-icon fa fa-pinterest pinterest-icon" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/brockwaystreet" target="_blank"><i class="social-media-icon footer-icon fa fa-instagram instagram-icon" aria-hidden="true"></i></a>
+        </div>
+        <div class="center-rel text-center">
+
+            <div class="mailing-list-text col col-11 col-centered">Sign up to our mailing list for discounts and occasional updates.</div>
+            <form action="https://formspree.io/zjordan@macalester.edu" method="POST">
+                <input name="mail-list-email" class="text-input" type="text" placeholder="Enter email" />
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="scripts/tether.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/swiper.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+
+
+    <script>
+        window.sr = ScrollReveal();
+        var delay1, delay2, delay3, delay4, delay5;
+        delay1 = 100;
+        delay2 = 300;
+        delay3 = 500;
+        delay4 = 700;
+        delay5 = 900;
+
+        sr.reveal('.delay1', { delay: delay1 });
+        sr.reveal('.delay2', { delay: delay2 });
+        sr.reveal('.delay3', { delay: delay3 });
+        sr.reveal('.delay4', { delay: delay4 });
+
+        $('a').on('click', function (event) {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+            event.preventDefault();
+        });
+
+        $('.item-type-box').on('mousenter', function (e) {
+            $(this).find('canvas').trigger('hover');
+        });
+    </script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+
+</body>
