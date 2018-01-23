@@ -12,19 +12,17 @@
 
     <link rel="stylesheet" href="styles/style.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
 
     <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+    <link rel="stylesheet" href="styles/swiper.css" />
 
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 
-    <script>
-        window.sr = ScrollReveal();
-    </script>
     <!-- Icon fonts -->
-    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
-
+    <script src="https://use.fontawesome.com/5783e93cdd.js"></script>
+    <link rel="stylesheet" href="pictonic/css/pictonic.css">
     <!--[if lt IE 8]><script src="pictonic/js/pictonic.min.js"></script><![endif]-->
     <script src="scripts/jquery.js"></script>
     <script src="scripts/jquery-easing.js"></script>
@@ -47,12 +45,27 @@
         }
 
         .swiper-container {
+
             width: 100%;
-            height: 69%;
+            height: 75%;
             margin-left: 0px !important;
             margin-right: 0px !important;
             padding-left: 0px !important;
             padding-right: 0px !important;
+        }
+
+        .swiper-container-style {
+
+            width: 100%;
+            height: 100%;
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+            padding-left: 0px !important;
+            padding-right: 0px !important;
+        }
+
+        .swiper-extend-height {
+            height: 100% !important;
         }
 
         .swiper-slide {
@@ -98,11 +111,6 @@
             min-height: 420px !important;
             max-height: 490px !important;
         }
-
-        .swiper-container1 {
-            width: 100%;
-            height: 100%;
-        }
     </style>
 </head>
 
@@ -128,6 +136,7 @@
                     <a class="nav-link white" href="about.html">ABOUT</a>
                     <a class="nav-link white" href="charity.html">CHARITY</a>
                     <a class="nav-link white" href="contact.html">CONTACT</a>
+                    <a class="nav-link white" href="contact.html">BLOG</a>
 
 
                 </div>
@@ -172,11 +181,26 @@
         </div>
 
     </nav>
-    <div class="section-header-image relative blog-image">
-        <div class="background-overlay"></div>
-        <div class="col col-12 center-abs text-center">
-            <div class="slide-text animated fadeInDown large-slide-text heavy section-image-focus">ARCADIAN BLOG</div>
+    <div onmouseover="enterSlider('outfitHeader')" onmouseout="exitSlider('outfitHeader')" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide header-slider-image-style second-image">
+                <div class="slide-text large-slide-text heavy animated fadeInDown">Shop our favorites</div>
+
+            </div>
+            <div class="swiper-slide header-slider-image-style third-image"></div>
+
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+            <div class "swiper-slide third-image"></div>
         </div>
+
+        <div class="swiper-pagination"></div>
+
+        <img id="left-slider-arrow-outfit-header" src="images/left-arrow-thick.svg" class="swiper-button-prev swiper-button-switch semi-transparent"
+        />
+        <img id="right-slider-arrow-outfit-header" src="images/right-arrow-thick.svg" class="swiper-button-next swiper-button-switch semi-transparent"
+        />
+
     </div>
 
 
@@ -242,29 +266,29 @@
     </div>
 
     <div class="section-two section-expanded-padding section-header text-center container-fluid">
-        <div class="small-section-text light-section-text center-rel">COMPANY POSTS</div>
-        <span class="light">POSTS ABOUT OUR</span>
-        <span class="heavy">CHARITABLE MISSION</span>
+        <div class="small-section-text light-section-text center-rel">RECENT POSTS</div>
+        <span class="light">CHECK OUT THE</span>
+        <span class="heavy">RECENT POSTS</span>
         <div>
             <a href="store.html" class="kill-link-style">
-                    <div class="navbar-top-element small-element delay2 heavy">View All <span class="smaller-arrow">&#8702;</span></div>
+                <div class="navbar-top-element small-element delay2 heavy">View All <span class="smaller-arrow">&#8702;</span></div>
             </a>
         </div>
         <div class="col col-sm-12 col-md-11 col-centered margin-top-large">
             <div class="row">
-                <div class = "col col-12 large-blog-post landscape-pic blog-lift blog-lift-white">
-                    <div class = "large-blog-post-header white">
+                <div class="col col-12 large-blog-post landscape-pic blog-lift blog-lift-white">
+                    <div class="large-blog-post-header white">
                         Supporting global causes
-                        <div class = "large-blog-post-body">
+                        <div class="large-blog-post-body">
                             Our mission is to help individuals and communities around the world
                         </div>
                     </div>
-                    
-                    <div class = "large-blog-button white">
+
+                    <div class="large-blog-button white">
                         Read Post
                     </div>
 
-                    <span class = "background-overlay-darken lighter-darken"></span>
+                    <span class="background-overlay-darken lighter-darken"></span>
                 </div>
                 <div class="col text-center col-12 col-md-6 left-no-pad">
                     <span class="inline blog-lift blog-lift-white">
@@ -306,24 +330,24 @@
         <span class="heavy">CHARITABLE MISSION</span>
         <div>
             <a href="store.html" class="kill-link-style">
-                    <div class="navbar-top-element small-element delay2 heavy white white-line-text">View All <span class="smaller-arrow">&#8702;</span></div>
+                <div class="navbar-top-element small-element delay2 heavy white white-line-text">View All <span class="smaller-arrow">&#8702;</span></div>
             </a>
         </div>
         <div class="col col-11 col-centered margin-top-large">
             <div class="row">
-                <div class = "col col-12 large-blog-post company-image2 blog-lift blog-lift-blue">
-                    <div class = "large-blog-post-header white">
+                <div class="col col-12 large-blog-post company-image2 blog-lift blog-lift-blue">
+                    <div class="large-blog-post-header white">
                         Supporting global causes
-                        <div class = "large-blog-post-body">
+                        <div class="large-blog-post-body">
                             Our mission is to help individuals and communities around the world
                         </div>
                     </div>
-                    
-                    <div class = "large-blog-button white">
+
+                    <div class="large-blog-button white">
                         Read Post
                     </div>
 
-                    <span class = "background-overlay-darken lighter-darken"></span>
+                    <span class="background-overlay-darken lighter-darken"></span>
                 </div>
 
                 <div class="col text-center col-12 col-md-6 left-no-pad">
@@ -366,24 +390,24 @@
         <span class="heavy">CHARITABLE MISSION</span>
         <div>
             <a href="store.html" class="kill-link-style">
-                        <div class="navbar-top-element small-element delay2 heavy">View All <span class="smaller-arrow">&#8702;</span></div>
+                <div class="navbar-top-element small-element delay2 heavy">View All <span class="smaller-arrow">&#8702;</span></div>
             </a>
         </div>
         <div class="col col-11 col-centered margin-top-large">
             <div class="row">
-                <div class = "col col-12 large-blog-post landscape-pic blog-lift blog-lift-white">
-                    <div class = "large-blog-post-header white">
+                <div class="col col-12 large-blog-post landscape-pic blog-lift blog-lift-white">
+                    <div class="large-blog-post-header white">
                         Supporting global causes
-                        <div class = "large-blog-post-body">
+                        <div class="large-blog-post-body">
                             Our mission is to help individuals and communities around the world
                         </div>
                     </div>
-                    
-                    <div class = "large-blog-button white">
+
+                    <div class="large-blog-button white">
                         Read Post
                     </div>
 
-                    <span class = "background-overlay-darken lighter-darken"></span>
+                    <span class="background-overlay-darken lighter-darken"></span>
                 </div>
 
                 <div class="col text-center col-12 col-md-6 left-no-pad">
@@ -420,15 +444,72 @@
         </div>
     </div>
 
-     <div class="section-three section-expanded-padding section-header text-center container-fluid">
-        <div class="small-section-text">GUEST SUBMISSIONS</div>
+
+    <div class="section-three white section-expanded-padding section-header text-center container-fluid">
+        <div class="small-section-text center-rel">CHARITY POSTS</div>
+        <span class="light">POSTS ABOUT OUR</span>
+        <span class="heavy">CHARITABLE MISSION</span>
+        <div>
+            <a href="store.html" class="kill-link-style">
+                <div class="navbar-top-element small-element delay2 heavy white white-line-text">View All <span class="smaller-arrow">&#8702;</span></div>
+            </a>
+        </div>
+        <div class="col col-11 col-centered margin-top-large">
+            <div class="row">
+                <div class="col col-12 large-blog-post company-image2 blog-lift blog-lift-blue">
+                    <div class="large-blog-post-header white">
+                        Supporting global causes
+                        <div class="large-blog-post-body">
+                            Our mission is to help individuals and communities around the world
+                        </div>
+                    </div>
+
+                    <div class="large-blog-button white">
+                        Read Post
+                    </div>
+
+                    <span class="background-overlay-darken lighter-darken"></span>
+                </div>
+
+                <div class="col text-center col-12 col-md-6 left-no-pad">
+                    <span class="inline blog-lift blog-lift-blue">
+                    <div class = "about-image blog-pic col-md-12"></div>
+                    <div class = "small-section-text margin-top-medium">January 27, 2018</div>
+                    <div class = "blog-header">Charity around the world</div>
+                    <div class = "highlight-line white-line"></div>
+                    <div class = "blog-body col-11 col-centered margin-top">
+                        In this post, we discuss our commitment to charitable causes what you 
+                     can do to identify great charities. 
+                    </div>
+                    <div class="item-button outfit-container-button margin-top">Read Post</div>
+                </span>
+                </div>
+
+
+
+
+                <div class="col text-center col-12 col-md-6 right-no-pad">
+                    <span class="inline blog-lift blog-lift-blue">
+                <div class = "company-image2 blog-pic"></div>
+                <div class = "small-section-text margin-top-medium">January 27, 2018</div>
+                <div class = "blog-header">Charity around the world</div>
+                <div class = "highlight-line white-line"></div>
+                <div class = "blog-body col-11 col-centered margin-top">
+                    In this post, we discuss our commitment to charitable causes what you 
+                     can do to identify great charities. 
+                </div>
+                <div class="item-button outfit-container-button margin-top">Read Post</div>
+                </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-two section-expanded-padding section-header text-center container-fluid">
+        <div class="small-section-text light-section-text">GUEST SUBMISSIONS</div>
         <div class="margin-top-small">
-            <span class="light white">SEND US</span>
-            <span class="heavy white">YOUR THOUGHTS</span>
-            <div class="highlight-line white-line"></div>
-
-
-
+            <span class="light">SEND US</span>
+            <span class="heavy">YOUR THOUGHTS</span>
+            <div class="highlight-line"></div>
             <div class="col col-12">
                 <div class="row">
 
@@ -444,13 +525,13 @@
                 </a>
                     </div>
 
-                    <div class="col col-12 col-md-6 margin-top-large base-text-size text-center white">
+                    <div class="col col-12 col-md-6 margin-top-large base-text-size text-center">
                         At company name, we like to make big things happen. Placeholder placeholder placeholder placeholder placeholde. Placeholder
                         placeholder placeholder Placeholder placeholder placeholder placeholder placeholde. Placeholder placeholder
                         placeholder. Placeholder placeholder placeholder.
                         <br />
                         <a href="mailto:thearcadianapparel@gmail.com?subject=Guest Blog Post">
-                            <div class="item-button outfit-container-button margin-top-medium">Send an Email</div>
+                            <div class="item-button outfit-container-button margin-top outfit-container-button-white">Send an Email</div>
                         </a>
                     </div>
                     <div class="col col-12 col-md-3 hidden-sm-down">
@@ -464,13 +545,8 @@
                         </div>
                 </a>
                     </div>
-                    
                 </div>
-
             </div>
-
-
-
             <div class="row margin-top-large hidden-md-up margin-top-medium">
                 <div class="col col-10 col-centered founder-pic women-pic margin-top-large"></div>
                 <div class="col col-10 col-centered founder-pic men-pic margin-top-large"></div>
@@ -543,7 +619,17 @@
     <script src="scripts/script.js"></script>
 
 
-
+    <script>
+        $('.swiper-container').each(function () {
+            new Swiper($(this), {
+                pagination: $(this).find('.swiper-pagination'),
+                paginationClickable: $(this).find('.swiper-pagination'),
+                nextButton: $(this).find('.swiper-button-next'),
+                prevButton: $(this).find('.swiper-button-prev'),
+                loop: true
+            });
+        });
+    </script>
     <script>
         window.sr = ScrollReveal();
         var delay1, delay2, delay3, delay4, delay5;
