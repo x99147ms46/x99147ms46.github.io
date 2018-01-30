@@ -209,6 +209,15 @@
   background:#000 !important;
 }
 
+.swiper-3 > .swiper-pagination-bullet
+{
+  margin-left:5px;
+  margin-right:5px;
+  width:16px;
+  height:8px;
+  background:#fff !important;
+}
+
 
 button.swiper-pagination-bullet {
   border: none;

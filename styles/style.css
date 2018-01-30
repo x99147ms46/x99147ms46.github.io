@@ -939,6 +939,14 @@ body
     transform: rotate(-180deg) !important;
 }
 
+.right-slider-arrow
+{
+    display: inline-block;
+    -ms-transform: rotate(180deg) !important; /* IE 9 */
+    -webkit-transform: rotate(180deg) !important; /* Chrome, Safari, Opera */
+    transform: rotate(180deg) !important;
+}
+
 .left-arrow
 {
     display: inline-block;
@@ -1596,6 +1604,126 @@ textarea
     background-repeat: no-repeat;
 }
 
+.fans-container
+{
+    position: absolute;
+    height: 63vh;
+    width:100%;
+    background-size: cover;
+} 
+
+.fans-container-overlay
+{
+    position: absolute;
+    top:0;
+    height: 63.1vh;
+    width:101%;
+    left:0;
+    z-index: 0;
+    background-color: #000;
+    opacity: 0.0;
+    transition: opacity .3s;
+}
+
+.fans-title-information
+{
+    position: absolute;
+    z-index: 100;
+    width:100%;
+    bottom:40px;
+}
+
+.fans-title-box
+{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    padding-bottom: 4px;
+    background: rgb(197,37,70);
+    background: rgba(197,37,70, 0.92);
+}
+
+.fans-title
+{
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+
+    width:57%;
+    font-size: 26.5px;
+    line-height: 50px;
+    /*
+    background: rgb(197,37,70);
+    background: rgba(197,37,70, 0.92);
+    */
+}
+
+.fans-subtitle
+{
+    margin-top:-15px;
+    margin-left: auto;
+    margin-right: auto;
+    left:0;
+    right:0;
+    width:57%;
+    font-size: 20px;
+    /*
+    background:rgb(176,28,58);
+    background:rgba(176,28,58, 0.92);
+    */
+}
+
+.fans-date-wrapper
+{
+    z-index: 100;
+    font-size: 16px;
+    position: absolute;
+    top:10px;
+    left:10px;
+}
+
+.fans-date-day
+{
+    height:36px;
+    width:69px;
+    line-height: 40px;
+    background: rgb(197,37,70);
+    background: rgba(197,37,70, 0.92);
+    font-weight: 300;
+}
+
+.fans-date-year
+{
+    height:36px;
+    width:69px;
+    line-height: 40px;
+    background:rgb(176,28,58);
+    background:rgba(176,28,58, 0.92);
+    font-weight: bold;
+}
+
+.fans-container-wrapper
+{
+    position: absolute;
+    bottom:100px;
+    z-index: 100;
+}
+
+.fans-container-header
+{
+    height:55px;
+    width:200px !important;
+    display: inline-block;
+    margin-left:35px;
+    top:35px;
+
+    width:auto;
+    background-color:#c52546;
+}
+
 .item1
 {
     background-image:url("http://www.stickpng.com/assets/images/5858478f4f6ae202fedf27dc.png");
@@ -1620,6 +1748,11 @@ textarea
 {
     cursor: pointer;
     box-shadow: 0px 0px 3px 5px #d0cfc2; 
+}
+
+.item-slide-blue:hover
+{
+    box-shadow: 0px 0px 3px 5px #000F26 !important; 
 }
 
 .text-container
@@ -1763,6 +1896,57 @@ textarea
 {
     font-weight: 300;
     font-size:34px;
+}
+
+.recent-post-box
+{
+    display: inline-block;
+    height:65vh;
+    width:95%;
+    transition: box-shadow .3s, top .3s ease;
+}
+
+.no-top-pad
+{
+    padding-top: 0px !important;
+}
+
+.recent-post-image
+{
+    top:0;
+    background-size: cover;
+    height:33vh;
+    width:100%;
+}
+
+.recent-post-box-header
+{
+    position: relative;
+    font-size: 23px;
+}
+
+.recent-post-box-body
+{
+    font-size: 15.5px;
+}
+
+.recent-posts-box-button
+{
+    position: absolute !important;
+    bottom: 30px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    left:0;
+    right:0;
+    width:160px !important;
+    line-height: 49px !important;
+    font-size: 17px !important;
+    height:49px !important;
+}
+
+.recent-posts-box-button:hover
+{
+    font-size: 18.5px !important;
 }
 
 .left-no-pad
@@ -2055,9 +2239,9 @@ textarea
     color:#000;
     padding-top:15px !important;
     padding-bottom:15px !important;
-    margin-left:3px !important;
-    margin-right: 3px !important;
-    font-size:15px;
+    margin-left:5.5px !important;
+    margin-right: 5.5px !important;
+    font-size:14px;
 }
 
 .nav-link:after{
@@ -3435,13 +3619,16 @@ html,body {
 
 .outfit-container-home
 {
+    position: relative;
+    top:0px;
     background-color:#0f2441;
     padding-bottom:35px;
-    transition: box-shadow .3s;
+    transition: box-shadow .3s, top .3s ease;
 }
 
 .outfit-container-home:hover
 {
+    top:-4px;
     cursor:pointer;
     box-shadow: 0px 0px 3px 5px #000F26; 
 }
@@ -4107,6 +4294,11 @@ html,body {
     outline: none !important;
 }
 
+    .push-top
+    {
+        z-index: 100 !important;
+    }
+
     .transparent-border
     {
         -moz-background-clip: border;     /* Firefox 3.6 */
@@ -4276,6 +4468,12 @@ html,body {
 {
     position: relative;
     top:420px;
+}
+
+.move-down-fans
+{
+    position: relative;
+    top:450px;
 }
 
 .charity-navigation
